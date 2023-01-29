@@ -1,0 +1,48 @@
+name: Auto Test
+
+on:
+  push:
+    branches:
+      - "main"
+    paths-ignore:
+      - ".github/**"
+  pull_request:
+    branches-ignore:
+      - "deploy"
+    paths-ignore:
+      - ".github/**"
+  workflow_dispatch:
+    branches-ignore:
+      - "deploy"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 切换到当前分支
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: 恢复文件修改时间
+        run: |
+          git ls-files -z | while read -d '' path; do touch -d "$(git log -1 --format="@%ct" "$path")" "$path"; done
+      - name: 设置Node版本和缓存
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "npm"
+      - name: Install dependencies 🔧
+        run: yarn install --frozen-lockfile --registry=https://registry.npmjs.org/
+      - uses: nikeee/setup-pandoc@v1
+      - name: 编译应用 🔧
+        run: |
+          yarn global add hexo-cli
+          hexo clean
+          hexo g
+      - name: 部署应用
+        if: ${{ github.ref_name == 'main' }}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: public
+          branch: deploy
+          force: false
