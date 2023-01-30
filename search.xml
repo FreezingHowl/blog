@@ -1,28 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/01/30/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <title>多重阅读-阅读技巧</title>
+    <url>/%E5%AD%A6%E4%B9%A0%E5%8A%9B/multiple-reading.html</url>
+    <content><![CDATA[<p>  快时代下的高效阅读方法。</p>
 <span id="more"></span>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>多重阅读是画出阅读框架的过程。<br>多重阅读第一遍以变速阅读为主，核心目的就是要选出重点精读的内容。<br>多重阅读第二遍以重点精读为主，就是要将阅读内容归到你的个人知识体系中，变成你自己的理解和知识，从而在需要的时候可以被顺畅地调用出来。</p>
+</blockquote>
+<h4 id="阅读步骤"><a href="#阅读步骤" class="headerlink" title="阅读步骤"></a>阅读步骤</h4><ol>
+<li>明确阅读目的</li>
+<li>绘制内容框架</li>
+<li>变速阅读</li>
+<li>重点精度</li>
+</ol>
+<h4 id="阅读过程"><a href="#阅读过程" class="headerlink" title="阅读过程"></a>阅读过程</h4><h5 id="明确阅读目的"><a href="#明确阅读目的" class="headerlink" title="-| 明确阅读目的"></a>-| 明确阅读目的</h5><blockquote>
+<p>阅读之前建议思考一个问题：<br>  如果是我写这本书的话，我会怎么组织观点呢？<br>带着这样的问题来阅读会更加高效的抓取关键信息。</p>
+</blockquote>
+<h5 id="绘制内容框架"><a href="#绘制内容框架" class="headerlink" title="-| 绘制内容框架"></a>-| 绘制内容框架</h5><blockquote>
+<p>从阅读目的出发，在浏览封面、作者简介、前言、目录后，画出一个整体的阅读框架关键词，这样效率就更高了。<br>通常来说，一本书的目录就是最原始的框架，阅读过程中可以增加自己的理解，逐渐完善框架。</p>
+</blockquote>
+<h5 id="变速阅读"><a href="#变速阅读" class="headerlink" title="-| 变速阅读"></a>-| 变速阅读</h5><p>  第一遍阅读的时候，要采用泛读的方式。</p>
+<p>针对四类不同的内容采用不同的阅读速度。</p>
+<ol>
+<li><p>与阅读目的不相关的内容</p>
+<blockquote>
+<p>这部分内容，阅读时跳过就行，或者做个标记以防后期需要再次复盘。</p>
+</blockquote>
+</li>
+<li><p>与阅读目的相关，但你已经很熟悉的内容</p>
+<blockquote>
+<p>这部分内容，阅读时以你能达到的最快速度浏览即可，只需留意其中是否有个别值得借鉴的要点。<br>切记不要反复阅读自己熟悉的内容，浪费时间的同时效率不高。</p>
+</blockquote>
+</li>
+<li><p>与阅读目的相关，但是你不熟悉的内容</p>
+<blockquote>
+<p>这部分内容，在第一遍阅读时就要回到正常的阅读速度进行阅读。<br>在每一章或每阅读10分钟之后，必须停下来，离开书本，在脑海里回忆刚刚阅读过的内容，然后将你能回忆出来的内容，添加到阅读框架中。<br>这一边的复盘很重要，通常也非常消耗精力，但是用自己的语言表述出来的时候也就意味着掌握了这个知识。</p>
+</blockquote>
+</li>
+<li><p>与阅读目的相关，但第一遍理解起来很难的内容</p>
+<blockquote>
+<p>在阅读不熟悉的内容时，如果碰到理解起来很难的内容，第一遍阅读时标记下来，看一看，在脑海中有点印象就行。</p>
+</blockquote>
+</li>
+</ol>
+<h5 id="重点精读"><a href="#重点精读" class="headerlink" title="-| 重点精读"></a>-| 重点精读</h5><blockquote>
+<p>第二遍阅读的时候，我们不需要将所有内容都重新阅读一遍，而是重点精读符合阅读目的，又是自己不熟悉的部分。<br>第二遍重点精读的时候，你需要做笔记！<br>最好的方式是在第二遍重点精读的时候，将这些内容记到笔记里，而且一定要体系化地组织这些内容（推荐使用OneNote）<br>形成知识体系化的最好方法是多读同一领域的不同书籍，互相补充，想成自己独特的目录。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">参考链接: https://www.jianshu.com/p/05986e4afddc</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>学习力</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+        <tag>技巧</tag>
+        <tag>快生活</tag>
+      </tags>
   </entry>
   <entry>
-    <title>nonnight</title>
-    <url>/2023/01/29/nonnight/</url>
-    <content><![CDATA[]]></content>
+    <title>因为那夜风</title>
+    <url>/%E8%AF%97%E8%AF%8D/study-pouwer.html</url>
+    <content><![CDATA[<p>  总是因为风中的一丝味道而伤感。</p>
+<span id="more"></span>
+<h3 id="因为那夜风"><a href="#因为那夜风" class="headerlink" title="因为那夜风"></a>因为那夜风</h3><p>因为一场风，<br>落日迎来了星空点点，<br>余晖拉长了记忆的影子，<br>月光洒下，<br>荡起层层细语。  </p>
+<p>吹来的这阵风，<br>偷走了曾经的一个梦，<br>曾想把它藏在过去，<br>如今却随风而去。</p>
+<p>那夜里吹走了的风，<br>朦朦胧胧，<br>抓不到，<br>也留不住，<br>但有种种思绪，<br>因为这风，<br>成为了心中默默嘈杂的秘密。</p>
+]]></content>
+      <categories>
+        <category>诗词</category>
+      </categories>
+      <tags>
+        <tag>秘密</tag>
+        <tag>夜风</tag>
+        <tag>伤感</tag>
+      </tags>
   </entry>
 </search>
