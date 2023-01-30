@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: 绿夜星空
+subtitle: '宛如一场梦'
+description: '在何去何从的路口，望着不会到来的绿灯，不如化为星辰，融入夜空，不盼，不等。。。'
+keywords: "忧伤，唯美，乐观"
+author: 非想飞
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -97,9 +97,26 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: ayer
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# -----------------------+ 插件区间 +-------------------
+# hexo-generator-searchdb 搜索插件
+search:
+  path: search.xml
+  field: post
+  format: html
+# hexo-generator-feed 生成RSS订阅
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: " "
+  order_by: -date
