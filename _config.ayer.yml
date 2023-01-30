@@ -4,15 +4,13 @@ menu:
   归档: /archives
   分类: /categories
   标签: /tags
-  旅行: /tags/旅行/
   友链: /friends
-  关于我: /2019/about
 
 # 站点次标题和打字动效
 # https://github.com/mattboldt/typed.js
 subtitle:
   enable: true # 是否开启动效
-  text: 面朝大海，春暖花开 # 显示的文字
+  text: 一夜，一座孤岛，一处幻境 # 显示的文字
   text2: 愿你一生努力，一生被爱 # 滚动播放，如果不需要可以留空
   text3: 想要的都拥有，得不到的都释怀 # 最多支持三段文字
   startDelay: 0 # 延迟时间
@@ -29,7 +27,7 @@ logo: /images/ayer-side.svg
 # enable-是否启用封面；path-封面背景图；logo-封面logo
 cover:
   enable: true
-  path: /images/cover1.jpg # /source/images目录下附送多张美图，可更换
+  path: /images/cover5.jpg # /source/images目录下附送多张美图，可更换
   logo: false #/images/ayer.svg，如果不要直接设置成false
 
 # 页面顶部进度条
@@ -79,7 +77,7 @@ word_count:
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 0
 # 打赏wording
 reward_wording: "请我喝杯咖啡吧~"
 # 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
@@ -122,7 +120,7 @@ layout:
 github:
   # (关闭请设置为false)
   enable: true
-  url: https://github.com/Shen-Yu/hexo-theme-ayer
+  url: https://github.com/FreezingHowl
 
 # 网易云音乐插件
 music:
@@ -138,7 +136,7 @@ busuanzi:
 
 # 友盟cnzz统计(url填js代码src链接)
 cnzz:
-  enable: true
+  enable: false
   url: https://s9.cnzz.com/z_stat.php?id=1278069914&web_id=1278069914
 
 # Google Analytics
@@ -163,7 +161,7 @@ mermaid:
   theme: forest
 
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
-since: 2015
+since: 2023
 
 # ICP备案信息尾部显示
 icp:
@@ -237,16 +235,16 @@ minivaline:
 # 首页广告配置
 # 可以根据需要自行增加ad_3，ad_4...，留空则不显示，建议图片和url不要带ad等关键词，否则可能会被adblock等插件屏蔽
 ads:
-  ad_1:
-    title: 云服务器限时秒杀
-    img: https://pic.imgdb.cn/item/62174b452ab3f51d912a5ccc.jpg
-    url: https://curl.qcloud.com/kvO7hb43
-    width: 300
-  ad_2:
-    title: vultr优惠vps
-    img: https://pic.imgdb.cn/item/62174b452ab3f51d912a5cd7.png
-    url: https://www.vultr.com/?ref=8630075
-    width: 300
+  # ad_1:
+  #   title: 云服务器限时秒杀
+  #   img: https://pic.imgdb.cn/item/62174b452ab3f51d912a5ccc.jpg
+  #   url: https://curl.qcloud.com/kvO7hb43
+  #   width: 300
+  # ad_2:
+  #   title: vultr优惠vps
+  #   img: https://pic.imgdb.cn/item/62174b452ab3f51d912a5cd7.png
+  #   url: https://www.vultr.com/?ref=8630075
+  #   width: 300
 
 # 网站开启加密访问，密码可设置任何字符
 lock:
