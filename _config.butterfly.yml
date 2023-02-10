@@ -18,7 +18,7 @@ nav:
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: ocean #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: ocean  #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -85,32 +85,32 @@ avatar:
   img: /img/icon_okino.jpg
   effect: false
 
-# Disable all banner image
+# Disable all banner image（禁用头部图片）
 disable_top_img: false
 
-# The banner image of home page
-index_img:
+# The banner image of home page（主页头部图片）
+index_img: /img/friend_404.gif
 
-# If the banner of page not setting, it will show the top_img
-default_top_img:
+# If the banner of page not setting, it will show the top_img（头部默认图片）
+default_top_img: /img/imagevisual_a.jpg
 
-# The banner image of archive page
-archive_img:
+# The banner image of archive page（归档头部图片）
+archive_img: 
 
-# If the banner of tag page not setting, it will show the top_img
+# If the banner of tag page not setting, it will show the top_img（标签头部图片）
 # note: tag page, not tags page (子標籤頁面的 top_img)
 tag_img:
 
-# The banner image of tag page
+# The banner image of tag page（每个标签（子标签页）头部图片）
 # format:
 #  - tag name: xxxxx
 tag_per_img:
 
-# If the banner of category page not setting, it will show the top_img
+# If the banner of category page not setting, it will show the top_img（分类头部图片）
 # note: category page, not categories page (子分類頁面的 top_img)
 category_img:
 
-# The banner image of category page
+# The banner image of category page（每个分类（子分类页）头部图片）
 # format:
 #  - category name: xxxxx
 category_per_img:
@@ -125,7 +125,7 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -140,10 +140,10 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: updated # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
+    tags: true # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
@@ -155,7 +155,7 @@ post_meta:
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
