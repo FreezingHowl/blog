@@ -89,7 +89,7 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page（主页头部图片）
-index_img: /img/friend_404.gif
+index_img: /img/imagevisual_a.jpg
 
 # If the banner of page not setting, it will show the top_img（头部默认图片）
 default_top_img: /img/imagevisual_a.jpg
