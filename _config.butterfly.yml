@@ -160,7 +160,7 @@ wordcount:
   min2read: true
   total_wordcount: true
 
-# Display the article introduction on homepage
+# Display the article introduction on homepage（在主页上显示文章简介）
 # 1: description
 # 2: both (if the description exists, it will show description, or show the auto_excerpt)
 # 3: auto_excerpt (default)
@@ -169,7 +169,7 @@ index_post_content:
   method: 3
   length: 500 # if you set method to 2 or 3, the length need to config
 
-# anchor
+# anchor（锚点）
 anchor:
   button:
     enable: false
@@ -189,6 +189,7 @@ toc:
   style_simple: false # for post
   scroll_percent: true
 
+# 统一版权（文章页可单独设置）
 post_copyright:
   enable: true
   decode: false
@@ -196,7 +197,7 @@ post_copyright:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-# Sponsor/reward
+# Sponsor/reward（文章打赏）
 reward:
   enable: false
   QR_code:
@@ -207,7 +208,7 @@ reward:
     #   link:
     #   text: alipay
 
-# Post edit
+# Post edit（文章编辑）
 # Easily browse and edit blog source code online.
 post_edit:
   enable: false
@@ -215,7 +216,7 @@ post_edit:
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   url:
 
-# Related Articles
+# Related Articles（相关文章）
 related_post:
   enable: true
   limit: 6 # Number of posts displayed
@@ -261,9 +262,8 @@ addtoany:
   enable: false
   item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
-# Comments System
+# Comments System（评论功能）
 # --------------------------------------
-
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
@@ -376,7 +376,7 @@ artalk:
   visitor: false
   option:
 
-# Chat Services
+# Chat Services （在线聊天）
 # --------------------------------------
 
 # Chat Button [recommend]
@@ -421,9 +421,9 @@ crisp:
 messenger:
   enable: false
   pageID:
-  lang: zh_TW # Language en_US/zh_CN/zh_TW and so on
+  lang: zh_CN # Language en_US/zh_CN/zh_TW and so on
 
-# Footer Settings
+# Footer Settings（尾部配置）
 # --------------------------------------
 footer:
   owner:
@@ -432,7 +432,7 @@ footer:
   custom_text:
   copyright: true # Copyright of theme and framework
 
-# Analysis
+# Analysis（分析统计）
 # --------------------------------------
 
 # Baidu Analytics
@@ -451,10 +451,10 @@ cloudflare_analytics:
 # https://clarity.microsoft.com/
 microsoft_clarity:
 
-# Advertisement
+# Advertisement（广告）
 # --------------------------------------
 
-# Google Adsense (谷歌廣告)
+# Google Adsense (谷歌广告)
 google_adsense:
   enable: false
   auto_ads: true
@@ -468,7 +468,7 @@ google_adsense:
 #   aside:
 #   post:
 
-# Verification (站長驗證)
+# Verification (网站验证)
 # --------------------------------------
 
 site_verification:
@@ -522,10 +522,10 @@ background: '#68b88e'
 # Footer Background
 footer_bg: '#add5a2'
 
-# the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
+# the position of bottom right button/default unit: px (右下角按钮距离底部的距离/默认单位为px)
 rightside-bottom:
 
-# Enter transitions (開啓網頁進入效果)
+# Enter transitions (开启网页进入效果)
 enter_transitions: true
 
 # Background effects (背景特效)
@@ -635,7 +635,7 @@ subtitle:
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
 
-# Loading Animation (加載動畫)
+# Loading Animation (加载动画)
 preloader:
   enable: true
   # source
@@ -645,7 +645,7 @@ preloader:
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
 
-# aside (側邊欄)
+# aside (侧边栏)
 # --------------------------------------
 
 aside:
@@ -698,19 +698,19 @@ aside:
     sort_order: # Don't modify the setting unless you know how it works
 
 # busuanzi count for PV / UV in site
-# 訪問人數
+# 访问人数
 busuanzi:
   site_uv: true
   site_pv: true
   page_pv: true
 
-# Time difference between publish date and now (網頁運行時間)
+# Time difference between publish date and now (网页运行时间)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: false
   publish_date:
 
-# Aside widget - Newest Comments
+# Aside widget - Newest Comments（最新评论）
 newest_comments:
   enable: false
   sort_order: # Don't modify the setting unless you know how it works
@@ -738,7 +738,7 @@ translate:
 # Read Mode (閲讀模式)
 readmode: true
 
-# dark mode
+# dark mode（夜间模式）
 darkmode:
   enable: true
   # Toggle Button to switch dark/light mode
@@ -749,7 +749,7 @@ darkmode:
   # autoChangeMode: false
   autoChangeMode: false
 
-# show scroll percent in scroll-to-top button
+# show scroll percent in scroll-to-top button(滚动条百分比)
 rightside_scroll_percent: false
 
 # Don't modify the following settings unless you know how they work (非必要請不要修改 )
