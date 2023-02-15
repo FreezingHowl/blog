@@ -6,6 +6,7 @@ tags:
   - 秘密
   - 夜风
   - 伤感
+cover: "/img/top-img/top_img_4.webp"
 ---
 
 总是因为风中的一丝味道而伤感。

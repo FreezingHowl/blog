@@ -6,6 +6,7 @@ tags:
   - 阅读
   - 技巧
   - 快生活
+cover: "/img/top-img/top_img_3.webp"
 ---
 
 快时代下的高效阅读方法。

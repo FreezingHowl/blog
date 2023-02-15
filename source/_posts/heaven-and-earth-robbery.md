@@ -6,6 +6,7 @@ tags:
   - 天地劫
   - SRPG
   - 教程
+cover: "/img/top-img/top_img_2.webp"
 ---
 
 <!--more-->
