@@ -226,4 +226,89 @@
         <tag>生活</tag>
       </tags>
   </entry>
+  <entry>
+    <title>webGIS-基础知识框架</title>
+    <url>/WEB-GIS/web-gis-basic.html</url>
+    <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>该文章将简要概括webGIS的基础知识框架体系，以基础、进阶、扩展三个维度阐述前端GIS开发的技术内容，结合自身工作经历与工作认知清晰明确的说明技术体系，协助所需朋友的职业构建。</p>
+<h3 id="webGIS开发的工作过程"><a href="#webGIS开发的工作过程" class="headerlink" title="webGIS开发的工作过程"></a>webGIS开发的工作过程</h3><ul>
+<li>开发员工工作流程：编写项目具体功能模块与解决日常需求与BUG<ol>
+<li>需求对接-&gt;功能开发-&gt;功能测试-&gt;需求交接</li>
+</ol>
+</li>
+<li>开发经理工作流程：项目开发安排协助与<ol>
+<li>项目对接-&gt;开发方案制定-&gt;（项目搭建-&gt;共用与基础功能开发）-&gt;（开发文档编写与跟踪-需求评审-代码走查-分享培训）-&gt;项目测试-&gt;项目交接</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><ul>
+<li>页面开发基础<ul>
+<li>学习地址：<a href="https://developer.mozilla.org/zh-CN/">https://developer.mozilla.org/zh-CN/</a></li>
+</ul>
+<ol>
+<li>HTML5 </li>
+<li>CSS3</li>
+<li>JavaScript</li>
+</ol>
+</li>
+<li>二三维地图库（leaflet和cesium）<ol>
+<li>leaflet.js <ul>
+<li>学习地址：<a href="https://blog.csdn.net/qq_44725504/article/details/128744105">https://blog.csdn.net/qq_44725504/article/details/128744105</a></li>
+</ul>
+</li>
+<li>cesium.js<ul>
+<li>学习地址：<a href="https://zhuanlan.zhihu.com/p/588049871">https://zhuanlan.zhihu.com/p/588049871</a></li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h3><ul>
+<li>打包工具（webpack）<ul>
+<li>学习地址：<a href="https://blog.csdn.net/li5466667/article/details/124545028">https://blog.csdn.net/li5466667/article/details/124545028</a></li>
+</ul>
+</li>
+<li>代码管理（Git）<ul>
+<li>学习地址：<a href="https://www.yuque.com/skyjilygao/na9bh8/qp8xdf">https://www.yuque.com/skyjilygao/na9bh8/qp8xdf</a></li>
+</ul>
+</li>
+<li>前端框架（VUE、React）<ol>
+<li>VUE<ul>
+<li>学习地址：<a href="https://cn.vuejs.org/">https://cn.vuejs.org/</a></li>
+</ul>
+</li>
+<li>React</li>
+</ol>
+</li>
+<li>前端UI框架（Ant Design）<ul>
+<li>学习地址：<a href="https://ant.design/index-cn">https://ant.design/index-cn</a></li>
+</ul>
+</li>
+<li>数据可视化（ECharts）<ul>
+<li>学习地址：<a href="https://echarts.apache.org/zh/index.html">https://echarts.apache.org/zh/index.html</a></li>
+</ul>
+</li>
+<li>JavaScript运行环境（node.js）<ul>
+<li>学习地址： <a href="https://learn-anything.cn/node-js-start">https://learn-anything.cn/node-js-start</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><ul>
+<li>数据处理与服务发布</li>
+<li>linux系统基础使用</li>
+<li>空间数据库基础使用</li>
+<li>后端开发基础了解</li>
+<li>SuperMap相关产品使用</li>
+<li>ESRI相关产品使用</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">参考链接: </span><br><span class="line"> - https://zhuanlan.zhihu.com/p/603970067</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>WEB-GIS</category>
+      </categories>
+      <tags>
+        <tag>WEB-GIS</tag>
+        <tag>知识</tag>
+        <tag>概括</tag>
+      </tags>
+  </entry>
 </search>
