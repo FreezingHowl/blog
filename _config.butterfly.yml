@@ -663,11 +663,11 @@ aside:
     category: true
   card_author:
     enable: true
-    description: "若水三千，吾只取一瓢饮。"
+    description: "得之则幸，弗得则安，走走停停，磕磕碰碰。"
     button:
       enable: true
       icon: fab fa-github
-      text: 朝圣
+      text: Github
       link: https://github.com/FreezingHowl
   card_announcement:
     enable: true
