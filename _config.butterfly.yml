@@ -667,7 +667,7 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Github
+      text: GitHub
       link: https://github.com/FreezingHowl
   card_announcement:
     enable: true
