@@ -187,6 +187,232 @@
       </tags>
   </entry>
   <entry>
+    <title>软件设计师-数据的表示</title>
+    <url>/uncategorized/software-designer-examination.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h3 id="考点一：进制转换"><a href="#考点一：进制转换" class="headerlink" title="考点一：进制转换"></a>考点一：进制转换</h3><h4 id="进制的组成"><a href="#进制的组成" class="headerlink" title="进制的组成"></a>进制的组成</h4><ul>
+<li><p>进制缩写：进制的英文字母缩写【十进制(D),二进制(B),十六进制(H)】</p>
+</li>
+<li><p>数码: 数制中表示基本数值大小的不同数字符号</p>
+</li>
+<li><p>基数：数制中可使用数字符号的数目</p>
+</li>
+<li><p>位权：数制中每一固定位置对应的单位值</p>
+</li>
+<li><p>eg:</p>
+<blockquote>
+<p>进制名称：十进制<br>进制缩写：D<br>数码：0，1，2，3，4，5，6，7，8，9<br>基数：10<br>位权：10^k</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="R-进制转十进制（按权展开法）"><a href="#R-进制转十进制（按权展开法）" class="headerlink" title="R 进制转十进制（按权展开法）"></a>R 进制转十进制（按权展开法）</h4><ul>
+<li>说明：R 进制转十进制使用按权展开法</li>
+<li>操作方式：将 R 进制的每一位数值用 R^K 形式表示，即幂的底数是 R，指数为 K ，K 与改为和小数点质检的距离有关。当该位位于小数点左边，K 值是该位和小数点质检的数码的个数，而当该位位于小数点左边，K 值是负值，其绝对值是该位和小数点质检的数码的个数加 1</li>
+<li>eg:<blockquote>
+<p>10100.01(B) &#x3D; 1<em>2^4 + 1</em>2^2 + 1*2^-2<br>603.002(H) &#x3D; 6<em>16^2 + 3</em>16^0 + 2*16^-3</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="十进制转-R-进制（短除法）"><a href="#十进制转-R-进制（短除法）" class="headerlink" title="十进制转 R 进制（短除法）"></a>十进制转 R 进制（短除法）</h4><ul>
+<li>说明：十进制转 R 进制使用短除法（除商取余法）</li>
+<li>eg:<blockquote>
+<p>94(D)转成二进制<br>2|94 余 0<br>2|47 余 1<br>2|23 余 1<br>2|11 余 1<br>2|5 余 1<br>2|2 余 0<br>2|1 余 1<br>0<br>则 结果为 1011110(B)</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="考点二：码制"><a href="#考点二：码制" class="headerlink" title="考点二：码制"></a>考点二：码制</h3><h4 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h4><ul>
+<li><p>原码：最高位是符号位，其余低位表示数值的绝对值</p>
+</li>
+<li><p>反码：正数的反码与原码相同，负数的反码是其绝对值按位取反（符号位不变）</p>
+</li>
+<li><p>补码：正数的补码与原码相同，负数的补码是其反码末位加 1（符号位不变）</p>
+</li>
+<li><p>移码：补码的符号位按位取反</p>
+</li>
+<li><p>eg:</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">数值 1</th>
+<th align="center">数值-1</th>
+<th align="center">1-1</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">原码</td>
+<td align="center">0000 0001</td>
+<td align="center">1000 0001</td>
+<td align="center">1000 0010</td>
+</tr>
+<tr>
+<td align="center">反码</td>
+<td align="center">0000 0001</td>
+<td align="center">1111 1110</td>
+<td align="center">1111 1111</td>
+</tr>
+<tr>
+<td align="center">补码</td>
+<td align="center">0000 0001</td>
+<td align="center">1111 1111</td>
+<td align="center">0000 0000</td>
+</tr>
+<tr>
+<td align="center">移码</td>
+<td align="center">1000 0001</td>
+<td align="center">0111 1111</td>
+<td align="center">1000 0000</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h4 id="表示范围"><a href="#表示范围" class="headerlink" title="表示范围"></a>表示范围</h4><ul>
+<li>eg:<table>
+<thead>
+<tr>
+<th align="center">码制</th>
+<th align="center">定点整数</th>
+<th align="center">定点小数</th>
+<th align="center">数码个数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">原码</td>
+<td align="center">- (2^n-1) ~ (2^n-1 - 1)</td>
+<td align="center">- (1 - 2^-(n-1)) ~ + (1 - 2^-(n-1))</td>
+<td align="center">2^n - 1</td>
+</tr>
+<tr>
+<td align="center">反码</td>
+<td align="center">- (2^n-1) ~ (2^n-1 - 1)</td>
+<td align="center">- (1 - 2^-(n-1)) ~ + (1 - 2^-(n-1))</td>
+<td align="center">2^n - 1</td>
+</tr>
+<tr>
+<td align="center">补码</td>
+<td align="center">- 2^n-1 ~ + (2^n-1 - 1)</td>
+<td align="center">-1 ~ (1 - 2^-(n-1))</td>
+<td align="center">2^n</td>
+</tr>
+<tr>
+<td align="center">移码</td>
+<td align="center">- 2^n-1 ~ + (2^n-1 - 1)</td>
+<td align="center">-1 ~ (1 - 2^-(n-1))</td>
+<td align="center">2^n</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="考点三：浮点数的表示"><a href="#考点三：浮点数的表示" class="headerlink" title="考点三：浮点数的表示"></a>考点三：浮点数的表示</h3><h4 id="基础概念-1"><a href="#基础概念-1" class="headerlink" title="基础概念"></a>基础概念</h4><ul>
+<li>表示模型：N &#x3D; 尾数*基数^指数</li>
+<li>eg:<blockquote>
+<p>1.25*10^6<br>尾数：1.25<br>基数：10<br>指数：6<br>数符：1</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="运算过程"><a href="#运算过程" class="headerlink" title="运算过程"></a>运算过程</h4><ul>
+<li>过程：对阶 &gt; 尾数计算 &gt; 结果格式化</li>
+<li>特点：<ol>
+<li>一般尾数用补码，阶码用移码</li>
+<li>阶码的位数决定数的表示范围，位数越多范围越大</li>
+<li>尾数的位数决定数的有效精度，位数越多精度越高</li>
+<li>对阶时，小数向大数看齐</li>
+<li>对阶是通过较小数的尾数右移实现的</li>
+</ol>
+</li>
+<li>eg:<blockquote>
+<p>1.25*10^6 与 3.14*10^8 相加<br>第一步（对阶）:1.25<em>10^6 &#x3D; 1.25</em>10^8 &#x2F; 10^2 &#x3D; 0.0125<em>10^8<br>第二步（尾数计算）:0.0125 + 3.14 &#x3D; 3.1525<br>第三步（结果格式化）:1.25</em>10^6 + 3.14*10^8 &#x3D; 3.1525*10^8</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="考点四：逻辑运算"><a href="#考点四：逻辑运算" class="headerlink" title="考点四：逻辑运算"></a>考点四：逻辑运算</h3><h4 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h4><ul>
+<li>优先级相同（高）<ul>
+<li>&lt; (小余)</li>
+<li>&lt;&#x3D; (小余或等于)</li>
+<li>&gt; (大于)</li>
+<li>&gt;&#x3D; (大于或等于)</li>
+</ul>
+</li>
+<li>优先级相同（低）<ul>
+<li>&#x3D;&#x3D; (等于)</li>
+<li>!&#x3D; (不等于)</li>
+</ul>
+</li>
+<li>说明<ul>
+<li>关系运算符的优先级低于算数运算符</li>
+<li>关系运算符的优先级高于赋值运算符</li>
+</ul>
+</li>
+</ul>
+<h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><ul>
+<li>基本概念： 逻辑变量之间的运算称为逻辑运算</li>
+<li>种类<ul>
+<li>逻辑或（||、+、U、V、OR）：连接的两个逻辑值全为 0 时才取 0</li>
+<li>逻辑与（&amp;&amp;、*、.、AND）：连接的两个逻辑值全为 1 时才取 1</li>
+<li>逻辑异或（XOR）：连接的两个逻辑值不相同时才取 1，相同则为 0</li>
+<li>逻辑非（!、~、NOT、-）：将原逻辑值取反即可</li>
+</ul>
+</li>
+<li>真值表<table>
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">B</th>
+<th align="center">(NOT)A</th>
+<th align="center">A(OR)B</th>
+<th align="center">A(AND)B</th>
+<th align="center">A(XOR)B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+</tbody></table>
+</li>
+<li>优先次序：!(非)-&gt;&amp;&amp;(与)-&gt;||(或)</li>
+<li>短路原则<ul>
+<li>a&amp;&amp;b&amp;&amp;c:只有 a 为真时，才需判断 b 的值，只有 a 和 b 都为真时，才需判断 c 的值</li>
+<li>a||b||c:只要 a 为真,就不必判断 b 和 c 的值，只有 a 为假，才判断 b；a 和 b 都为假才判断 c</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>软件设计师（中级）</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>因为那夜风</title>
     <url>/%E8%AF%97%E8%AF%8D/study-pouwer.html</url>
     <content><![CDATA[<p>总是因为风中的一丝味道而伤感。</p>
