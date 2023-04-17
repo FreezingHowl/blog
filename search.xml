@@ -190,6 +190,35 @@
     <title>软件设计师-校验码</title>
     <url>/uncategorized/sofare-designer-check-code.html</url>
     <content><![CDATA[<span id="more"></span>
+
+<h3 id="校验码基础知识"><a href="#校验码基础知识" class="headerlink" title="校验码基础知识"></a>校验码基础知识</h3><h4 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h4><ul>
+<li>码距：任何一种编码都由许多码字构成，任意两个码字之间最少变化的二进制位数就称为数据校验码的码距<ul>
+<li>eg:<blockquote>
+<p>用 4 位二进制表示 16 种状态，则有 16 个不同的码字，此时码距为 1</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="奇偶校验码"><a href="#奇偶校验码" class="headerlink" title="奇偶校验码"></a>奇偶校验码</h3><ul>
+<li>编码方法：由若干个有效信息（如一个字符），再加上一个二进制位（校验位）组成校验码</li>
+<li>奇校验：整个校验码（有效信息位和校验码）中“1”的个数为奇数</li>
+<li>偶校验：整个校验码（有效信息位和校验码）中“1”的个数为偶数</li>
+<li>特点：可检查 1 位（奇数位）的错误，不可纠错</li>
+</ul>
+<h3 id="CRC-循环冗余校验码"><a href="#CRC-循环冗余校验码" class="headerlink" title="CRC 循环冗余校验码"></a>CRC 循环冗余校验码</h3><ul>
+<li>编码方法：在 k 位信息码之后拼接 r 位校验码（由生成多项式决定）</li>
+<li>注意：把接收到的 CRC 码用约定的生成多项式 G(X)去除（模二除法），如果正确，则余数为 0；如果某一位出错，则余数不为 0。不同的位数出错其余数不同，余数和出错位序号之间有唯一的对应关系。</li>
+<li>特点：可检错，不可纠错</li>
+</ul>
+<h3 id="海明校验码"><a href="#海明校验码" class="headerlink" title="海明校验码"></a>海明校验码</h3><ul>
+<li>特点：可检错，也可纠错</li>
+<li>海明校验位求取公式：2^r &gt;&#x3D; m + r + 1 (r 为要求取的最小值，m 为信息位的个数)</li>
+<li>校验位放置位置(eg)<blockquote>
+<p>如果为 5 位校验码的话，这五个码分别放在 1（2^0）、2(2^1)、4(2^2)、8(2^3)、16(2^4)</p>
+</blockquote>
+</li>
+</ul>
 ]]></content>
       <tags>
         <tag>软件设计师（中级）</tag>
