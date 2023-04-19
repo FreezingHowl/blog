@@ -440,7 +440,11 @@ footer:
 
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+baidu_analytics: '<script>var _hmt = _hmt || [];(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5b48b0ef51f9c06e914180ee8f393508";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);})();</script>'
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
@@ -634,9 +638,9 @@ subtitle:
   # source: 2  调用一句网（简体） https://yijuzhan.com/
   # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
   # subtitle 会先显示 source ， 再显示 sub 的内容
-  source: 3
+  source: 1
   # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
-  sub: "对月形单望相护,只羡鸳鸯不羡仙。"
+  sub: ["对月形单望相护,只羡鸳鸯不羡仙"]
 
 # Loading Animation (加载动画)
 preloader:
@@ -670,7 +674,7 @@ aside:
       text: GitHub
       link: https://github.com/FreezingHowl
   card_announcement:
-    enable: true
+    enable: false
     content: "时间如水奔流，窗外雨打风吹依旧。"
   card_recent_post: # 最近文章
     enable: true
@@ -830,18 +834,18 @@ snackbar:
 
 # https://instant.page/
 # prefetch (预加载)
-instantpage: false
+instantpage: true
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之间添加空格)
 pangu:
-  enable: false
+  enable: true
   field: site # site/post
 
 # Lazyload (图片懒加载)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   field: site # site/post
   placeholder:
   blur: false
@@ -955,4 +959,4 @@ CDN:
     # prismjs_autoloader:
     # artalk_js:
     # artalk_css:
-    # busuanzi:
+    busuanzi: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@master/js/busuanzi.pure.mini.js
