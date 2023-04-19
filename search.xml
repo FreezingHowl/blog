@@ -230,7 +230,56 @@
     <url>/uncategorized/sofare-designer-cpu-compose.html</url>
     <content><![CDATA[<span id="more"></span>
 
-<h3 id="计算机结构"><a href="#计算机结构" class="headerlink" title="计算机结构"></a>计算机结构</h3><h4 id="计算机基础构成"><a href="#计算机基础构成" class="headerlink" title="计算机基础构成"></a>计算机基础构成</h4><p>- </p>
+<h3 id="计算机结构"><a href="#计算机结构" class="headerlink" title="计算机结构"></a>计算机结构</h3><h4 id="计算机基础构成"><a href="#计算机基础构成" class="headerlink" title="计算机基础构成"></a>计算机基础构成</h4><ul>
+<li>外设<ul>
+<li>输入设备</li>
+<li>输出设备</li>
+<li>辅助存储器（辅存&#x2F;外存）</li>
+</ul>
+</li>
+<li>主机<ul>
+<li>CPU<ul>
+<li>运算器</li>
+<li>控制器</li>
+</ul>
+</li>
+<li>主存储器（主存&#x2F;内存）</li>
+</ul>
+</li>
+</ul>
+<h4 id="线路运输"><a href="#线路运输" class="headerlink" title="线路运输"></a>线路运输</h4><ul>
+<li>数据总线<ul>
+<li>输入设备-&gt;主存储器</li>
+<li>辅助存储器 &lt;-&gt; 主存储器</li>
+<li>主存储器 -&gt; 输出设备</li>
+<li>运算器 &lt;-&gt; 主存储器</li>
+</ul>
+</li>
+<li>控制总线<ul>
+<li>控制器 -&gt; 运算器</li>
+<li>控制器 -&gt; 主存储器</li>
+<li>控制器 -&gt; 辅助存储器</li>
+<li>控制器 -&gt; 输出设备</li>
+</ul>
+</li>
+<li>地址总线<ul>
+<li>控制器 &lt;-&gt; 主存储器</li>
+</ul>
+</li>
+</ul>
+<h3 id="运算器和控制器"><a href="#运算器和控制器" class="headerlink" title="运算器和控制器"></a>运算器和控制器</h3><h4 id="运算器"><a href="#运算器" class="headerlink" title="运算器"></a>运算器</h4><ul>
+<li>算数逻辑单元 ALU: 数据的算数运算和逻辑运算</li>
+<li>累加寄存器 AC:通用寄存器，为 ALU 提供一个工作区，用在暂存数据</li>
+<li>数据缓冲寄存器 DR:写内存时，暂存指令或数据</li>
+<li>状态条件寄存器 PSW:村状态标志与控制标志</li>
+<li>注意：状态条件寄存器 PSW 归属存在争议，也有将其归为控制器的理论</li>
+</ul>
+<h4 id="控制器"><a href="#控制器" class="headerlink" title="控制器"></a>控制器</h4><ul>
+<li>程序计数器 PC:存储下一条要执行指令的地址</li>
+<li>指令寄存器 IR:存储即将执行的指令</li>
+<li>指令译码器 ID:对指令中的操作码字段进行分析解释</li>
+<li>时序部件:提供时序控制信号</li>
+</ul>
 ]]></content>
       <tags>
         <tag>软件设计师（中级）</tag>
