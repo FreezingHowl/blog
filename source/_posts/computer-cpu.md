@@ -5,7 +5,8 @@ tags:
   - 计算机
   - 硬件
   - 知识普及
-cover: "/img/top-img/top_img_1.webp"
+cover: /img/top-img/top_img_1.webp
+abbrlink: 557a97ef
 ---
 
 ### 介绍

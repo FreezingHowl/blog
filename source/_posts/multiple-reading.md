@@ -1,12 +1,13 @@
 ---
 title: 多重阅读-阅读技巧
 category: 学习力
-date: 2023-01-30 10:40:35
 tags:
   - 阅读
   - 技巧
   - 快生活
-cover: "/img/top-img/top_img_3.webp"
+cover: /img/top-img/top_img_3.webp
+abbrlink: '14241789'
+date: 2023-01-30 10:40:35
 ---
 
 快时代下的高效阅读方法。

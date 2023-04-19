@@ -1,12 +1,13 @@
 ---
 title: 因为那夜风
 category: 诗词
-date: 2023-01-30 08:38:35
 tags:
   - 秘密
   - 夜风
   - 伤感
-cover: "/img/top-img/top_img_4.webp"
+cover: /img/top-img/top_img_4.webp
+abbrlink: 8a6609a9
+date: 2023-01-30 08:38:35
 ---
 
 总是因为风中的一丝味道而伤感。

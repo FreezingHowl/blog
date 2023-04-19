@@ -1,12 +1,13 @@
 ---
 title: 天地劫-幽城再临-角色培养
 category: 游戏
-date: 2023-01-30 10:40:35
 tags:
   - 天地劫
   - SRPG
   - 教程
-cover: "/img/top-img/top_img_2.webp"
+cover: /img/top-img/top_img_2.webp
+abbrlink: 708e3ffc
+date: 2023-01-30 10:40:35
 ---
 
 <!--more-->

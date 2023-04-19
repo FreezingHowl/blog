@@ -1,12 +1,13 @@
 ---
 title: webGIS-基础知识框架
 category: WEB-GIS
-date: 2023-01-30 08:38:35
 tags:
   - WEB-GIS
   - 知识
   - 概括
-cover: "/img/top-img/top_img_1.webp"
+cover: /img/top-img/top_img_1.webp
+abbrlink: 5af50b98
+date: 2023-01-30 08:38:35
 ---
 
 ### 概述

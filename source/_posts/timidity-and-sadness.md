@@ -1,12 +1,13 @@
 ---
 title: 怯乐悲色
 category: 日记散文
-date: 2023-01-30 08:38:35
 tags:
   - 日记
   - 思考
   - 生活
-cover: "/img/top-img/top_img_1.webp"
+cover: /img/top-img/top_img_1.webp
+abbrlink: 66fb8235
+date: 2023-01-30 08:38:35
 ---
 
 <!--more-->
