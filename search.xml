@@ -227,6 +227,23 @@
 <td align="center">优化编译，有效支持高级语言</td>
 </tr>
 </tbody></table>
+<h3 id="流水线技术"><a href="#流水线技术" class="headerlink" title="流水线技术"></a>流水线技术</h3><ul>
+<li><p>概念：流水线是指在程序执行时对多条指令重叠进行操作的一种准并行处理实现技术。各个部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分进行工作，以提高各部件的利用率和指令的平均执行速度（准并行）</p>
+</li>
+<li><p>流水线计算公式：一条指令执行时间 + (指令条数 - 1) * 流水线周期</p>
+<ul>
+<li>流水线周期：执行时间最长的一段(t)</li>
+<li>理论公式：(t1 + t2 + … + tk) + (n - 1)*t</li>
+<li>实践公式：k*t + (n - 1)*t</li>
+</ul>
+</li>
+<li><p>流水线的吞吐率：单位时间内流水线所完成的任务数量或输出的结果数量</p>
+<ul>
+<li>公式：TP &#x3D; 指令条数 &#x2F; 流水线执行时间</li>
+<li>极限吞吐率：1 &#x2F; t</li>
+</ul>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>软件设计师</category>
@@ -559,6 +576,99 @@
 <li>短路原则<ul>
 <li>a&amp;&amp;b&amp;&amp;c:只有 a 为真时，才需判断 b 的值，只有 a 和 b 都为真时，才需判断 c 的值</li>
 <li>a||b||c:只要 a 为真,就不必判断 b 和 c 的值，只有 a 为假，才判断 b；a 和 b 都为假才判断 c</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件设计师</category>
+      </categories>
+      <tags>
+        <tag>软件设计师（中级）</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件设计师-存储系统</title>
+    <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-storage-system.html</url>
+    <content><![CDATA[<span id="more"></span>
+<h3 id="层次化存储体系"><a href="#层次化存储体系" class="headerlink" title="层次化存储体系"></a>层次化存储体系</h3><ul>
+<li>存储结构：CPU（寄存器【存储速率最快、容量最小、成本最高】） -&gt; Cache（按内容存取） -&gt; 内存（RAM、ROM） -&gt; 外存（硬盘、光盘、U盘【存储速率最慢、容量最大、成本最低】）<ul>
+<li>局部性存储原理是层次化存储结构的支撑<ul>
+<li>时间局部性：刚被访问的内容，立即又被访问</li>
+<li>空间局部性：刚被访问的内容，临近的空间很快被访问</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>存储结构分类：<ol>
+<li>按存储位置：<ul>
+<li>内存</li>
+<li>外存</li>
+</ul>
+</li>
+<li>按存取方式<ul>
+<li>按内容存取（Cache）</li>
+<li>按地址存取<ul>
+<li>随机存取存储器（内存）</li>
+<li>顺序存取存储器（磁带）</li>
+<li>直接存取存储器（磁带）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>按工作方式<ul>
+<li>随机存取存储器RAM（内存DRAM）</li>
+<li>只读存储器ROM（BIOS）</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h3><ul>
+<li>概念：<ul>
+<li>在计算机存储系统体系中，Cache的访问速度最快的层次（在没有寄存器的情况下）</li>
+<li>使用Cache改善系统性能的依据是程序的局部性原理（时间局部性和空间局部性）</li>
+</ul>
+</li>
+<li>Cache的访问命中率<blockquote>
+<p>如果以h代表对Cache的访问命中率，t1表示Cache的周期时间，t2表示主存储器周期时间,以读操作为例，使用”Cache + 主存储器“的系统的平均周期为t3，则:<br>t3 &#x3D; h*t1 + (1 - h)*t2<br>其中,(1 - h)又称为失效率（未命中率）。</p>
+</blockquote>
+</li>
+<li>映像<ul>
+<li>概念：地址映像是将主存与Cache的存储空间划分为若干大小相同的页（或称为块）</li>
+<li>分类：<ul>
+<li>直接相联映像：硬件电路较简单，但冲突率很高</li>
+<li>全相联映像：电路难于设计和实现，只适用于小容量的Cache，C冲突率较低</li>
+<li>组相联映像：直接相联映像与全相联映像的折中</li>
+</ul>
+</li>
+<li>比较：<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">冲突率（高、中、低）</th>
+<th align="center">电路复杂度（复杂、简单、折中）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">直接相联映像</td>
+<td align="center">高</td>
+<td align="center">简单</td>
+</tr>
+<tr>
+<td align="center">全相联映像</td>
+<td align="center">低</td>
+<td align="center">复杂</td>
+</tr>
+<tr>
+<td align="center">组相联映像</td>
+<td align="center">中</td>
+<td align="center">折中</td>
+</tr>
+</tbody></table>
+</li>
+<li>注意：主存与Cache之间的地址映射由硬件直接完成</li>
 </ul>
 </li>
 </ul>
