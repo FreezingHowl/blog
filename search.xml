@@ -318,22 +318,39 @@
 </li>
 </ul>
 <h4 id="线路运输"><a href="#线路运输" class="headerlink" title="线路运输"></a>线路运输</h4><ul>
-<li>数据总线<ul>
+<li><p>总线：一条总线同一时刻仅允许一个设备发送，但允许多个设备接受</p>
+</li>
+<li><p>数据总线</p>
+<ul>
+<li>概念：在 CPU 与 RAM 之间来回传送需要处理或是需要存储的数据</li>
+<li>路线：<ul>
 <li>输入设备-&gt;主存储器</li>
 <li>辅助存储器 &lt;-&gt; 主存储器</li>
 <li>主存储器 -&gt; 输出设备</li>
 <li>运算器 &lt;-&gt; 主存储器</li>
 </ul>
 </li>
-<li>控制总线<ul>
+</ul>
+</li>
+<li><p>控制总线</p>
+<ul>
+<li>概念：将微处理器控制单元的信号，传送到周边设备</li>
+<li>路线：<ul>
 <li>控制器 -&gt; 运算器</li>
 <li>控制器 -&gt; 主存储器</li>
 <li>控制器 -&gt; 辅助存储器</li>
 <li>控制器 -&gt; 输出设备</li>
 </ul>
 </li>
-<li>地址总线<ul>
+</ul>
+</li>
+<li><p>地址总线</p>
+<ul>
+<li>概念：用来指定在 RAM 之中储存的数据的地址</li>
+<li>路线：<ul>
 <li>控制器 &lt;-&gt; 主存储器</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -603,6 +620,43 @@
 </li>
 <li>通道方式</li>
 <li>I&#x2F;O 处理机</li>
+</ul>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+      <categories>
+        <category>软件设计师</category>
+      </categories>
+      <tags>
+        <tag>软件设计师（中级）</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件设计师-可靠性</title>
+    <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-reliability.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h3 id="可靠性指标"><a href="#可靠性指标" class="headerlink" title="可靠性指标"></a>可靠性指标</h3><ul>
+<li>平均无故障时间：(MTTF)MTTF&#x3D;1&#x2F;λ，λ 为失效率</li>
+<li>平均故障修复时间：(MTTR)MTTR&#x3D;1&#x2F;μ，μ 为修复率</li>
+<li>平均故障间隔时间：(MTTR)MTBF&#x3D;MTTR + MTTF</li>
+<li>系统可用性：MTTF&#x2F;(MTTR + MTTF) * 100%<blockquote>
+<p>在实际应用中，一般 MTTR（平均故障修复时间）很小，所以通常认为 MTBF≈MTTF<br>可靠性可以用 MTTF&#x2F;(1 + MTTF)来度量</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="串联系统与并联系统"><a href="#串联系统与并联系统" class="headerlink" title="串联系统与并联系统"></a>串联系统与并联系统</h3><ul>
+<li>串联系统<ul>
+<li>同时可靠率：R &#x3D; R1 _ R2 _ R3 _ … _ Rn（某一个系统部件的可行性记录的参数）</li>
+</ul>
+</li>
+<li>并联系统<ul>
+<li>同时可靠率：R &#x3D; 1 - (1 - R1) _ (1 - R2) _ (1 - R3) _ … _ (1 - Rn)（某一个系统部件的可行性记录的参数）</li>
+</ul>
+</li>
+<li>N 模混合系统<ul>
+<li>同时可靠率：R &#x3D; R1 _ R2 _ … * Rn(R 为某一类型系统不见的同时可靠率)</li>
+</ul>
+</li>
 </ul>
 ]]></content>
       <categories>
