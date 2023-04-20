@@ -589,6 +589,31 @@
       </tags>
   </entry>
   <entry>
+    <title>软件设计师-输入和输出技术</title>
+    <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-input-and-output.html</url>
+    <content><![CDATA[<h3 id="数据传输控制方式"><a href="#数据传输控制方式" class="headerlink" title="数据传输控制方式"></a>数据传输控制方式</h3><ul>
+<li>程序控制（查询）方式：分为无条件传送和程序查询方式两种。方法简单，硬件开销小，单 I&#x2F;O 能力不高，严重影像 CPU 的利用率</li>
+<li>程序中断方式：与程序控制方式相比，中断方式因为 CPU 无需等待而提高了传输请求的响应速度<blockquote>
+<p>中断处理过程：<br>1.CPU 无需等待也不必查询 I&#x2F;O 状态。<br>2.当 I&#x2F;O 系统准备好以后，发出中断请求信号通知 CPU。<br>3.CPU 接到中断请求后，保存正在执行程序的现场（保存现场），打断的程序当前位置即为断点。<br>4.（通过中断向量表）转入 I&#x2F;O 中的服务程序的执行，完成 I&#x2F;O 系统的数据交换<br>5.返回被打断的程序继续执行（恢复现场）</p>
+</blockquote>
+</li>
+<li>DMA 方式：DMA 方式是为了在主存和外设之间实现高速、批量数据交换而设置的。DMA 方式比程序控制方式与中断方式都高效<blockquote>
+<p>DMAC 向总线裁决逻辑提出总线请求；CPU 执行完当前总线周期即可释放总线控制权。此时 DMA 响应，通过 DMAC 通知 I&#x2F;O 接口开始 DMA 传输</p>
+</blockquote>
+</li>
+<li>通道方式</li>
+<li>I&#x2F;O 处理机</li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件设计师</category>
+      </categories>
+      <tags>
+        <tag>软件设计师（中级）</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件设计师-存储系统</title>
     <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-storage-system.html</url>
     <content><![CDATA[<span id="more"></span>
