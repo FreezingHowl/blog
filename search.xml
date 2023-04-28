@@ -644,6 +644,25 @@
       </tags>
   </entry>
   <entry>
+    <title>软件设计师-系统性能设计</title>
+    <url>/uncategorized/sofare-designer-performance-index.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h4 id="性能指标"><a href="#性能指标" class="headerlink" title="性能指标"></a>性能指标</h4><ul>
+<li>字长和数据通路宽度</li>
+<li>主存容量和存取速度 》 主频与 CPU 时钟周期</li>
+<li>运算速度 》 CPI 与 IPC</li>
+<li>吞吐量和吞吐率 》 MIPS 与 MFLOPS</li>
+<li>响应时间（RT）与完成时间（TAT）</li>
+<li>兼容性</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>软件设计师（中级）</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>软件设计师-可靠性</title>
     <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-reliability.html</url>
     <content><![CDATA[<span id="more"></span>
