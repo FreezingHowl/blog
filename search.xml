@@ -200,469 +200,6 @@
       </tags>
   </entry>
   <entry>
-    <title>软件设计师-指令</title>
-    <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-Instruction.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h3 id="指令的基本概念"><a href="#指令的基本概念" class="headerlink" title="指令的基本概念"></a>指令的基本概念</h3><ul>
-<li>指令：一条指令就是机器语言的一个语句，它是一组有意义的二进制代码</li>
-<li>指令的基本格式：操作码字段 | 地址码字段</li>
-</ul>
-<h3 id="寻址方式（特点）"><a href="#寻址方式（特点）" class="headerlink" title="寻址方式（特点）"></a>寻址方式（特点）</h3><ul>
-<li>立即寻址方式：操作数直接在指令中，速度快，灵活性差</li>
-<li>直接寻址方式：指令中存放的是操作数的地址</li>
-<li>间接寻址方式：指令中存放的一个地址，这个地址对应的内容是操作数的地址</li>
-<li>寄存器寻址方式：寄存器存放操作数</li>
-<li>寄存器间接寻址方式：寄存器内存放的是操作数的地址</li>
-</ul>
-<h3 id="CISC-与-RISC"><a href="#CISC-与-RISC" class="headerlink" title="CISC 与 RISC"></a>CISC 与 RISC</h3><table>
-<thead>
-<tr>
-<th align="center">指令系统类型</th>
-<th align="center">指令</th>
-<th align="center">寻址方式</th>
-<th align="center">实现方式</th>
-<th align="center">其它</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">CISC(复杂)</td>
-<td align="center">数量多，使用频率差别大，可变长格式</td>
-<td align="center">支持多种</td>
-<td align="center">微程序控制技术（微码）</td>
-<td align="center">研制周期长</td>
-</tr>
-<tr>
-<td align="center">RISC(精简)</td>
-<td align="center">数量少，使用频率接近，定长格式，大部分为单周期指令，操作寄存器，只有 Load&#x2F;Store 操作内存</td>
-<td align="center">支持方式少</td>
-<td align="center">增加了通用寄存器；硬布线逻辑控制为主；适合采用流水线</td>
-<td align="center">优化编译，有效支持高级语言</td>
-</tr>
-</tbody></table>
-<h3 id="流水线技术"><a href="#流水线技术" class="headerlink" title="流水线技术"></a>流水线技术</h3><ul>
-<li><p>概念：流水线是指在程序执行时对多条指令重叠进行操作的一种准并行处理实现技术。各个部件同时处理是针对不同指令而言的，它们可同时为多条指令的不同部分进行工作，以提高各部件的利用率和指令的平均执行速度（准并行）</p>
-</li>
-<li><p>流水线计算公式：一条指令执行时间 + (指令条数 - 1) * 流水线周期</p>
-<ul>
-<li>流水线周期：执行时间最长的一段(t)</li>
-<li>理论公式：(t1 + t2 + … + tk) + (n - 1)*t</li>
-<li>实践公式：k*t + (n - 1)*t</li>
-</ul>
-</li>
-<li><p>流水线的吞吐率：单位时间内流水线所完成的任务数量或输出的结果数量</p>
-<ul>
-<li>公式：TP &#x3D; 指令条数 &#x2F; 流水线执行时间</li>
-<li>极限吞吐率：1 &#x2F; t</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件设计师</category>
-      </categories>
-      <tags>
-        <tag>软件设计师（中级）</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件设计师-校验码</title>
-    <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-check-code.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h3 id="校验码基础知识"><a href="#校验码基础知识" class="headerlink" title="校验码基础知识"></a>校验码基础知识</h3><h4 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h4><ul>
-<li>码距：任何一种编码都由许多码字构成，任意两个码字之间最少变化的二进制位数就称为数据校验码的码距<ul>
-<li>eg:<blockquote>
-<p>用 4 位二进制表示 16 种状态，则有 16 个不同的码字，此时码距为 1</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="奇偶校验码"><a href="#奇偶校验码" class="headerlink" title="奇偶校验码"></a>奇偶校验码</h3><ul>
-<li>编码方法：由若干个有效信息（如一个字符），再加上一个二进制位（校验位）组成校验码</li>
-<li>奇校验：整个校验码（有效信息位和校验码）中“1”的个数为奇数</li>
-<li>偶校验：整个校验码（有效信息位和校验码）中“1”的个数为偶数</li>
-<li>特点：可检查 1 位（奇数位）的错误，不可纠错</li>
-</ul>
-<h3 id="CRC-循环冗余校验码"><a href="#CRC-循环冗余校验码" class="headerlink" title="CRC 循环冗余校验码"></a>CRC 循环冗余校验码</h3><ul>
-<li>编码方法：在 k 位信息码之后拼接 r 位校验码（由生成多项式决定）</li>
-<li>注意：把接收到的 CRC 码用约定的生成多项式 G(X)去除（模二除法），如果正确，则余数为 0；如果某一位出错，则余数不为 0。不同的位数出错其余数不同，余数和出错位序号之间有唯一的对应关系。</li>
-<li>特点：可检错，不可纠错</li>
-</ul>
-<h3 id="海明校验码"><a href="#海明校验码" class="headerlink" title="海明校验码"></a>海明校验码</h3><ul>
-<li>特点：可检错，也可纠错</li>
-<li>海明校验位求取公式：2^r &gt;&#x3D; m + r + 1 (r 为要求取的最小值，m 为信息位的个数)</li>
-<li>校验位放置位置(eg)<blockquote>
-<p>如果为 5 位校验码的话，这五个码分别放在 1（2^0）、2(2^1)、4(2^2)、8(2^3)、16(2^4)</p>
-</blockquote>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件设计师</category>
-      </categories>
-      <tags>
-        <tag>软件设计师（中级）</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件设计师-CPU组成</title>
-    <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-cpu-compose.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h3 id="计算机结构"><a href="#计算机结构" class="headerlink" title="计算机结构"></a>计算机结构</h3><h4 id="计算机基础构成"><a href="#计算机基础构成" class="headerlink" title="计算机基础构成"></a>计算机基础构成</h4><ul>
-<li>外设<ul>
-<li>输入设备</li>
-<li>输出设备</li>
-<li>辅助存储器（辅存&#x2F;外存）</li>
-</ul>
-</li>
-<li>主机<ul>
-<li>CPU<ul>
-<li>运算器</li>
-<li>控制器</li>
-</ul>
-</li>
-<li>主存储器（主存&#x2F;内存）</li>
-</ul>
-</li>
-</ul>
-<h4 id="线路运输"><a href="#线路运输" class="headerlink" title="线路运输"></a>线路运输</h4><ul>
-<li><p>总线：一条总线同一时刻仅允许一个设备发送，但允许多个设备接受</p>
-</li>
-<li><p>数据总线</p>
-<ul>
-<li>概念：在 CPU 与 RAM 之间来回传送需要处理或是需要存储的数据</li>
-<li>路线：<ul>
-<li>输入设备-&gt;主存储器</li>
-<li>辅助存储器 &lt;-&gt; 主存储器</li>
-<li>主存储器 -&gt; 输出设备</li>
-<li>运算器 &lt;-&gt; 主存储器</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>控制总线</p>
-<ul>
-<li>概念：将微处理器控制单元的信号，传送到周边设备</li>
-<li>路线：<ul>
-<li>控制器 -&gt; 运算器</li>
-<li>控制器 -&gt; 主存储器</li>
-<li>控制器 -&gt; 辅助存储器</li>
-<li>控制器 -&gt; 输出设备</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>地址总线</p>
-<ul>
-<li>概念：用来指定在 RAM 之中储存的数据的地址</li>
-<li>路线：<ul>
-<li>控制器 &lt;-&gt; 主存储器</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="运算器和控制器"><a href="#运算器和控制器" class="headerlink" title="运算器和控制器"></a>运算器和控制器</h3><h4 id="运算器"><a href="#运算器" class="headerlink" title="运算器"></a>运算器</h4><ul>
-<li>算数逻辑单元 ALU: 数据的算数运算和逻辑运算</li>
-<li>累加寄存器 AC:通用寄存器，为 ALU 提供一个工作区，用在暂存数据</li>
-<li>数据缓冲寄存器 DR:写内存时，暂存指令或数据</li>
-<li>状态条件寄存器 PSW:村状态标志与控制标志</li>
-<li>注意：状态条件寄存器 PSW 归属存在争议，也有将其归为控制器的理论</li>
-</ul>
-<h4 id="控制器"><a href="#控制器" class="headerlink" title="控制器"></a>控制器</h4><ul>
-<li>程序计数器 PC:存储下一条要执行指令的地址</li>
-<li>指令寄存器 IR:存储即将执行的指令</li>
-<li>指令译码器 ID:对指令中的操作码字段进行分析解释</li>
-<li>时序部件:提供时序控制信号</li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件设计师</category>
-      </categories>
-      <tags>
-        <tag>软件设计师（中级）</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件设计师-数据的表示</title>
-    <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-data-view.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h3 id="考点一：进制转换"><a href="#考点一：进制转换" class="headerlink" title="考点一：进制转换"></a>考点一：进制转换</h3><h4 id="进制的组成"><a href="#进制的组成" class="headerlink" title="进制的组成"></a>进制的组成</h4><ul>
-<li><p>进制缩写：进制的英文字母缩写【十进制(D),二进制(B),十六进制(H)】</p>
-</li>
-<li><p>数码: 数制中表示基本数值大小的不同数字符号</p>
-</li>
-<li><p>基数：数制中可使用数字符号的数目</p>
-</li>
-<li><p>位权：数制中每一固定位置对应的单位值</p>
-</li>
-<li><p>eg:</p>
-<blockquote>
-<p>进制名称：十进制<br>进制缩写：D<br>数码：0，1，2，3，4，5，6，7，8，9<br>基数：10<br>位权：10^k</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="R-进制转十进制（按权展开法）"><a href="#R-进制转十进制（按权展开法）" class="headerlink" title="R 进制转十进制（按权展开法）"></a>R 进制转十进制（按权展开法）</h4><ul>
-<li>说明：R 进制转十进制使用按权展开法</li>
-<li>操作方式：将 R 进制的每一位数值用 R^K 形式表示，即幂的底数是 R，指数为 K ，K 与改为和小数点质检的距离有关。当该位位于小数点左边，K 值是该位和小数点质检的数码的个数，而当该位位于小数点左边，K 值是负值，其绝对值是该位和小数点质检的数码的个数加 1</li>
-<li>eg:<blockquote>
-<p>10100.01(B) &#x3D; 1<em>2^4 + 1</em>2^2 + 1*2^-2<br>603.002(H) &#x3D; 6<em>16^2 + 3</em>16^0 + 2*16^-3</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="十进制转-R-进制（短除法）"><a href="#十进制转-R-进制（短除法）" class="headerlink" title="十进制转 R 进制（短除法）"></a>十进制转 R 进制（短除法）</h4><ul>
-<li>说明：十进制转 R 进制使用短除法（除商取余法）</li>
-<li>eg:<blockquote>
-<p>94(D)转成二进制<br>2|94 余 0<br>2|47 余 1<br>2|23 余 1<br>2|11 余 1<br>2|5 余 1<br>2|2 余 0<br>2|1 余 1<br>0<br>则 结果为 1011110(B)</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="考点二：码制"><a href="#考点二：码制" class="headerlink" title="考点二：码制"></a>考点二：码制</h3><h4 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h4><ul>
-<li><p>原码：最高位是符号位，其余低位表示数值的绝对值</p>
-</li>
-<li><p>反码：正数的反码与原码相同，负数的反码是其绝对值按位取反（符号位不变）</p>
-</li>
-<li><p>补码：正数的补码与原码相同，负数的补码是其反码末位加 1（符号位不变）</p>
-</li>
-<li><p>移码：补码的符号位按位取反</p>
-</li>
-<li><p>eg:</p>
-<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center">数值 1</th>
-<th align="center">数值-1</th>
-<th align="center">1-1</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">原码</td>
-<td align="center">0000 0001</td>
-<td align="center">1000 0001</td>
-<td align="center">1000 0010</td>
-</tr>
-<tr>
-<td align="center">反码</td>
-<td align="center">0000 0001</td>
-<td align="center">1111 1110</td>
-<td align="center">1111 1111</td>
-</tr>
-<tr>
-<td align="center">补码</td>
-<td align="center">0000 0001</td>
-<td align="center">1111 1111</td>
-<td align="center">0000 0000</td>
-</tr>
-<tr>
-<td align="center">移码</td>
-<td align="center">1000 0001</td>
-<td align="center">0111 1111</td>
-<td align="center">1000 0000</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h4 id="表示范围"><a href="#表示范围" class="headerlink" title="表示范围"></a>表示范围</h4><ul>
-<li>eg:<table>
-<thead>
-<tr>
-<th align="center">码制</th>
-<th align="center">定点整数</th>
-<th align="center">定点小数</th>
-<th align="center">数码个数</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">原码</td>
-<td align="center">- (2^n-1) ~ (2^n-1 - 1)</td>
-<td align="center">- (1 - 2^-(n-1)) ~ + (1 - 2^-(n-1))</td>
-<td align="center">2^n - 1</td>
-</tr>
-<tr>
-<td align="center">反码</td>
-<td align="center">- (2^n-1) ~ (2^n-1 - 1)</td>
-<td align="center">- (1 - 2^-(n-1)) ~ + (1 - 2^-(n-1))</td>
-<td align="center">2^n - 1</td>
-</tr>
-<tr>
-<td align="center">补码</td>
-<td align="center">- 2^n-1 ~ + (2^n-1 - 1)</td>
-<td align="center">-1 ~ (1 - 2^-(n-1))</td>
-<td align="center">2^n</td>
-</tr>
-<tr>
-<td align="center">移码</td>
-<td align="center">- 2^n-1 ~ + (2^n-1 - 1)</td>
-<td align="center">-1 ~ (1 - 2^-(n-1))</td>
-<td align="center">2^n</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h3 id="考点三：浮点数的表示"><a href="#考点三：浮点数的表示" class="headerlink" title="考点三：浮点数的表示"></a>考点三：浮点数的表示</h3><h4 id="基础概念-1"><a href="#基础概念-1" class="headerlink" title="基础概念"></a>基础概念</h4><ul>
-<li>表示模型：N &#x3D; 尾数*基数^指数</li>
-<li>eg:<blockquote>
-<p>1.25*10^6<br>尾数：1.25<br>基数：10<br>指数：6<br>数符：1</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="运算过程"><a href="#运算过程" class="headerlink" title="运算过程"></a>运算过程</h4><ul>
-<li>过程：对阶 &gt; 尾数计算 &gt; 结果格式化</li>
-<li>特点：<ol>
-<li>一般尾数用补码，阶码用移码</li>
-<li>阶码的位数决定数的表示范围，位数越多范围越大</li>
-<li>尾数的位数决定数的有效精度，位数越多精度越高</li>
-<li>对阶时，小数向大数看齐</li>
-<li>对阶是通过较小数的尾数右移实现的</li>
-</ol>
-</li>
-<li>eg:<blockquote>
-<p>1.25*10^6 与 3.14*10^8 相加<br>第一步（对阶）:1.25<em>10^6 &#x3D; 1.25</em>10^8 &#x2F; 10^2 &#x3D; 0.0125<em>10^8<br>第二步（尾数计算）:0.0125 + 3.14 &#x3D; 3.1525<br>第三步（结果格式化）:1.25</em>10^6 + 3.14*10^8 &#x3D; 3.1525*10^8</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="考点四：逻辑运算"><a href="#考点四：逻辑运算" class="headerlink" title="考点四：逻辑运算"></a>考点四：逻辑运算</h3><h4 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h4><ul>
-<li>优先级相同（高）<ul>
-<li>&lt; (小余)</li>
-<li>&lt;&#x3D; (小余或等于)</li>
-<li>&gt; (大于)</li>
-<li>&gt;&#x3D; (大于或等于)</li>
-</ul>
-</li>
-<li>优先级相同（低）<ul>
-<li>&#x3D;&#x3D; (等于)</li>
-<li>!&#x3D; (不等于)</li>
-</ul>
-</li>
-<li>说明<ul>
-<li>关系运算符的优先级低于算数运算符</li>
-<li>关系运算符的优先级高于赋值运算符</li>
-</ul>
-</li>
-</ul>
-<h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><ul>
-<li>基本概念： 逻辑变量之间的运算称为逻辑运算</li>
-<li>种类<ul>
-<li>逻辑或（||、+、U、V、OR）：连接的两个逻辑值全为 0 时才取 0</li>
-<li>逻辑与（&amp;&amp;、*、.、AND）：连接的两个逻辑值全为 1 时才取 1</li>
-<li>逻辑异或（XOR）：连接的两个逻辑值不相同时才取 1，相同则为 0</li>
-<li>逻辑非（!、~、NOT、-）：将原逻辑值取反即可</li>
-</ul>
-</li>
-<li>真值表<table>
-<thead>
-<tr>
-<th align="center">A</th>
-<th align="center">B</th>
-<th align="center">(NOT)A</th>
-<th align="center">A(OR)B</th>
-<th align="center">A(AND)B</th>
-<th align="center">A(XOR)B</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">1</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">0</td>
-</tr>
-<tr>
-<td align="center">0</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">0</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">1</td>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">1</td>
-<td align="center">0</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">0</td>
-</tr>
-</tbody></table>
-</li>
-<li>优先次序：!(非)-&gt;&amp;&amp;(与)-&gt;||(或)</li>
-<li>短路原则<ul>
-<li>a&amp;&amp;b&amp;&amp;c:只有 a 为真时，才需判断 b 的值，只有 a 和 b 都为真时，才需判断 c 的值</li>
-<li>a||b||c:只要 a 为真,就不必判断 b 和 c 的值，只有 a 为假，才判断 b；a 和 b 都为假才判断 c</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件设计师</category>
-      </categories>
-      <tags>
-        <tag>软件设计师（中级）</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件设计师-输入和输出技术</title>
-    <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-input-and-output.html</url>
-    <content><![CDATA[<h3 id="数据传输控制方式"><a href="#数据传输控制方式" class="headerlink" title="数据传输控制方式"></a>数据传输控制方式</h3><ul>
-<li>程序控制（查询）方式：分为无条件传送和程序查询方式两种。方法简单，硬件开销小，单 I&#x2F;O 能力不高，严重影像 CPU 的利用率</li>
-<li>程序中断方式：与程序控制方式相比，中断方式因为 CPU 无需等待而提高了传输请求的响应速度<blockquote>
-<p>中断处理过程：<br>1.CPU 无需等待也不必查询 I&#x2F;O 状态。<br>2.当 I&#x2F;O 系统准备好以后，发出中断请求信号通知 CPU。<br>3.CPU 接到中断请求后，保存正在执行程序的现场（保存现场），打断的程序当前位置即为断点。<br>4.（通过中断向量表）转入 I&#x2F;O 中的服务程序的执行，完成 I&#x2F;O 系统的数据交换<br>5.返回被打断的程序继续执行（恢复现场）</p>
-</blockquote>
-</li>
-<li>DMA 方式：DMA 方式是为了在主存和外设之间实现高速、批量数据交换而设置的。DMA 方式比程序控制方式与中断方式都高效<blockquote>
-<p>DMAC 向总线裁决逻辑提出总线请求；CPU 执行完当前总线周期即可释放总线控制权。此时 DMA 响应，通过 DMAC 通知 I&#x2F;O 接口开始 DMA 传输</p>
-</blockquote>
-</li>
-<li>通道方式</li>
-<li>I&#x2F;O 处理机</li>
-</ul>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
-      <categories>
-        <category>软件设计师</category>
-      </categories>
-      <tags>
-        <tag>软件设计师（中级）</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件设计师-系统性能设计</title>
-    <url>/uncategorized/sofare-designer-performance-index.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h4 id="性能指标"><a href="#性能指标" class="headerlink" title="性能指标"></a>性能指标</h4><ul>
-<li>字长和数据通路宽度</li>
-<li>主存容量和存取速度 》 主频与 CPU 时钟周期</li>
-<li>运算速度 》 CPI 与 IPC</li>
-<li>吞吐量和吞吐率 》 MIPS 与 MFLOPS</li>
-<li>响应时间（RT）与完成时间（TAT）</li>
-<li>兼容性</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>软件设计师（中级）</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>软件设计师-进程</title>
     <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-process.html</url>
     <content><![CDATA[<h3 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h3><ul>
@@ -696,155 +233,67 @@
       </tags>
   </entry>
   <entry>
-    <title>软件设计师-可靠性</title>
-    <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-reliability.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h3 id="可靠性指标"><a href="#可靠性指标" class="headerlink" title="可靠性指标"></a>可靠性指标</h3><ul>
-<li>平均无故障时间：(MTTF)MTTF&#x3D;1&#x2F;λ，λ 为失效率</li>
-<li>平均故障修复时间：(MTTR)MTTR&#x3D;1&#x2F;μ，μ 为修复率</li>
-<li>平均故障间隔时间：(MTTR)MTBF&#x3D;MTTR + MTTF</li>
-<li>系统可用性：MTTF&#x2F;(MTTR + MTTF) * 100%<blockquote>
-<p>在实际应用中，一般 MTTR（平均故障修复时间）很小，所以通常认为 MTBF≈MTTF<br>可靠性可以用 MTTF&#x2F;(1 + MTTF)来度量</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="串联系统与并联系统"><a href="#串联系统与并联系统" class="headerlink" title="串联系统与并联系统"></a>串联系统与并联系统</h3><ul>
-<li>串联系统<ul>
-<li>同时可靠率：R &#x3D; R1 _ R2 _ R3 _ … _ Rn（某一个系统部件的可行性记录的参数）</li>
-</ul>
-</li>
-<li>并联系统<ul>
-<li>同时可靠率：R &#x3D; 1 - (1 - R1) _ (1 - R2) _ (1 - R3) _ … _ (1 - Rn)（某一个系统部件的可行性记录的参数）</li>
-</ul>
-</li>
-<li>N 模混合系统<ul>
-<li>同时可靠率：R &#x3D; R1 _ R2 _ … * Rn(R 为某一类型系统不见的同时可靠率)</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>软件设计师</category>
-      </categories>
-      <tags>
-        <tag>软件设计师（中级）</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件设计师-存储系统</title>
-    <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-storage-system.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h3 id="层次化存储体系"><a href="#层次化存储体系" class="headerlink" title="层次化存储体系"></a>层次化存储体系</h3><ul>
-<li>存储结构：CPU（寄存器【存储速率最快、容量最小、成本最高】） -&gt; Cache（按内容存取） -&gt; 内存（RAM、ROM） -&gt; 外存（硬盘、光盘、U 盘【存储速率最慢、容量最大、成本最低】）<ul>
-<li>局部性存储原理是层次化存储结构的支撑<ul>
-<li>时间局部性：刚被访问的内容，立即又被访问</li>
-<li>空间局部性：刚被访问的内容，临近的空间很快被访问</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>存储结构分类：<ol>
-<li>按存储位置：<ul>
-<li>内存</li>
-<li>外存</li>
-</ul>
-</li>
-<li>按存取方式<ul>
-<li>按内容存取（Cache）</li>
-<li>按地址存取<ul>
-<li>随机存取存储器（内存）</li>
-<li>顺序存取存储器（磁带）</li>
-<li>直接存取存储器（磁带）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>按工作方式<ul>
-<li>随机存取存储器 RAM（内存 DRAM）</li>
-<li>只读存储器 ROM（BIOS）</li>
+    <title>软件设计师中级-个人笔记</title>
+    <url>/uncategorized/sofare-designer-self.html</url>
+    <content><![CDATA[<h3 id="考前须知"><a href="#考前须知" class="headerlink" title="考前须知"></a>考前须知</h3><ol>
+<li>时间安排<table>
+ <tr>
+     <td>科目</td> 
+     <td>时间段</td> 
+     <td>流程</td> 
+     <td>时间</td> 
+</tr>
+ <tr>
+     <td rowspan="4">软件设计师</td>    
+     <td rowspan="4">上半年</td>  
+     <td >报名</td>  
+     <td >2023年3月14日9：00至2023年4月10日18：00</td>  
+ </tr>
+ <tr>  
+     <td >缴费</td>  
+     <td >2023年3月14日9：00至2023年4月12日24：00</td>  
+ </tr>
+ <tr>   
+     <td >准考证打印</td>  
+     <td >2023年5月22日9：00至2023年5月26日17：00</td>  
+ </tr>
+ <tr>  
+     <td >考试</td>  
+     <td >2023-05-27 09:00:00（150分钟）至2023-05-27 14:00:00（150分钟）</td>  
+ </tr>
+</table></li>
+<li>相关网站<ul>
+<li>报名地址：<a href="https://bm.ruankao.org.cn/">https://bm.ruankao.org.cn/</a></li>
+<li>网上办事服务大厅：<a href="https://rs.jshrss.jiangsu.gov.cn/web/center/main">https://rs.jshrss.jiangsu.gov.cn/web/center/main</a></li>
 </ul>
 </li>
 </ol>
-</li>
-</ul>
-<h3 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h3><ul>
-<li>概念：<ul>
-<li>在计算机存储系统体系中，Cache 的访问速度最快的层次（在没有寄存器的情况下）</li>
-<li>使用 Cache 改善系统性能的依据是程序的局部性原理（时间局部性和空间局部性）</li>
-</ul>
-</li>
-<li>Cache 的访问命中率<blockquote>
-<p>如果以 h 代表对 Cache 的访问命中率，t1 表示 Cache 的周期时间，t2 表示主存储器周期时间,以读操作为例，使用”Cache + 主存储器“的系统的平均周期为 t3，则:<br>t3 &#x3D; h*t1 + (1 - h)*t2<br>其中,(1 - h)又称为失效率（未命中率）。</p>
-</blockquote>
-</li>
-<li>映像<ul>
-<li>概念：地址映像是将主存与 Cache 的存储空间划分为若干大小相同的页（或称为块）</li>
-<li>分类：<ul>
-<li>直接相联映像：硬件电路较简单，但冲突率很高</li>
-<li>全相联映像：电路难于设计和实现，只适用于小容量的 Cache，C 冲突率较低</li>
-<li>组相联映像：直接相联映像与全相联映像的折中</li>
+<h3 id="计划安排"><a href="#计划安排" class="headerlink" title="计划安排"></a>计划安排</h3><ul>
+<li>目标程度：计算了解，概念熟悉，理论理解，顺利上岸。</li>
+<li>阶段一：<ul>
+<li>目标：基础知识学习，了解所有考试内容，构建粗略知识框架</li>
+<li>具体方法：看视频讲解、参考他人汇总笔记、同步刷上午考题</li>
+<li>注意：理论内容切不可一知半解</li>
 </ul>
 </li>
-<li>比较：<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center">冲突率（高、中、低）</th>
-<th align="center">电路复杂度（复杂、简单、折中）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">直接相联映像</td>
-<td align="center">高</td>
-<td align="center">简单</td>
-</tr>
-<tr>
-<td align="center">全相联映像</td>
-<td align="center">低</td>
-<td align="center">复杂</td>
-</tr>
-<tr>
-<td align="center">组相联映像</td>
-<td align="center">中</td>
-<td align="center">折中</td>
-</tr>
-</tbody></table>
+<li>阶段二：<ul>
+<li>目标：专项练习下午试题（应用技术），保证下午内容一分不丢</li>
+<li>具体方法：详细学习相关知识，练习试题，揣摩考试逻辑，扩展内容延申学习</li>
+</ul>
 </li>
-<li>注意：主存与 Cache 之间的地址映射由硬件直接完成</li>
+<li>阶段三：<ul>
+<li>目标：寻找考试状态，整体理解考试内容</li>
+<li>具体方法：刷真题、刷真题、刷真题</li>
 </ul>
 </li>
 </ul>
-<h3 id="主存编址计算"><a href="#主存编址计算" class="headerlink" title="主存编址计算"></a>主存编址计算</h3><ul>
-<li>概念：<ul>
-<li>字和字长：计算机在存储、传送或操作时，作为一个单元的一组二进制码称为字，一个字中的二进制位的位数称为字长</li>
-<li>1B（字节） &#x3D; 8bit</li>
-</ul>
-</li>
-<li>计算相关：<ul>
-<li>存储单元个数 &#x3D; 最大地址 - 最小地址 + 1</li>
-<li>编制内容：<ul>
-<li>按字编址：存储体的存储单元是字存储单元，即最小寻址单位是一个字（1bit）</li>
-<li>按字节编址：存储体的存储单元是字节存储单元，即最小寻址单位是一个字节（1B）</li>
-</ul>
-</li>
-<li>总容量 &#x3D; 存储单元个数 * 编址内容</li>
-<li>根据存储器所要求的容量和选定的存储芯片的容量，就可以计算出所需芯片的总数<blockquote>
-<p>总片数 &#x3D; 总容量 &#x2F; 每片的容量</p>
-</blockquote>
-</li>
-</ul>
-</li>
+<h3 id="个人记录"><a href="#个人记录" class="headerlink" title="个人记录"></a>个人记录</h3><ul>
+<li>软件设计师主要内容：</li>
 </ul>
 ]]></content>
-      <categories>
-        <category>软件设计师</category>
-      </categories>
       <tags>
-        <tag>软件设计师（中级）</tag>
         <tag>学习笔记</tag>
+        <tag>软件设计师</tag>
       </tags>
   </entry>
   <entry>
