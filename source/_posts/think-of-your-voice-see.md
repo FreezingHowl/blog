@@ -1,10 +1,11 @@
 ---
 title: 想起你的声音-初见
+category: 配音学习
+abbrlink: ba1f0ab9
+date: 2023-04-23 09:23:10
 tags:
   - 苔花小米
   - 声音优化
-abbrlink: ba1f0ab9
-date: 2023-04-23 09:23:10
 ---
 
 <!--more-->
@@ -27,6 +28,9 @@ date: 2023-04-23 09:23:10
     ![发音器官示意图](../img/post-img/think-of-your-voice-1.png "发音器官示意图")
 
 #### 咬字器官
+
+- 舌头
+- 唇齿
 
 #### 声音属性
 
