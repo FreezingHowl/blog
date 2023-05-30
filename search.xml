@@ -61,6 +61,228 @@
       </tags>
   </entry>
   <entry>
+    <title>css-动画</title>
+    <url>/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/css-animation.html</url>
+    <content><![CDATA[<blockquote>
+<p>浏览器最低版本支持： Chrome（43.0）、Firefox（16.0）、Opera（30.0）、Internet（10.0）</p>
+</blockquote>
+<h3 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h3><h4 id="animation属性系列"><a href="#animation属性系列" class="headerlink" title="animation属性系列"></a>animation属性系列</h4><ul>
+<li><p><code>animation: name duration timing-function delay iteration-count direction</code></p>
+</li>
+<li><p><em><strong>animation-name</strong></em>：<br><strong>描述</strong>：规定 @keyframes 动画的名称<br><strong>语法</strong>：<code>animation-name: keyframename|none;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody><tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td><i>keyframename</i></td>
+  <td>规定需要绑定到选择器的 keyframe 的名称。</td>
+  </tr>
+
+  <tr>
+  <td>none</td>
+  <td>规定无动画效果（可用于覆盖来自级联的动画）。</td>
+  </tr>
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-duration</strong></em>：<br><strong>描述</strong>：规定完成动画所花费的时间，以秒或毫秒计。<br><strong>语法</strong>：<code>animation-duration: time;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody><tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td><i>time</i></td>
+  <td>规定完成动画所花费的时间。默认值是 0，意味着没有动画效果。</td>
+  </tr>
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-timing-function</strong></em>：<br><strong>描述</strong>：规定动画的速度曲线。<br><strong>语法</strong>：<code>animation-timing-function: value;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody>
+  <tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td>linear</td>
+  <td>动画从头到尾的速度是相同的。</td>
+  </tr>
+
+  <tr>
+  <td>ease</td>
+  <td>默认。动画以低速开始，然后加快，在结束前变慢。</td>
+  </tr>
+
+  <tr>
+  <td>ease-in</td>
+  <td>动画以低速开始。</td>
+  </tr>
+
+  <tr>
+  <td>ease-out</td>
+  <td>动画以低速结束。</td>
+  </tr>
+
+
+  <tr>
+  <td>ease-in-out</td>
+  <td>动画以低速开始和结束。</td>
+  </tr>
+
+  <tr>
+  <td>cubic-bezier(<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>)</td>
+  <td>在 cubic-bezier 函数中自己的值。可能的值是从 0 到 1 的数值。</td>
+  <td></td>
+  </tr>
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-delay</strong></em>：<br><strong>描述</strong>：规定在动画开始之前的延迟。<br><strong>语法</strong>：<code>animation-delay: time;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody>
+  <tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td><i>time</i></td>
+  <td>可选。定义动画开始前等待的时间，以秒或毫秒计。默认值是 0。</td>
+  </tr>
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-iteration-count</strong></em>：<br><strong>描述</strong>：规定动画应该播放的次数。<br><strong>语法</strong>：<code>animation-iteration-count: n|infinite;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody><tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td><i>n</i></td>
+  <td>定义动画播放次数的数值。</td>
+  </tr>
+
+  <tr>
+  <td>infinite</td>
+  <td>规定动画应该无限次播放。</td>
+  </tr>
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-direction</strong></em>：<br><strong>描述</strong>：规定是否应该轮流反向播放动画。<br><strong>语法</strong>：<code>animation-direction: normal|alternate;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody><tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td>normal</td>
+  <td>默认值。动画应该正常播放。</td>
+  </tr>
+
+  <tr>
+  <td>alternate</td>
+  <td>动画应该轮流反向播放。</td>
+  </tr>
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-fill-mode</strong></em>：<br><strong>描述</strong>：规定动画在执行时间之外应用的值。<br><strong>语法</strong>：<code>animation-fill-mode : none | forwards | backwards | both;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody><tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td>none</td>
+  <td>不改变默认行为。</td>
+  </tr>
+
+  <tr>
+  <td>forwards</td>
+  <td>当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。</td>
+  </tr>
+
+  <tr>
+  <td>backwards</td>
+  <td>在 animation-delay 所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定义）。</td>
+  </tr>
+
+  <tr>
+  <td>both</td>
+  <td>向前和向后填充模式都被应用。</td>
+  </tr>
+
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-play-state</strong></em>：<br><strong>描述</strong>：规定动画是正在运行还是暂停。<br><strong>语法</strong>：<code>animation-play-state: paused|running;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody><tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td>paused</td>
+  <td>规定动画已暂停。</td>
+  </tr>
+
+  <tr>
+  <td>running</td>
+  <td>规定动画正在播放。</td>
+  </tr>
+  </tbody></table></li>
+</ul>
+<h4 id="keyframes属性"><a href="#keyframes属性" class="headerlink" title="@keyframes属性"></a>@keyframes属性</h4><ul>
+<li><p><strong>描述</strong>：规定动画模式。</p>
+</li>
+<li><p><strong>语法</strong>：<code>@keyframes animationname &#123;keyframes-selector &#123;css-styles;&#125;&#125;</code></p>
+</li>
+<li><p><strong>属性</strong>：</p>
+<table>
+<tbody><tr>
+<th style="width:25%;">值</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td><i>animationname</i></td>
+<td>必需。定义动画的名称。</td>
+</tr>
+
+<tr>
+<td><i>keyframes-selector</i></td>
+<td>
+  <p>必需。动画时长的百分比。</p>
+  <p>合法的值：</p>
+    0-100% 、
+    from（与 0% 相同）、
+    to（与 100% 相同）
+</td>
+</tr>
+
+<tr>
+<td><i>css-styles</i></td>
+<td>必需。一个或多个合法的 CSS 样式属性。</td>
+</tr>
+</tbody></table></li>
+</ul>
+<h3 id="应用范围分析"><a href="#应用范围分析" class="headerlink" title="应用范围分析"></a>应用范围分析</h3><p>未完待续。。。  </p>
+]]></content>
+      <categories>
+        <category>Web前端开发</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>学习记录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>天地劫-幽城再临-角色培养</title>
     <url>/%E6%B8%B8%E6%88%8F/heaven-and-earth-robbery.html</url>
     <content><![CDATA[<span id="more"></span>
