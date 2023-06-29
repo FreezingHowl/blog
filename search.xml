@@ -272,7 +272,9 @@
 </tr>
 </tbody></table></li>
 </ul>
-<h3 id="应用范围分析"><a href="#应用范围分析" class="headerlink" title="应用范围分析"></a>应用范围分析</h3><p>未完待续。。。  </p>
+<h3 id="应用范围分析"><a href="#应用范围分析" class="headerlink" title="应用范围分析"></a>应用范围分析</h3><ul>
+<li>基础使用：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">div &#123;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  background-color: red;</span><br><span class="line">  animation-name: example;</span><br><span class="line">  animation-duration: 4s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@keyframes example &#123;</span><br><span class="line">  0% &#123;</span><br><span class="line">    background-color: red;</span><br><span class="line">  &#125;</span><br><span class="line">  25% &#123;</span><br><span class="line">    background-color: yellow;</span><br><span class="line">  &#125;</span><br><span class="line">  50% &#123;</span><br><span class="line">    background-color: blue;</span><br><span class="line">  &#125;</span><br><span class="line">  100% &#123;</span><br><span class="line">    background-color: green;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
 ]]></content>
       <categories>
         <category>Web前端开发</category>
