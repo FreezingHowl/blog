@@ -238,4 +238,28 @@ tags:
     </tr>
     </tbody></table>
 ### 应用范围分析
-未完待续。。。  
+- 基础使用：
+  ```
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  @keyframes example {
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: blue;
+    }
+    100% {
+      background-color: green;
+    }
+  }
+  ```
