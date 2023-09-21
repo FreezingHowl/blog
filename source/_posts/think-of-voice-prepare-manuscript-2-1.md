@@ -1,9 +1,10 @@
 ---
-title: 想起你的声音-备稿
+title: 想起你的声音-备稿（2-1）
 category: 配音学习
 tags:
   - 苔花小米
   - 声音优化
+abbrlink: dea7e49c
 date: 2023-07-26 19:42:07
 ---
 
