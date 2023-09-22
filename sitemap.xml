@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.nonnight.com/%E6%97%A5%E8%AE%B0%E6%95%A3%E6%96%87/self-year.html</loc>
+    
+    <lastmod>2023-09-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nonnight.com/uncategorized/the-story-of-the-pearl-of-words.html</loc>
+    
+    <lastmod>2023-09-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.nonnight.com/uncategorized/think-of-voice-color-of-tone-and-rhythm-of-speech-2-3.html</loc>
     
     <lastmod>2023-09-21</lastmod>
@@ -194,15 +212,6 @@
     <loc>https://www.nonnight.com/%E9%85%8D%E9%9F%B3%E5%AD%A6%E4%B9%A0/think-of-voice-vowel.html</loc>
     
     <lastmod>2023-06-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.nonnight.com/%E6%97%A5%E8%AE%B0%E6%95%A3%E6%96%87/self-year.html</loc>
-    
-    <lastmod>2023-06-09</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -478,6 +487,13 @@
   
   <url>
     <loc>https://www.nonnight.com/tags/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/</loc>
+    <lastmod>2023-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.nonnight.com/tags/%E6%97%A5%E8%AE%B0%E6%95%A3%E6%96%87/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
