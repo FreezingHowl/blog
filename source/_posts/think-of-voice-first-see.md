@@ -1,6 +1,6 @@
 ---
 title: 想起你的声音-初见
-category: 配音学习
+category: 知声配音
 tags:
   - 苔花小米
   - 声音优化

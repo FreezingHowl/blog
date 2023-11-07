@@ -1,6 +1,6 @@
 ---
 title: 想起你的声音-童话、寓言演播
-category: 配音学习
+category: 知声配音
 tags:
   - 苔花小米
   - 声音优化

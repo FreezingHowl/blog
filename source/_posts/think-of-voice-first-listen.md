@@ -1,6 +1,6 @@
 ---
 title: 想起你的声音-初闻
-category: 配音学习
+category: 知声配音
 abbrlink: ba1f0ab9
 date: 2023-04-23 09:23:10
 tags:

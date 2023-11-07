@@ -1,6 +1,6 @@
 ---
-layout: _posts
 title: 想起你的声音-情景再现和对象感
+category: 知声配音
 date: 2023-08-02 19:51:16
 tags:
   - 苔花小米

@@ -1,7 +1,7 @@
 ---
 title: 想起你的声音-附录二
 abbrlink: fb304f84
-category: 配音学习
+category: 知声配音
 date: 2023-04-23 19:40:51
 tags:
   - 配音试听课

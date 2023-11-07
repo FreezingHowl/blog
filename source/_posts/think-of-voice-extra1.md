@@ -1,7 +1,7 @@
 ---
 title: 想起你的声音-附录一
 abbrlink: c0b0612d
-category: 配音学习
+category: 知声配音
 date: 2023-04-23 19:40:51
 tags: 
   - 唱歌试听课
