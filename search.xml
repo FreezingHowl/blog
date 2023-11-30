@@ -1,448 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>计算机硬件-CPU（中央处理器）</title>
-    <url>/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/computer-cpu.html</url>
-    <content><![CDATA[<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>CPU（central processing unit）即中央处理器，是计算机系统的运算和控制核心，是信息处理、程序运行的最终执行单元；</p>
-<p>CPU 主要功能是解释计算机指令以及处理计算机软件中的数据。</p>
-<p>CPU 由运算器、控制器和寄存器及实现它们之间联系的数据、控制及状态的总线构成。</p>
-<h3 id="性能衡量指标"><a href="#性能衡量指标" class="headerlink" title="性能衡量指标"></a>性能衡量指标</h3><ul>
-<li>主频： CPU 运行计算时工作频率，每秒的运算速度<ul>
-<li>睿频： Intel 的加速技术，性能分配上实现按需分配，根据系统的运行自动调整频率。</li>
-<li>超频： CPU 和主板都支持超频时，可手动调整频率。</li>
-</ul>
-</li>
-<li>核心数： 计算核心数，核心数越多可以打开的程序就越多，同时进行多任务计算的能力也越高。</li>
-<li>位数： CPU 位数&#x3D;CPU 中寄存器的位数&#x3D;CPU 能够一次并行处理的数据宽度（位数）&#x3D;数据总线宽度。（pg.现在的计算机处理器一般都是 64 位)</li>
-<li>缓存指令集: CPU 缓存,用于暂存指令。</li>
-</ul>
-<h3 id="后缀详解"><a href="#后缀详解" class="headerlink" title="后缀详解"></a>后缀详解</h3><h4 id="intel-处理器含义："><a href="#intel-处理器含义：" class="headerlink" title="intel 处理器含义："></a>intel 处理器含义：</h4><ul>
-<li>X：高端牛逼处理器</li>
-<li>K：解锁超频模式的处理器，适合超频玩家</li>
-<li>F：没有内置核显，需要搭配额外的独立显卡</li>
-<li>S：节能版处理器，相比于同型号不带 S 的处理器性能差一些</li>
-<li>T：相比于同型号后面带 S 的更加节能，但是功耗更低，适合长时间开机但是对性能要求不那么高的用户</li>
-<li>U：笔记本低功耗处理器，性能偏弱，续航能力强，多用于轻薄本</li>
-<li>Q：笔记本高性能四核处理器</li>
-<li>M：移动版 CPU</li>
-<li>Y：超低功耗处理器，性能很弱，功耗很低，大多数用于平板电脑</li>
-<li>H：高电压处理器，功耗高、主频高的处理器</li>
-<li>R：有 Iris 的核显，没有独立显卡的情况下有比较强的图形处理能力</li>
-<li>G：与 AMD 合作的产物，带 AMD 家的 Vega 牛逼核显</li>
-</ul>
-<h4 id="AMD-处理器含义："><a href="#AMD-处理器含义：" class="headerlink" title="AMD 处理器含义："></a>AMD 处理器含义：</h4><ul>
-<li>X：高端牛逼处理器</li>
-<li>K：解锁超频模式的处理器，适合超频玩家</li>
-<li>U：低功耗处理器，性能偏弱，续航能力强，一般用于轻薄本</li>
-<li>G：有 Vega 的核显，没有独立显卡的情况下有比较强的图形处理能力</li>
-<li>H：高电压处理器，功耗高主频高的处理器</li>
-<li>E：低功耗处理器，性能弱</li>
-<li>T：比较古老的 AMD 处理器后缀 T 表示支持 Turbo 睿频技术，如果是比较新版的，一般跟 Intel 一样表示超低功耗</li>
-<li>B：一般是低功耗的商务本</li>
-<li>C：一般用于 Chrome OS 的笔记本电脑</li>
-<li>W: 是指工作的专业 CPU，最适合编程画图渲染的朋友。</li>
-<li>WX: 这个后缀 CPU 是 AMD 平台中最好最贵的 CPU，性能也是最好的。经常用在玩游戏和高端设计上。</li>
-</ul>
-<h3 id="购买注意事项"><a href="#购买注意事项" class="headerlink" title="购买注意事项"></a>购买注意事项</h3><ol>
-<li>注意与主板规格适配</li>
-<li>处理器后缀含义与处理器生产厂商直接相关</li>
-<li>睿频参数较大影响 CPU 运算速度，建议和主频共同参考</li>
-<li>核数多但单核主频较低的 CPU 不建议购买</li>
-</ol>
-<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://www.leixue.com/ask/what-do-the-letters-of-the-cpu-suffix-represent?hl=2</span><br><span class="line">https://www.jianshu.com/p/273551811a77</span><br><span class="line">https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/284033</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>计算机基础知识</category>
-      </categories>
-      <tags>
-        <tag>计算机</tag>
-        <tag>硬件</tag>
-        <tag>知识普及</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>css-动画</title>
-    <url>/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/css-animation.html</url>
-    <content><![CDATA[<blockquote>
-<p>浏览器最低版本支持： Chrome（43.0）、Firefox（16.0）、Opera（30.0）、Internet（10.0）</p>
-</blockquote>
-<h3 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h3><h4 id="animation属性系列"><a href="#animation属性系列" class="headerlink" title="animation属性系列"></a>animation属性系列</h4><ul>
-<li><p><code>animation: name duration timing-function delay iteration-count direction</code></p>
-</li>
-<li><p><em><strong>animation-name</strong></em>：<br><strong>描述</strong>：规定 @keyframes 动画的名称<br><strong>语法</strong>：<code>animation-name: keyframename|none;</code><br><strong>属性</strong>：</p>
-  <table>
-  <tbody><tr>
-  <th style="width:25%;">值</th>
-  <th>描述</th>
-  </tr>
-
-  <tr>
-  <td><i>keyframename</i></td>
-  <td>规定需要绑定到选择器的 keyframe 的名称。</td>
-  </tr>
-
-  <tr>
-  <td>none</td>
-  <td>规定无动画效果（可用于覆盖来自级联的动画）。</td>
-  </tr>
-  </tbody></table>
-</li>
-<li><p><em><strong>animation-duration</strong></em>：<br><strong>描述</strong>：规定完成动画所花费的时间，以秒或毫秒计。<br><strong>语法</strong>：<code>animation-duration: time;</code><br><strong>属性</strong>：</p>
-  <table>
-  <tbody><tr>
-  <th style="width:25%;">值</th>
-  <th>描述</th>
-  </tr>
-
-  <tr>
-  <td><i>time</i></td>
-  <td>规定完成动画所花费的时间。默认值是 0，意味着没有动画效果。</td>
-  </tr>
-  </tbody></table>
-</li>
-<li><p><em><strong>animation-timing-function</strong></em>：<br><strong>描述</strong>：规定动画的速度曲线。<br><strong>语法</strong>：<code>animation-timing-function: value;</code><br><strong>属性</strong>：</p>
-  <table>
-  <tbody>
-  <tr>
-  <th style="width:25%;">值</th>
-  <th>描述</th>
-  </tr>
-
-  <tr>
-  <td>linear</td>
-  <td>动画从头到尾的速度是相同的。</td>
-  </tr>
-
-  <tr>
-  <td>ease</td>
-  <td>默认。动画以低速开始，然后加快，在结束前变慢。</td>
-  </tr>
-
-  <tr>
-  <td>ease-in</td>
-  <td>动画以低速开始。</td>
-  </tr>
-
-  <tr>
-  <td>ease-out</td>
-  <td>动画以低速结束。</td>
-  </tr>
-
-
-  <tr>
-  <td>ease-in-out</td>
-  <td>动画以低速开始和结束。</td>
-  </tr>
-
-  <tr>
-  <td>cubic-bezier(<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>)</td>
-  <td>在 cubic-bezier 函数中自己的值。可能的值是从 0 到 1 的数值。</td>
-  <td></td>
-  </tr>
-  </tbody></table>
-</li>
-<li><p><em><strong>animation-delay</strong></em>：<br><strong>描述</strong>：规定在动画开始之前的延迟。<br><strong>语法</strong>：<code>animation-delay: time;</code><br><strong>属性</strong>：</p>
-  <table>
-  <tbody>
-  <tr>
-  <th style="width:25%;">值</th>
-  <th>描述</th>
-  </tr>
-
-  <tr>
-  <td><i>time</i></td>
-  <td>可选。定义动画开始前等待的时间，以秒或毫秒计。默认值是 0。</td>
-  </tr>
-  </tbody></table>
-</li>
-<li><p><em><strong>animation-iteration-count</strong></em>：<br><strong>描述</strong>：规定动画应该播放的次数。<br><strong>语法</strong>：<code>animation-iteration-count: n|infinite;</code><br><strong>属性</strong>：</p>
-  <table>
-  <tbody><tr>
-  <th style="width:25%;">值</th>
-  <th>描述</th>
-  </tr>
-
-  <tr>
-  <td><i>n</i></td>
-  <td>定义动画播放次数的数值。</td>
-  </tr>
-
-  <tr>
-  <td>infinite</td>
-  <td>规定动画应该无限次播放。</td>
-  </tr>
-  </tbody></table>
-</li>
-<li><p><em><strong>animation-direction</strong></em>：<br><strong>描述</strong>：规定是否应该轮流反向播放动画。<br><strong>语法</strong>：<code>animation-direction: normal|alternate;</code><br><strong>属性</strong>：</p>
-  <table>
-  <tbody><tr>
-  <th style="width:25%;">值</th>
-  <th>描述</th>
-  </tr>
-
-  <tr>
-  <td>normal</td>
-  <td>默认值。动画应该正常播放。</td>
-  </tr>
-
-  <tr>
-  <td>alternate</td>
-  <td>动画应该轮流反向播放。</td>
-  </tr>
-  </tbody></table>
-</li>
-<li><p><em><strong>animation-fill-mode</strong></em>：<br><strong>描述</strong>：规定动画在执行时间之外应用的值。<br><strong>语法</strong>：<code>animation-fill-mode : none | forwards | backwards | both;</code><br><strong>属性</strong>：</p>
-  <table>
-  <tbody><tr>
-  <th style="width:25%;">值</th>
-  <th>描述</th>
-  </tr>
-
-  <tr>
-  <td>none</td>
-  <td>不改变默认行为。</td>
-  </tr>
-
-  <tr>
-  <td>forwards</td>
-  <td>当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。</td>
-  </tr>
-
-  <tr>
-  <td>backwards</td>
-  <td>在 animation-delay 所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定义）。</td>
-  </tr>
-
-  <tr>
-  <td>both</td>
-  <td>向前和向后填充模式都被应用。</td>
-  </tr>
-
-  </tbody></table>
-</li>
-<li><p><em><strong>animation-play-state</strong></em>：<br><strong>描述</strong>：规定动画是正在运行还是暂停。<br><strong>语法</strong>：<code>animation-play-state: paused|running;</code><br><strong>属性</strong>：</p>
-  <table>
-  <tbody><tr>
-  <th style="width:25%;">值</th>
-  <th>描述</th>
-  </tr>
-
-  <tr>
-  <td>paused</td>
-  <td>规定动画已暂停。</td>
-  </tr>
-
-  <tr>
-  <td>running</td>
-  <td>规定动画正在播放。</td>
-  </tr>
-  </tbody></table></li>
-</ul>
-<h4 id="keyframes属性"><a href="#keyframes属性" class="headerlink" title="@keyframes属性"></a>@keyframes属性</h4><ul>
-<li><p><strong>描述</strong>：规定动画模式。</p>
-</li>
-<li><p><strong>语法</strong>：<code>@keyframes animationname &#123;keyframes-selector &#123;css-styles;&#125;&#125;</code></p>
-</li>
-<li><p><strong>属性</strong>：</p>
-<table>
-<tbody><tr>
-<th style="width:25%;">值</th>
-<th>描述</th>
-</tr>
-
-<tr>
-<td><i>animationname</i></td>
-<td>必需。定义动画的名称。</td>
-</tr>
-
-<tr>
-<td><i>keyframes-selector</i></td>
-<td>
-  <p>必需。动画时长的百分比。</p>
-  <p>合法的值：</p>
-    0-100% 、
-    from（与 0% 相同）、
-    to（与 100% 相同）
-</td>
-</tr>
-
-<tr>
-<td><i>css-styles</i></td>
-<td>必需。一个或多个合法的 CSS 样式属性。</td>
-</tr>
-</tbody></table></li>
-</ul>
-<h3 id="应用范围分析"><a href="#应用范围分析" class="headerlink" title="应用范围分析"></a>应用范围分析</h3><ul>
-<li>基础使用：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">div &#123;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  background-color: red;</span><br><span class="line">  animation-name: example;</span><br><span class="line">  animation-duration: 4s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@keyframes example &#123;</span><br><span class="line">  0% &#123;</span><br><span class="line">    background-color: red;</span><br><span class="line">  &#125;</span><br><span class="line">  25% &#123;</span><br><span class="line">    background-color: yellow;</span><br><span class="line">  &#125;</span><br><span class="line">  50% &#123;</span><br><span class="line">    background-color: blue;</span><br><span class="line">  &#125;</span><br><span class="line">  100% &#123;</span><br><span class="line">    background-color: green;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Web前端开发</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-        <tag>学习记录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>天地劫-幽城再临-角色培养</title>
-    <url>/%E6%B8%B8%E6%88%8F/heaven-and-earth-robbery.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<pre><code>天地劫-幽城再临属于SRPG(Strategy Role-Playing Game),除去剧情外，角色养成和战旗策略是该类游戏的两大游玩内容。
-</code></pre>
-<h3 id="角色养成"><a href="#角色养成" class="headerlink" title="角色养成"></a>角色养成</h3><h4 id="角色能力组成与对应资源来源"><a href="#角色能力组成与对应资源来源" class="headerlink" title="角色能力组成与对应资源来源"></a>角色能力组成与对应资源来源</h4><pre><code>- 兵刃
-    - 淬火（蚀之隙）
-    - 魂石（创命之间、幻海魂渊）
-    - 神兵（九如塔）
-- 及身
-    - 饰品（三途川）
-    - 精化（灵脉光渊）
-- 五内
-    - 化蕴（蚀之隙）
-    - 内力精进（江湖）
-    - 绝学化神（江湖）
-- 天魂之力
-    - 回响（蚀之隙）
-</code></pre>
-<p>由此可见，培养角色的本质在于资源材料获取（副本攻克），根据副本敌人属性组成本人将副本分为单属性副本和多属性副本：</p>
-<ul>
-<li>单属性副本<ul>
-<li>创命之间、幻海魂渊、九如塔、灵脉光渊</li>
-</ul>
-</li>
-<li>多属性副本<ul>
-<li>蚀之隙、三途川、江湖</li>
-</ul>
-</li>
-</ul>
-<h4 id="养成探讨"><a href="#养成探讨" class="headerlink" title="养成探讨"></a>养成探讨</h4><blockquote>
-<p>根据副本类型，对应出属性队和混色队，属性队由单属性为主体组成，混色队由多色队组成。<br>两种队伍形成原因在于属性克制和副本对属性的加成（九如塔）。<br>游戏推荐角色养成路线和有限的资源导致混色队培养优先级高于混色队。<br>角色功能可以分为：输出、辅助、坦克三类，且功能存在交集，即一个角色既可以是输出也可以是辅助。<br>角色职业培养优先级：侠客、巫咒&gt;祝由&gt;铁卫&gt;御风&gt;羽士；<br>侠客为游戏中最为平衡的职业，数值平均，功能多样，适配能力强，常作为物理主输出。<br>祝由常作为恢复辅助，大幅提高队伍生存能力。<br>铁卫有很高的生存能力，护卫能力可保护队友，为队友攻击提供环境。</p>
-</blockquote>
-<h4 id="培养方案"><a href="#培养方案" class="headerlink" title="培养方案"></a>培养方案</h4><ul>
-<li>第一阶段：混色队培养 - 标准：六星五属性有阵混色队 - 例子：真胤[雷]（阵眼-坦克+辅助）、殷剑平[炎]（物理输出）、于小雪[冰]（辅助）、武英仲[光]（辅助+输出）、黎幽<a href="%E8%BE%85%E5%8A%A9+%E8%BE%93%E5%87%BA">暗</a> - 说明：混色队培养需要考虑两个问题，第一是角色强度，第二是向属性队的衍生；以上角色中，每个角色都很强力，都有阵，并且该阵可组成本身属性的属性队，可顺利的衍生出属性队，五个人配合强度和功能性也很高。</li>
-<li>第二阶段：五属性纯色队培养 - 标准：两个六星+三个五星有阵属性队 - 例子：冰属性-&gt;于小雪（阵眼）+冰璃+隋酒+封寒月+银玛 - 说明：当达到该标准时，九如塔可较为轻松通过，江湖也有一战之力，得到资源后反哺本属性人物；由于资源有限，个人建议一个属性队一个属性队的培养，切不可零碎培养，导致培养周期延长</li>
-<li>第三阶段：五属性全职业培养</li>
-</ul>
-]]></content>
-      <categories>
-        <category>游戏</category>
-      </categories>
-      <tags>
-        <tag>天地劫</tag>
-        <tag>SRPG</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我是一个WebGIS开发工程师</title>
-    <url>/uncategorized/i-am-a-GIS-development-engineer.html</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>   我总在追求清晰，避免模糊的道路上前进，因为模糊会让我看不清自己。我也总在反复确定自己身份，确定自己在社会群体中，担任着怎么样的职务，三年前褪去学生的身份后，我走上了WebGis的职业道路上，在社会角色扮演中，职业是最重要的一重身份。第一年学习前端开发，第二年学习后端开发，第三年作为核心开发人员进行综合开发，如今第四年也已经过去了两个月多，回头想一想，总是会有一些茫然，学习了很多，但感觉又很单薄，因此想抽出一些时间，认真描绘一下自己职业的轮廓。<br>   ps.本文为个人所遇所感，所思所想，如有不足，请谅解。</p>
-<h3 id="职业简介"><a href="#职业简介" class="headerlink" title="职业简介"></a>职业简介</h3><p>   顾名思义，WebGIS开发工程师就是以WebGIS开发模式进行GIS系统开发的工程师，WebGIS开发是软件研发的重要方向，以网络请求做为信息传输方式，在客户端与服务端进行数据传输，从而实现各种各样的业务系统平台；GIS系统是以地图和空间数据为基础，对自然地理或者人文地理相关问题进行分析和处理的一类系统。因此，WebGIS开发工程师需要地理学相关支持，从而支持本身主要的业务能力，同时也需要Web前端、Web后端和网络技术三大方面的技术能力支持。计算机网络领域发展十分迅速，各种框架推陈出新，新的技术也不断产生，仿佛无限增长又望之不尽的海洋，但一个职业的职能是确定的，不同种类工具的作用也是明确的，一个职业的人用自己知道的工具做成这个职业需要做到的事，便足以。</p>
-<h3 id="WEB开发相关技术"><a href="#WEB开发相关技术" class="headerlink" title="WEB开发相关技术"></a>WEB开发相关技术</h3><ul>
-<li>计算机技术<ol>
-<li>linux系统</li>
-<li>数据库<ol>
-<li>MySQL</li>
-<li>PostgreSQL</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>前端技术<ol>
-<li>前端基础<ol>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>ECMAScript 6</li>
-</ol>
-</li>
-<li>前端环境（Node.js）<ol>
-<li>包的管理工具 npm&#x2F;yarn</li>
-<li>资源构建工具 webpack</li>
-</ol>
-</li>
-<li>前端框架<ol>
-<li>vue(组件化 数据驱动)</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>后端技术<ol>
-<li>微服务技术栈<ol>
-<li>Spring Boot</li>
-<li>Spring Clound</li>
-<li>Docker</li>
-<li>Eureka</li>
-<li>Ribbon</li>
-<li>Feign</li>
-<li>GateWay</li>
-<li>RabbitMQ</li>
-</ol>
-</li>
-<li>后端环境（JDK8）</li>
-</ol>
-</li>
-<li>网络技术<ol>
-<li>nginx</li>
-<li>http&#x2F;https</li>
-</ol>
-</li>
-</ul>
-<h3 id="WebGIS系统特有技术"><a href="#WebGIS系统特有技术" class="headerlink" title="WebGIS系统特有技术"></a>WebGIS系统特有技术</h3><ul>
-<li>SuperMap产品<ol>
-<li>iDecktop</li>
-<li>iServer</li>
-<li>iManage</li>
-</ol>
-</li>
-<li>地图库<ol>
-<li>leaflet</li>
-<li>Cesium</li>
-</ol>
-</li>
-</ul>
-<p>未完待续。。。</p>
-]]></content>
-      <tags>
-        <tag>思考总结</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>学习与思考</title>
-    <url>/uncategorized/learning-and-thinkking.html</url>
+    <url>/%E5%93%B2%E5%AD%A6%E6%80%9D%E8%80%83/learning-and-thinkking.html</url>
     <content><![CDATA[<span id="more"></span>
 
-<h3 id="系统学习内容"><a href="#系统学习内容" class="headerlink" title="系统学习内容"></a>系统学习内容</h3><ol>
-<li>基础概念内容</li>
-<li>进阶知识技巧</li>
-<li>个人理解架构</li>
-</ol>
-<h3 id="系统学习过程"><a href="#系统学习过程" class="headerlink" title="系统学习过程"></a>系统学习过程</h3><ol>
-<li>完整系统学习</li>
-<li>实践练习</li>
-<li>思考总结</li>
-</ol>
-]]></content>
-  </entry>
-  <entry>
-    <title>望风吹</title>
-    <url>/%E8%AF%97%E8%AF%8D/look-at-the-wind-blowing.html</url>
-    <content><![CDATA[<p>虔心祈，<br>春风，代替秋雨，<br>花开，抹去冷寂，<br>一点的凝望，<br>换一点驻足的歌唱。</p>
-<p>愿风来，<br>小草摆头等待，<br>细雪调皮欢快，<br>我逃离了泪眼之地，<br>没有无助，<br>也没有刻意。</p>
-<p>忘思愁，<br>清晨的挽留，<br>勾勒出，<br>夕阳下你温柔的眼眸。</p>
+<h3 id="学习过程中两种不同的认知模式"><a href="#学习过程中两种不同的认知模式" class="headerlink" title="学习过程中两种不同的认知模式"></a>学习过程中两种不同的认知模式</h3><ul>
+<li><p>专注学习：</p>
+<ul>
+<li>定义： 这是一种深入学习的模式，通常用于解决特定的问题或理解特定的概念。在专注学习时，你集中注意力，深入研究和掌握特定的信息或技能。</li>
+<li>特点： 强调深度思考和集中注意力。这种模式涉及对特定主题进行深入研究，以便更好地理解和应用所学的知识。</li>
+</ul>
+</li>
+<li><p>分散学习：</p>
+<ul>
+<li>定义： 这是一种广泛的学习模式，通常发生在专注学习之外。在分散学习时，你的思维更加放松，允许思维在不同的概念和想法之间漂移。</li>
+<li>特点： 强调对多个概念的涉猎和连接。这种模式涉及到与多种信息和概念有关的广泛思考，有助于提供新的视角和创意。</li>
+</ul>
+</li>
+<li><p>区别：</p>
+<ul>
+<li>焦点： 专注学习侧重于深度思考和对特定主题的集中注意力；分散学习强调对多个概念的广泛涉猎和连接。</li>
+<li>状态： 专注学习时，思维状态通常较为紧凑和有针对性；而在分散学习时，思维状态较为放松和漂移。</li>
+<li>应用： 专注学习通常用于解决问题、深入理解复杂的主题；分散学习有助于激发创意、将不同领域的知识联系起来。</li>
+</ul>
+</li>
+<li><p>建议：</p>
+<blockquote>
+<p>在进入具体细节之前，先阅读一些介绍性材料，以便对一个领域有一个高度的了解，这通常是好的。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="制定计划"><a href="#制定计划" class="headerlink" title="制定计划"></a>制定计划</h3><ul>
+<li><p>确定目标</p>
+<blockquote>
+<p>我想在两年后成为一名专业的 Web 开发者。<br>我想学习足够的知识，为我当地的业余网球俱乐部建立一个网站。</p>
+</blockquote>
+</li>
+<li><p>准备条件</p>
+<blockquote>
+<p>需要哪些工具<br>需要哪些知识</p>
+</blockquote>
+</li>
+<li><p>投入规划</p>
+<blockquote>
+<p>我每周需要投入多少小时？<br>这需要花费多少时间和金钱？<br>分为几个阶段，每个阶段达到怎样的效果</p>
+</blockquote>
+</li>
+<li><p>保持动力</p>
+<blockquote>
+<p>尽量让你的工作环境更有效率<br>把大问题分成具体的小问题，确定问题层级<br>奖励你自己</p>
+</blockquote>
+</li>
+<li><p>周期练习</p>
+<blockquote>
+<p>计划实行的过程是了解-认识-实践-思考的迭代提升过程</p>
+</blockquote>
+</li>
+</ul>
 ]]></content>
       <categories>
-        <category>诗词</category>
+        <category>哲学思考</category>
       </categories>
       <tags>
-        <tag>秘密</tag>
-        <tag>夜风</tag>
-        <tag>伤感</tag>
+        <tag>学习思考</tag>
+        <tag>方法论</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多重阅读-阅读技巧</title>
+    <url>/%E5%93%B2%E5%AD%A6%E6%80%9D%E8%80%83/multiple-reading.html</url>
+    <content><![CDATA[<p>快时代下的高效阅读方法。</p>
+<span id="more"></span>
+
+<blockquote>
+<p>多重阅读是画出阅读框架的过程。<br>多重阅读第一遍以变速阅读为主，核心目的就是要选出重点精读的内容。<br>多重阅读第二遍以重点精读为主，就是要将阅读内容归到你的个人知识体系中，变成你自己的理解和知识，从而在需要的时候可以被顺畅地调用出来。</p>
+</blockquote>
+<h4 id="阅读步骤"><a href="#阅读步骤" class="headerlink" title="阅读步骤"></a>阅读步骤</h4><ol>
+<li>明确阅读目的</li>
+<li>绘制内容框架</li>
+<li>变速阅读</li>
+<li>重点精度</li>
+</ol>
+<h4 id="阅读过程"><a href="#阅读过程" class="headerlink" title="阅读过程"></a>阅读过程</h4><h5 id="明确阅读目的"><a href="#明确阅读目的" class="headerlink" title="-| 明确阅读目的"></a>-| 明确阅读目的</h5><blockquote>
+<p>阅读之前建议思考一个问题：<br>如果是我写这本书的话，我会怎么组织观点呢？<br>带着这样的问题来阅读会更加高效的抓取关键信息。</p>
+</blockquote>
+<h5 id="绘制内容框架"><a href="#绘制内容框架" class="headerlink" title="-| 绘制内容框架"></a>-| 绘制内容框架</h5><blockquote>
+<p>从阅读目的出发，在浏览封面、作者简介、前言、目录后，画出一个整体的阅读框架关键词，这样效率就更高了。<br>通常来说，一本书的目录就是最原始的框架，阅读过程中可以增加自己的理解，逐渐完善框架。</p>
+</blockquote>
+<h5 id="变速阅读"><a href="#变速阅读" class="headerlink" title="-| 变速阅读"></a>-| 变速阅读</h5><p>第一遍阅读的时候，要采用泛读的方式。</p>
+<p>针对四类不同的内容采用不同的阅读速度。</p>
+<ol>
+<li><p>与阅读目的不相关的内容</p>
+<blockquote>
+<p>这部分内容，阅读时跳过就行，或者做个标记以防后期需要再次复盘。</p>
+</blockquote>
+</li>
+<li><p>与阅读目的相关，但你已经很熟悉的内容</p>
+<blockquote>
+<p>这部分内容，阅读时以你能达到的最快速度浏览即可，只需留意其中是否有个别值得借鉴的要点。<br>切记不要反复阅读自己熟悉的内容，浪费时间的同时效率不高。</p>
+</blockquote>
+</li>
+<li><p>与阅读目的相关，但是你不熟悉的内容</p>
+<blockquote>
+<p>这部分内容，在第一遍阅读时就要回到正常的阅读速度进行阅读。<br>在每一章或每阅读 10 分钟之后，必须停下来，离开书本，在脑海里回忆刚刚阅读过的内容，然后将你能回忆出来的内容，添加到阅读框架中。<br>这一边的复盘很重要，通常也非常消耗精力，但是用自己的语言表述出来的时候也就意味着掌握了这个知识。</p>
+</blockquote>
+</li>
+<li><p>与阅读目的相关，但第一遍理解起来很难的内容</p>
+<blockquote>
+<p>在阅读不熟悉的内容时，如果碰到理解起来很难的内容，第一遍阅读时标记下来，看一看，在脑海中有点印象就行。</p>
+</blockquote>
+</li>
+</ol>
+<h5 id="重点精读"><a href="#重点精读" class="headerlink" title="-| 重点精读"></a>-| 重点精读</h5><blockquote>
+<p>第二遍阅读的时候，我们不需要将所有内容都重新阅读一遍，而是重点精读符合阅读目的，又是自己不熟悉的部分。<br>第二遍重点精读的时候，你需要做笔记！<br>最好的方式是在第二遍重点精读的时候，将这些内容记到笔记里，而且一定要体系化地组织这些内容（推荐使用 OneNote）<br>形成知识体系化的最好方法是多读同一领域的不同书籍，互相补充，想成自己独特的目录。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">参考链接: https://www.jianshu.com/p/05986e4afddc</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>哲学思考</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+        <tag>技巧</tag>
+        <tag>快生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>软件设计师中级-个人笔记</title>
+    <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-self.html</url>
+    <content><![CDATA[<h3 id="考前须知"><a href="#考前须知" class="headerlink" title="考前须知"></a>考前须知</h3><ol>
+<li>时间安排<table>
+ <tr>
+     <td>科目</td> 
+     <td>时间段</td> 
+     <td>流程</td> 
+     <td>时间</td> 
+</tr>
+ <tr>
+     <td rowspan="4">软件设计师</td>    
+     <td rowspan="4">上半年</td>  
+     <td >报名</td>  
+     <td >2023年3月14日9：00至2023年4月10日18：00</td>  
+ </tr>
+ <tr>  
+     <td >缴费</td>  
+     <td >2023年3月14日9：00至2023年4月12日24：00</td>  
+ </tr>
+ <tr>   
+     <td >准考证打印</td>  
+     <td >2023年5月22日9：00至2023年5月26日17：00</td>  
+ </tr>
+ <tr>  
+     <td >考试</td>  
+     <td >2023-05-27 09:00:00（150分钟）至2023-05-27 14:00:00（150分钟）</td>  
+ </tr>
+</table></li>
+<li>相关网站<ul>
+<li>报名地址：<a href="https://bm.ruankao.org.cn/">https://bm.ruankao.org.cn/</a></li>
+<li>网上办事服务大厅：<a href="https://rs.jshrss.jiangsu.gov.cn/web/center/main">https://rs.jshrss.jiangsu.gov.cn/web/center/main</a></li>
+</ul>
+</li>
+</ol>
+<h3 id="计划安排"><a href="#计划安排" class="headerlink" title="计划安排"></a>计划安排</h3><ul>
+<li>目标程度：计算了解，概念熟悉，理论理解，顺利上岸。</li>
+<li>阶段一：<ul>
+<li>目标：基础知识学习，了解所有考试内容，构建粗略知识框架</li>
+<li>具体方法：看视频讲解、参考他人汇总笔记、同步刷上午考题</li>
+<li>注意：理论内容切不可一知半解</li>
+</ul>
+</li>
+<li>阶段二：<ul>
+<li>目标：专项练习下午试题（应用技术），保证下午内容一分不丢</li>
+<li>具体方法：详细学习相关知识，练习试题，揣摩考试逻辑，扩展内容延申学习</li>
+</ul>
+</li>
+<li>阶段三：<ul>
+<li>目标：寻找考试状态，整体理解考试内容</li>
+<li>具体方法：刷真题、刷真题、刷真题</li>
+</ul>
+</li>
+</ul>
+<h3 id="个人记录"><a href="#个人记录" class="headerlink" title="个人记录"></a>个人记录</h3><ul>
+<li>软件设计师主要内容：<a href="https://app.gitbook.com/o/DXydf1xam3QnhX5TACL1/s/CoM1utHSQT3IQlbuzD7w/mu-lu">https://app.gitbook.com/o/DXydf1xam3QnhX5TACL1/s/CoM1utHSQT3IQlbuzD7w/mu-lu</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>软件设计师</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>软件设计师</tag>
       </tags>
   </entry>
   <entry>
     <title>微服务技术栈-Docker</title>
-    <url>/uncategorized/microservices-technology-stack-docker.html</url>
+    <url>/uncategorized/microservices-technology-stack/microservices-technology-stack-docker.html</url>
     <content><![CDATA[<h1 id="初识Docker"><a href="#初识Docker" class="headerlink" title="初识Docker"></a>初识Docker</h1><h2 id="什么是Docker"><a href="#什么是Docker" class="headerlink" title="什么是Docker"></a>什么是Docker</h2><p>微服务虽然具备各种各样的优势，但服务的拆分通用给部署带来了很大的麻烦。</p>
 <ul>
 <li>分布式系统中，依赖的组件非常多，不同组件之间部署时往往会产生一些冲突。</li>
@@ -1015,13 +768,13 @@
 </blockquote>
 ]]></content>
       <tags>
-        <tag>学习记录</tag>
         <tag>微服务</tag>
+        <tag>学习记录</tag>
       </tags>
   </entry>
   <entry>
     <title>微服务技术栈-rabbitMQ</title>
-    <url>/uncategorized/microservices-technology-stack-rabbitMQ.html</url>
+    <url>/uncategorized/microservices-technology-stack/microservices-technology-stack-rabbitMQ.html</url>
     <content><![CDATA[<h1 id="初识MQ"><a href="#初识MQ" class="headerlink" title="初识MQ"></a>初识MQ</h1><h2 id="同步和异步通讯"><a href="#同步和异步通讯" class="headerlink" title="同步和异步通讯"></a>同步和异步通讯</h2><p>微服务间通讯有同步和异步两种方式：</p>
 <p>同步通讯：就像打电话，需要实时响应。</p>
 <p>异步通讯：就像发邮件，不需要马上回复。</p>
@@ -1427,166 +1180,69 @@
 </blockquote>
 ]]></content>
       <tags>
-        <tag>学习记录</tag>
         <tag>微服务</tag>
+        <tag>学习记录</tag>
       </tags>
   </entry>
   <entry>
-    <title>多重阅读-阅读技巧</title>
-    <url>/%E5%AD%A6%E4%B9%A0%E5%8A%9B/multiple-reading.html</url>
-    <content><![CDATA[<p>快时代下的高效阅读方法。</p>
-<span id="more"></span>
-
-<blockquote>
-<p>多重阅读是画出阅读框架的过程。<br>多重阅读第一遍以变速阅读为主，核心目的就是要选出重点精读的内容。<br>多重阅读第二遍以重点精读为主，就是要将阅读内容归到你的个人知识体系中，变成你自己的理解和知识，从而在需要的时候可以被顺畅地调用出来。</p>
-</blockquote>
-<h4 id="阅读步骤"><a href="#阅读步骤" class="headerlink" title="阅读步骤"></a>阅读步骤</h4><ol>
-<li>明确阅读目的</li>
-<li>绘制内容框架</li>
-<li>变速阅读</li>
-<li>重点精度</li>
-</ol>
-<h4 id="阅读过程"><a href="#阅读过程" class="headerlink" title="阅读过程"></a>阅读过程</h4><h5 id="明确阅读目的"><a href="#明确阅读目的" class="headerlink" title="-| 明确阅读目的"></a>-| 明确阅读目的</h5><blockquote>
-<p>阅读之前建议思考一个问题：<br>如果是我写这本书的话，我会怎么组织观点呢？<br>带着这样的问题来阅读会更加高效的抓取关键信息。</p>
-</blockquote>
-<h5 id="绘制内容框架"><a href="#绘制内容框架" class="headerlink" title="-| 绘制内容框架"></a>-| 绘制内容框架</h5><blockquote>
-<p>从阅读目的出发，在浏览封面、作者简介、前言、目录后，画出一个整体的阅读框架关键词，这样效率就更高了。<br>通常来说，一本书的目录就是最原始的框架，阅读过程中可以增加自己的理解，逐渐完善框架。</p>
-</blockquote>
-<h5 id="变速阅读"><a href="#变速阅读" class="headerlink" title="-| 变速阅读"></a>-| 变速阅读</h5><p>第一遍阅读的时候，要采用泛读的方式。</p>
-<p>针对四类不同的内容采用不同的阅读速度。</p>
-<ol>
-<li><p>与阅读目的不相关的内容</p>
-<blockquote>
-<p>这部分内容，阅读时跳过就行，或者做个标记以防后期需要再次复盘。</p>
-</blockquote>
-</li>
-<li><p>与阅读目的相关，但你已经很熟悉的内容</p>
-<blockquote>
-<p>这部分内容，阅读时以你能达到的最快速度浏览即可，只需留意其中是否有个别值得借鉴的要点。<br>切记不要反复阅读自己熟悉的内容，浪费时间的同时效率不高。</p>
-</blockquote>
-</li>
-<li><p>与阅读目的相关，但是你不熟悉的内容</p>
-<blockquote>
-<p>这部分内容，在第一遍阅读时就要回到正常的阅读速度进行阅读。<br>在每一章或每阅读 10 分钟之后，必须停下来，离开书本，在脑海里回忆刚刚阅读过的内容，然后将你能回忆出来的内容，添加到阅读框架中。<br>这一边的复盘很重要，通常也非常消耗精力，但是用自己的语言表述出来的时候也就意味着掌握了这个知识。</p>
-</blockquote>
-</li>
-<li><p>与阅读目的相关，但第一遍理解起来很难的内容</p>
-<blockquote>
-<p>在阅读不熟悉的内容时，如果碰到理解起来很难的内容，第一遍阅读时标记下来，看一看，在脑海中有点印象就行。</p>
-</blockquote>
-</li>
-</ol>
-<h5 id="重点精读"><a href="#重点精读" class="headerlink" title="-| 重点精读"></a>-| 重点精读</h5><blockquote>
-<p>第二遍阅读的时候，我们不需要将所有内容都重新阅读一遍，而是重点精读符合阅读目的，又是自己不熟悉的部分。<br>第二遍重点精读的时候，你需要做笔记！<br>最好的方式是在第二遍重点精读的时候，将这些内容记到笔记里，而且一定要体系化地组织这些内容（推荐使用 OneNote）<br>形成知识体系化的最好方法是多读同一领域的不同书籍，互相补充，想成自己独特的目录。</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">参考链接: https://www.jianshu.com/p/05986e4afddc</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>学习力</category>
-      </categories>
-      <tags>
-        <tag>阅读</tag>
-        <tag>技巧</tag>
-        <tag>快生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>本人年华</title>
-    <url>/%E6%97%A5%E8%AE%B0%E6%95%A3%E6%96%87/self-year.html</url>
+    <title>天地劫-幽城再临-角色培养</title>
+    <url>/%E6%B8%B8%E6%88%8F/tdd-phantom-city-revisited/heaven-and-earth-robbery.html</url>
     <content><![CDATA[<span id="more"></span>
 
-<h3 id="真诚的人生信仰"><a href="#真诚的人生信仰" class="headerlink" title="真诚的人生信仰"></a>真诚的人生信仰</h3><p>大概从初中开始，我就开始思索自己的人生信仰，当时也没有什么目的，只是单纯的觉得有自己的信条，会很帅。刚开始想的是真诚、善良、机敏、勇笃，我记得还有对应的意象，真诚如风，善良如冰，机敏如声，勇笃如铮，现在想来，当时可能只是想押个韵，但细细一品，其实是有一些味道的。再后来，思考着思考着，就只留下真诚了；善良会使人温暖，但负不了敌人，机敏让人清晰，但不可把控，不能锻炼；勇笃更是束之高阁的东西，一腔热血，终会停歇。但真诚确是一种由内而外散发出来的感觉，是的，真诚其实是一种感觉，一种可以无怨无悔的感觉；当然，它也可以抽象成准则，真且诚恳，解决问题要真，这样问题才会真正的被解决，待人处要诚恳，用真心才会发现真心。其实感觉自己对真诚的理解还不够高，但这样也更让自己坚信这个信仰，我相信这个信仰，会把我带到我喜欢的道路上去，无论早晚。</p>
-<h3 id="习惯的漫漫长路"><a href="#习惯的漫漫长路" class="headerlink" title="习惯的漫漫长路"></a>习惯的漫漫长路</h3><p>以前经常有满腔热血的时候，想着怎么努力，怎么拼搏，但努力几天后，就没那么愤慨，想着一飞冲天的感觉了，多次后总结的区别，可能就是多努力几天，少努力几天吧。后来觉得，只有养成习惯，才是自己的。规划一段时间的事情，然后把规划的事情实现，再规划，再完成，一定周期后进行总结思考，就会发现自己其实是有些成长的，但过程中，要切切实实的做好每一件事情，多总结，多思考，多记录。其实在实行过程中，还会有很多其他的问题，比如长时间在忙一部分计划放弃式中断了，一些事情在坚持后发现不是太适宜，这些事情都是很严重的阻碍，多次反馈后，我发现多半是计划设计的不好，自己太贪心，太急于求成了，两个月看本书，三个月学个乐器，一个月准备个考试，一生很短也很长，既然决定终身学习，那么就不要急。</p>
-<p>未完待续。。。</p>
+<pre><code>天地劫-幽城再临属于SRPG(Strategy Role-Playing Game),除去剧情外，角色养成和战旗策略是该类游戏的两大游玩内容。
+</code></pre>
+<h3 id="角色养成"><a href="#角色养成" class="headerlink" title="角色养成"></a>角色养成</h3><h4 id="角色能力组成与对应资源来源"><a href="#角色能力组成与对应资源来源" class="headerlink" title="角色能力组成与对应资源来源"></a>角色能力组成与对应资源来源</h4><pre><code>- 兵刃
+    - 淬火（蚀之隙）
+    - 魂石（创命之间、幻海魂渊）
+    - 神兵（九如塔）
+- 及身
+    - 饰品（三途川）
+    - 精化（灵脉光渊）
+- 五内
+    - 化蕴（蚀之隙）
+    - 内力精进（江湖）
+    - 绝学化神（江湖）
+- 天魂之力
+    - 回响（蚀之隙）
+</code></pre>
+<p>由此可见，培养角色的本质在于资源材料获取（副本攻克），根据副本敌人属性组成本人将副本分为单属性副本和多属性副本：</p>
+<ul>
+<li>单属性副本<ul>
+<li>创命之间、幻海魂渊、九如塔、灵脉光渊</li>
+</ul>
+</li>
+<li>多属性副本<ul>
+<li>蚀之隙、三途川、江湖</li>
+</ul>
+</li>
+</ul>
+<h4 id="养成探讨"><a href="#养成探讨" class="headerlink" title="养成探讨"></a>养成探讨</h4><blockquote>
+<p>根据副本类型，对应出属性队和混色队，属性队由单属性为主体组成，混色队由多色队组成。<br>两种队伍形成原因在于属性克制和副本对属性的加成（九如塔）。<br>游戏推荐角色养成路线和有限的资源导致混色队培养优先级高于混色队。<br>角色功能可以分为：输出、辅助、坦克三类，且功能存在交集，即一个角色既可以是输出也可以是辅助。<br>角色职业培养优先级：侠客、巫咒&gt;祝由&gt;铁卫&gt;御风&gt;羽士；<br>侠客为游戏中最为平衡的职业，数值平均，功能多样，适配能力强，常作为物理主输出。<br>祝由常作为恢复辅助，大幅提高队伍生存能力。<br>铁卫有很高的生存能力，护卫能力可保护队友，为队友攻击提供环境。</p>
+</blockquote>
+<h4 id="培养方案"><a href="#培养方案" class="headerlink" title="培养方案"></a>培养方案</h4><ul>
+<li>第一阶段：混色队培养 - 标准：六星五属性有阵混色队 - 例子：真胤[雷]（阵眼-坦克+辅助）、殷剑平[炎]（物理输出）、于小雪[冰]（辅助）、武英仲[光]（辅助+输出）、黎幽<a href="%E8%BE%85%E5%8A%A9+%E8%BE%93%E5%87%BA">暗</a> - 说明：混色队培养需要考虑两个问题，第一是角色强度，第二是向属性队的衍生；以上角色中，每个角色都很强力，都有阵，并且该阵可组成本身属性的属性队，可顺利的衍生出属性队，五个人配合强度和功能性也很高。</li>
+<li>第二阶段：五属性纯色队培养 - 标准：两个六星+三个五星有阵属性队 - 例子：冰属性-&gt;于小雪（阵眼）+冰璃+隋酒+封寒月+银玛 - 说明：当达到该标准时，九如塔可较为轻松通过，江湖也有一战之力，得到资源后反哺本属性人物；由于资源有限，个人建议一个属性队一个属性队的培养，切不可零碎培养，导致培养周期延长</li>
+<li>第三阶段：五属性全职业培养</li>
+</ul>
 ]]></content>
       <categories>
-        <category>日记散文</category>
+        <category>游戏</category>
       </categories>
       <tags>
-        <tag>总结</tag>
-        <tag>日记</tag>
-        <tag>感慨</tag>
+        <tag>天地劫</tag>
+        <tag>SRPG</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
-    <title>软件设计师中级-个人笔记</title>
-    <url>/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/sofare-designer-self.html</url>
-    <content><![CDATA[<h3 id="考前须知"><a href="#考前须知" class="headerlink" title="考前须知"></a>考前须知</h3><ol>
-<li>时间安排<table>
- <tr>
-     <td>科目</td> 
-     <td>时间段</td> 
-     <td>流程</td> 
-     <td>时间</td> 
-</tr>
- <tr>
-     <td rowspan="4">软件设计师</td>    
-     <td rowspan="4">上半年</td>  
-     <td >报名</td>  
-     <td >2023年3月14日9：00至2023年4月10日18：00</td>  
- </tr>
- <tr>  
-     <td >缴费</td>  
-     <td >2023年3月14日9：00至2023年4月12日24：00</td>  
- </tr>
- <tr>   
-     <td >准考证打印</td>  
-     <td >2023年5月22日9：00至2023年5月26日17：00</td>  
- </tr>
- <tr>  
-     <td >考试</td>  
-     <td >2023-05-27 09:00:00（150分钟）至2023-05-27 14:00:00（150分钟）</td>  
- </tr>
-</table></li>
-<li>相关网站<ul>
-<li>报名地址：<a href="https://bm.ruankao.org.cn/">https://bm.ruankao.org.cn/</a></li>
-<li>网上办事服务大厅：<a href="https://rs.jshrss.jiangsu.gov.cn/web/center/main">https://rs.jshrss.jiangsu.gov.cn/web/center/main</a></li>
-</ul>
-</li>
-</ol>
-<h3 id="计划安排"><a href="#计划安排" class="headerlink" title="计划安排"></a>计划安排</h3><ul>
-<li>目标程度：计算了解，概念熟悉，理论理解，顺利上岸。</li>
-<li>阶段一：<ul>
-<li>目标：基础知识学习，了解所有考试内容，构建粗略知识框架</li>
-<li>具体方法：看视频讲解、参考他人汇总笔记、同步刷上午考题</li>
-<li>注意：理论内容切不可一知半解</li>
-</ul>
-</li>
-<li>阶段二：<ul>
-<li>目标：专项练习下午试题（应用技术），保证下午内容一分不丢</li>
-<li>具体方法：详细学习相关知识，练习试题，揣摩考试逻辑，扩展内容延申学习</li>
-</ul>
-</li>
-<li>阶段三：<ul>
-<li>目标：寻找考试状态，整体理解考试内容</li>
-<li>具体方法：刷真题、刷真题、刷真题</li>
-</ul>
-</li>
-</ul>
-<h3 id="个人记录"><a href="#个人记录" class="headerlink" title="个人记录"></a>个人记录</h3><ul>
-<li>软件设计师主要内容：<a href="https://app.gitbook.com/o/DXydf1xam3QnhX5TACL1/s/CoM1utHSQT3IQlbuzD7w/mu-lu">https://app.gitbook.com/o/DXydf1xam3QnhX5TACL1/s/CoM1utHSQT3IQlbuzD7w/mu-lu</a></li>
-</ul>
+    <title>望风吹</title>
+    <url>/%E8%AF%97%E8%AF%8D%E6%95%A3%E6%96%87/verse-and-prose/look-at-the-wind-blowing.html</url>
+    <content><![CDATA[<p>虔心祈，<br>春风，代替秋雨，<br>花开，抹去冷寂，<br>一点的凝望，<br>换一点驻足的歌唱。</p>
+<p>愿风来，<br>小草摆头等待，<br>细雪调皮欢快，<br>我逃离了泪眼之地，<br>没有无助，<br>也没有刻意。</p>
+<p>忘思愁，<br>清晨的挽留，<br>勾勒出，<br>夕阳下你温柔的眼眸。</p>
 ]]></content>
       <categories>
-        <category>软件设计师</category>
-      </categories>
-      <tags>
-        <tag>学习笔记</tag>
-        <tag>软件设计师</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>因为那夜风</title>
-    <url>/%E8%AF%97%E8%AF%8D/study-pouwer.html</url>
-    <content><![CDATA[<p>总是因为风中的一丝味道而伤感。</p>
-<span id="more"></span>
-
-<h3 id="因为那夜风"><a href="#因为那夜风" class="headerlink" title="因为那夜风"></a>因为那夜风</h3><p>因为一场风，<br>落日迎来了星空点点，<br>余晖拉长了记忆的影子，<br>月光洒下，<br>荡起层层细语。</p>
-<p>吹来的这阵风，<br>偷走了曾经的一个梦，<br>曾想把它藏在过去，<br>如今却随风而去。</p>
-<p>那夜里吹走了的风，<br>朦朦胧胧，<br>抓不到，<br>也留不住，<br>但有种种思绪，<br>因为这风，<br>成为了心中默默嘈杂的秘密。</p>
-]]></content>
-      <categories>
-        <category>诗词</category>
+        <category>诗词散文</category>
       </categories>
       <tags>
         <tag>秘密</tag>
@@ -1595,8 +1251,95 @@
       </tags>
   </entry>
   <entry>
+    <title>本人年华</title>
+    <url>/%E8%AF%97%E8%AF%8D%E6%95%A3%E6%96%87/verse-and-prose/self-year.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h3 id="真诚的人生信仰"><a href="#真诚的人生信仰" class="headerlink" title="真诚的人生信仰"></a>真诚的人生信仰</h3><p>大概从初中开始，我就开始思索自己的人生信仰，当时也没有什么目的，只是单纯的觉得有自己的信条，会很帅。刚开始想的是真诚、善良、机敏、勇笃，我记得还有对应的意象，真诚如风，善良如冰，机敏如声，勇笃如铮，现在想来，当时可能只是想押个韵，但细细一品，其实是有一些味道的。再后来，思考着思考着，就只留下真诚了；善良会使人温暖，但负不了敌人，机敏让人清晰，但不可把控，不能锻炼；勇笃更是束之高阁的东西，一腔热血，终会停歇。但真诚确是一种由内而外散发出来的感觉，是的，真诚其实是一种感觉，一种可以无怨无悔的感觉；当然，它也可以抽象成准则，真且诚恳，解决问题要真，这样问题才会真正的被解决，待人处要诚恳，用真心才会发现真心。其实感觉自己对真诚的理解还不够高，但这样也更让自己坚信这个信仰，我相信这个信仰，会把我带到我喜欢的道路上去，无论早晚。</p>
+<h3 id="习惯的漫漫长路"><a href="#习惯的漫漫长路" class="headerlink" title="习惯的漫漫长路"></a>习惯的漫漫长路</h3><p>以前经常有满腔热血的时候，想着怎么努力，怎么拼搏，但努力几天后，就没那么愤慨，想着一飞冲天的感觉了，多次后总结的区别，可能就是多努力几天，少努力几天吧。后来觉得，只有养成习惯，才是自己的。规划一段时间的事情，然后把规划的事情实现，再规划，再完成，一定周期后进行总结思考，就会发现自己其实是有些成长的，但过程中，要切切实实的做好每一件事情，多总结，多思考，多记录。其实在实行过程中，还会有很多其他的问题，比如长时间在忙一部分计划放弃式中断了，一些事情在坚持后发现不是太适宜，这些事情都是很严重的阻碍，多次反馈后，我发现多半是计划设计的不好，自己太贪心，太急于求成了，两个月看本书，三个月学个乐器，一个月准备个考试，一生很短也很长，既然决定终身学习，那么就不要急。</p>
+<p>未完待续。。。</p>
+]]></content>
+      <categories>
+        <category>诗词散文</category>
+      </categories>
+      <tags>
+        <tag>总结</tag>
+        <tag>日记</tag>
+        <tag>感慨</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>因为那夜风</title>
+    <url>/%E8%AF%97%E8%AF%8D%E6%95%A3%E6%96%87/verse-and-prose/study-pouwer.html</url>
+    <content><![CDATA[<p>总是因为风中的一丝味道而伤感。</p>
+<span id="more"></span>
+
+<h3 id="因为那夜风"><a href="#因为那夜风" class="headerlink" title="因为那夜风"></a>因为那夜风</h3><p>因为一场风，<br>落日迎来了星空点点，<br>余晖拉长了记忆的影子，<br>月光洒下，<br>荡起层层细语。</p>
+<p>吹来的这阵风，<br>偷走了曾经的一个梦，<br>曾想把它藏在过去，<br>如今却随风而去。</p>
+<p>那夜里吹走了的风，<br>朦朦胧胧，<br>抓不到，<br>也留不住，<br>但有种种思绪，<br>因为这风，<br>成为了心中默默嘈杂的秘密。</p>
+]]></content>
+      <categories>
+        <category>诗词散文</category>
+      </categories>
+      <tags>
+        <tag>秘密</tag>
+        <tag>夜风</tag>
+        <tag>伤感</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>语珠的故事</title>
+    <url>/%E8%AF%97%E8%AF%8D%E6%95%A3%E6%96%87/verse-and-prose/the-story-of-the-pearl-of-words.html</url>
+    <content><![CDATA[<pre><code>生活是值得期待的，因为它会时不时的给你一场相遇，每场相遇会让我惊喜万分，虽然望着望着都再也看不见了，但这一次，我决定要勇敢的上前打招呼。
+</code></pre>
+<hr>
+<p>   第一次见她的时候，我就感受到她肯定是一个认真而又专注的女孩子。她有一股让别人也认真的能量，让逐渐熟悉职场开始有些懈怠的我感觉到了硕大的忏愧，也让我对她的初步印象十分深刻。但由于种种原因，后来就很少再见到她了，打听后才知道，她到其他楼层工作了。有时工作乏累的时候，会不经意的看向她曾经的座位，想起她，就仿佛又有了些力量。</p>
+<p>   现场一期任务结束后，我就被调回了公司，一天又一天的工作生活，让自己又有些麻木了起来，直到有一天同事谈及到了她，同时还得到了一个很重要的消息，当时就感觉仿佛自己从梦中醒来了一般，想一想她，又看了看现在的自己，做出了一个坚定的决则，三个月，我要坚持跑步，让自己更健康，我要走出屋子，让自己内心更阔达，我要按时睡觉，让自己更加精神，我要为这个决定做好充足的准备。时间一天天过去，自己也仿佛回到了一年前刚入职的时候那般认真了，一切都向着我希望到达的方向前进着。但自己一如既往的倒霉，从她朋友那里得知，她有了可以照顾好她的人。我无法清晰的回想起当时的心情，只知道自己给她发了祝福，发了个私密的朋友圈，然后就又回到了自己的世界里。</p>
+<blockquote>
+<p>万里无云的天空，倒映在河水中，微风拂过，平静了，伴着花，牵着柳，格外清朗。俄而乌云忽至，群草倾覆，暴雨连连，一顿一顿地涌向心间。<br>外边的世界，也渐渐迎来了月光，路过欢声笑语，路过吵闹喧哗，路过他人走过自己也想走的路，路过低语喃喃的丁香花。<br>坐上回去的车，看了眼匆匆而去，瞥了眼迟迟未到，恍然间的站起伫立，恍然间的呆滞迷离，想言想语也疯言疯语，索性默默的退了回去，退了回去。<br>可能接下来会自然而然的下车，到一个该去的地方，做平常都在做的事，但总会是一片安静，安静之后是什么？时光流逝，该来的来，想走的走，<br>锤一锤胸，晃一晃头，喊出些声音，惊扰下自己。</p>
+<p>烦事三千，有久备断始，有忘念楚现，有迷而不知，有奋而误因，有愤天吼不敌万里无人。。。何止三千，吾祝，吾愿。</p>
+</blockquote>
+<p>   一转眼，差不多一年过去了，跑步和早睡已经成了习惯，一切都不好不坏，就像昨天一样，明天大概也是如此吧，挺好。</p>
+<p>   有时候，上天总是喜欢开玩笑，让有些事情，那么的不可能，但又确确实实的发生了，还是那个同事，还是那个我回忆中依旧清晰的她。这次我不要再等三个月了，虽然不知道当时为什么会决定准备那么长时间，但我不止一次想穿越回去，重重地敲一敲当时自己的脑子。</p>
+<p>   忽然而来地惊喜让我感受到从未有过的开心，多长时间聊天没有这么投入了，多长时间没有会因为开心激动而一两点还睡不着觉，明知道明天见她时要神采奕奕，但内心总是又兴奋又紧张。</p>
+<p>   能见到她的那两天，是我最开心的两天，虽然第一次主动邀请和女孩子一块看音乐剧，一块逛公园，但我发现她给我了一种非常强烈的亲切感，我没有想象中紧张无言，也没有想像中的手足无措，让我觉得，她仿佛本来就是我很要好的人一般。我曾经也有倾注过感情地人，但那时自己只能做她们月光下亲密的倒影，她给我的回应，让我有了从未有过的动力，让自己觉得自己竟是如此的幸运，想让自己变得更优秀，可以帮助她更多更多，可以带给她更多地快乐。</p>
+<p>   我决定送给她一件礼物，因为她的手链只有三十块钱，因为她那晚笑的样子像我想要买的礼物一样光彩夺人，我晚上早早地下班了，从商场这头逛到那头，从这个商场逛到那个商场，最后选完包装后，就想找个时间送给她，我觉得，她肯定喜欢。</p>
+<p>   近乎为零地经验，让我做了个错误地决定，虽然最终没有执行，但过程中还是给她带来了一些烦恼。朋友结婚让我帮忙准备一下晚上地活动，是一个大家快快乐乐地活动。我突然想起她给我说旅游时有情侣在朋友帮助下求婚成功地事情，想着如果那时把礼物送给她，她肯定也会很惊喜吧。现在想想，自己地想法是多么自私和愚蠢。</p>
+<p>   在朋友婚礼上，我感受到了很多，父母地托付和彼此地相爱，让自己即感动又羡慕，觉得爱是世间最大地幸福和责任。</p>
+<p>   近些天她在准备考试，我和她之间聊的少了，我也慢慢从那种兴奋癫狂中冷静了下来，我想和她一块变得优秀，只要她愿意，我愿意一直陪她前进。虽然不知道将来会怎样，但二十七年来，我从未如此珍惜，也未如此幸运。</p>
+]]></content>
+      <categories>
+        <category>诗词散文</category>
+      </categories>
+      <tags>
+        <tag>日记散文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>怯乐悲色</title>
+    <url>/%E8%AF%97%E8%AF%8D%E6%95%A3%E6%96%87/verse-and-prose/timidity-and-sadness.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h3 id="怯弱"><a href="#怯弱" class="headerlink" title="怯弱"></a>怯弱</h3><p>何为怯？是不敢，是畏惧，是踌躇，是后悔的开始；怯弱让人悲观，让人失去大好机会，使本不该失去的东西，再也得不到。就仿佛把自己框到笼子里，可能笼子并不坚固，甚至触之即碎，但仍然无法走出，到最后，因为怯弱，它愈加坚固，甚至会让人觉得更加舒服，准确的说，不是舒服，而且习惯了，坦然了。<br>怯弱确实会上瘾，以前害怕陌生人，然后就避开陌生人，最后熟悉的人也陌生了，所以也就慢慢喜欢一个人了。其实不能说是喜欢，只是相较与陌生人相处，一个人，反而没那么忐忑与不适。<br>那怎样才能不怯弱呢？硬着头皮乱吼吗？如果真这样做的话，可能就再也没办法回头了，因为负面的情绪会给你更大的重击，让人永坠谷底。我觉得吧，怯弱本质上还是因为自卑，卑自己容貌不佳，卑自己举止不雅，卑自己思维迟钝，卑自己身份低微，人前半生的环境是很难自己选择的，环境不一样，起点不一样，遇见的人也不一样，做过的事也不一样，和他人比，终究会有强弱与好坏，一些人出身就能拿到几个亿，我可能这辈子都攒不够这个数。所以，拿两个人进行比较本身就是不公平的，人应该和自己比，和昨天的自己比，和以前的自己比，有人可能会说，这样脱离环境的自娱自乐很可悲，但人不就是为自己而活，为需要自己的人而活的吗？别人可以是目标，可以是参照，也可以是教训，和别人比，终究会乱了神，迷了心，眼观六路，耳听八方，走自己的路，不自卑，不怯弱，心里有光，目光灼灼。</p>
+<hr>
+<h3 id="迷乐"><a href="#迷乐" class="headerlink" title="迷乐"></a>迷乐</h3><p>迷，头脑不清；乐，情绪高涨，不冷静，不敏锐。处于迷乐状态有多种原因，第一种，得志的时候，由自满而产生的情绪高涨，周围环境所产生的有利氛围，让人迷乐，这可能会导致给你机会的人觉得你不够稳重，太张扬而有所疑虑，也可能会使你的同事对你产生厌恶情绪，这时多想一想如果自己同事得志了，自己希望他处于怎样的状态，自己就试着处于那种状态。第二种，沉迷娱乐时，也会造成迷乐，不管是喝酒玩乐，游戏玩乐，都可能会产生迷乐情绪，这时候迷乐可能会让你口无遮拦，让你说出一些会后悔的言语，所以把我好自己的度，适可而止才能不沉迷。迷乐其实很难自我发现，但多做少说，多自勉少自满，多观察周围，多思考自己的环境，终会清心寡欲，从容不迫的。</p>
+<h3 id="悲愁"><a href="#悲愁" class="headerlink" title="悲愁"></a>悲愁</h3><p>夜风萧瑟，路灯闪烁，漫漫长路，形影相吊，无人追赶，无处寻觅，天空洒下的月光，仿佛把时间冰冻了一般；拖着沉重的步伐，没有目的地前进，前方的路和曾经走过的路那么相似，变了的只有自己，这条路很宽，宽的左拐右拐还能回到原地，它也很窄，绑着你脚，不管逃到哪里，你总在它的上面；有些乏力了，但隔壁地路上人来人往，一拳一拳地在后面捶打着自己，也曾抬头挥翅，兴奋地想要飞到高处，但总也飞不出去，不是向往地地方太高，是自己少了些羽翼；走着走着，遇到了一条河，在河中看到了喜欢的人渐渐远离，看到了想要的果实被别人摘取，看到了周围人的质疑，亲人的冷语；有时多想成为一个不会思考，没有感受的傻瓜，不去爱，也不去争，不知不觉的沉睡，自给自足的老去，但自己就是自己，想去争，想被爱，想被需要，既然生命的尽头不可知，那就探索寻觅到走到尽头的那一刻，戛然而止也好，功成名就也罢。</p>
+<h3 id="繁色"><a href="#繁色" class="headerlink" title="繁色"></a>繁色</h3><p>怒目圆睁是色，喜极而泣是色，情欲狰狞也是色。古人云：”困于心，衡于虑，而后作；征与色，发于声，而后喻。“《生于忧患，死于安乐-孟子》，然他人之感独己难变，人没办法改变他人的想法，解释会变成掩饰，措辞会变成说辞，情感流露需要有场景区别，是需要有感情程度的，对于陌生人，你的哭泣可能会引来嘲讽，对于亲近之人，一滴眼泪可能就会引起他心中的风云变化，亲近之人征于色，陌生之人掩于色，毕竟没有人会对一潭清水指指点点。那么这种行为算是虚伪吗？我认为是不算的，因为对于内人你已经是真诚相待的，至于外人，你捎带扰乱的坦诚反而会更让人生厌。</p>
+<hr>
+<p>怯乐悲色，也许像喜怒哀乐一般让生活变得真实，也会给生活带来诸多不变，古人长谈修心养性，有的人四面圆滑，有的人正气凌然，大家都在做，但结果总是呈现出多样性，经历生活多次衍生出来的理解，不同方面会有不同方面的好坏，以前常警戒自己”怯乐悲色，哀若如死人一般“，现在想来，仿佛没有个结果，看不到终点，终享不得圆满。</p>
+]]></content>
+      <categories>
+        <category>诗词散文</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+        <tag>思考</tag>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>想起你的声音-分析角色（3-3）</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-analyzing-roles-3-3.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-analyzing-roles-3-3.html</url>
     <content><![CDATA[<h3 id="一：弄清楚角色行动发展线索"><a href="#一：弄清楚角色行动发展线索" class="headerlink" title="一：弄清楚角色行动发展线索"></a>一：弄清楚角色行动发展线索</h3><blockquote>
 <p>先找出在剧本中一个单位，有的有可能是情节发展上的一个重要<br>环节，有的则是一个事件发展的整个过程。<br>而且在每个单位中都存在着角色相互之间的行动，因此在找出一<br>个又一个相互连接的单位之后，再从每一个单位中找到角色的主<br>要行动。</p>
 </blockquote>
@@ -1630,33 +1373,8 @@
       </tags>
   </entry>
   <entry>
-    <title>语珠的故事</title>
-    <url>/uncategorized/the-story-of-the-pearl-of-words.html</url>
-    <content><![CDATA[<pre><code>生活是值得期待的，因为它会时不时的给你一场相遇，每场相遇会让我惊喜万分，虽然望着望着都再也看不见了，但这一次，我决定要勇敢的上前打招呼。
-</code></pre>
-<hr>
-<p>   第一次见她的时候，我就感受到她肯定是一个认真而又专注的女孩子。她有一股让别人也认真的能量，让逐渐熟悉职场开始有些懈怠的我感觉到了硕大的忏愧，也让我对她的初步印象十分深刻。但由于种种原因，后来就很少再见到她了，打听后才知道，她到其他楼层工作了。有时工作乏累的时候，会不经意的看向她曾经的座位，想起她，就仿佛又有了些力量。</p>
-<p>   现场一期任务结束后，我就被调回了公司，一天又一天的工作生活，让自己又有些麻木了起来，直到有一天同事谈及到了她，同时还得到了一个很重要的消息，当时就感觉仿佛自己从梦中醒来了一般，想一想她，又看了看现在的自己，做出了一个坚定的决则，三个月，我要坚持跑步，让自己更健康，我要走出屋子，让自己内心更阔达，我要按时睡觉，让自己更加精神，我要为这个决定做好充足的准备。时间一天天过去，自己也仿佛回到了一年前刚入职的时候那般认真了，一切都向着我希望到达的方向前进着。但自己一如既往的倒霉，从她朋友那里得知，她有了可以照顾好她的人。我无法清晰的回想起当时的心情，只知道自己给她发了祝福，发了个私密的朋友圈，然后就又回到了自己的世界里。</p>
-<blockquote>
-<p>万里无云的天空，倒映在河水中，微风拂过，平静了，伴着花，牵着柳，格外清朗。俄而乌云忽至，群草倾覆，暴雨连连，一顿一顿地涌向心间。<br>外边的世界，也渐渐迎来了月光，路过欢声笑语，路过吵闹喧哗，路过他人走过自己也想走的路，路过低语喃喃的丁香花。<br>坐上回去的车，看了眼匆匆而去，瞥了眼迟迟未到，恍然间的站起伫立，恍然间的呆滞迷离，想言想语也疯言疯语，索性默默的退了回去，退了回去。<br>可能接下来会自然而然的下车，到一个该去的地方，做平常都在做的事，但总会是一片安静，安静之后是什么？时光流逝，该来的来，想走的走，<br>锤一锤胸，晃一晃头，喊出些声音，惊扰下自己。</p>
-<p>烦事三千，有久备断始，有忘念楚现，有迷而不知，有奋而误因，有愤天吼不敌万里无人。。。何止三千，吾祝，吾愿。</p>
-</blockquote>
-<p>   一转眼，差不多一年过去了，跑步和早睡已经成了习惯，一切都不好不坏，就像昨天一样，明天大概也是如此吧，挺好。</p>
-<p>   有时候，上天总是喜欢开玩笑，让有些事情，那么的不可能，但又确确实实的发生了，还是那个同事，还是那个我回忆中依旧清晰的她。这次我不要再等三个月了，虽然不知道当时为什么会决定准备那么长时间，但我不止一次想穿越回去，重重地敲一敲当时自己的脑子。</p>
-<p>   忽然而来地惊喜让我感受到从未有过的开心，多长时间聊天没有这么投入了，多长时间没有会因为开心激动而一两点还睡不着觉，明知道明天见她时要神采奕奕，但内心总是又兴奋又紧张。</p>
-<p>   能见到她的那两天，是我最开心的两天，虽然第一次主动邀请和女孩子一块看音乐剧，一块逛公园，但我发现她给我了一种非常强烈的亲切感，我没有想象中紧张无言，也没有想像中的手足无措，让我觉得，她仿佛本来就是我很要好的人一般。我曾经也有倾注过感情地人，但那时自己只能做她们月光下亲密的倒影，她给我的回应，让我有了从未有过的动力，让自己觉得自己竟是如此的幸运，想让自己变得更优秀，可以帮助她更多更多，可以带给她更多地快乐。</p>
-<p>   我决定送给她一件礼物，因为她的手链只有三十块钱，因为她那晚笑的样子像我想要买的礼物一样光彩夺人，我晚上早早地下班了，从商场这头逛到那头，从这个商场逛到那个商场，最后选完包装后，就想找个时间送给她，我觉得，她肯定喜欢。</p>
-<p>   近乎为零地经验，让我做了个错误地决定，虽然最终没有执行，但过程中还是给她带来了一些烦恼。朋友结婚让我帮忙准备一下晚上地活动，是一个大家快快乐乐地活动。我突然想起她给我说旅游时有情侣在朋友帮助下求婚成功地事情，想着如果那时把礼物送给她，她肯定也会很惊喜吧。现在想想，自己地想法是多么自私和愚蠢。</p>
-<p>   在朋友婚礼上，我感受到了很多，父母地托付和彼此地相爱，让自己即感动又羡慕，觉得爱是世间最大地幸福和责任。</p>
-<p>   近些天她在准备考试，我和她之间聊的少了，我也慢慢从那种兴奋癫狂中冷静了下来，我想和她一块变得优秀，只要她愿意，我愿意一直陪她前进。虽然不知道将来会怎样，但二十七年来，我从未如此珍惜，也未如此幸运。</p>
-]]></content>
-      <tags>
-        <tag>日记散文</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>想起你的声音-有声书旁白</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-audiobook-prepare-draft.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-audiobook-prepare-draft.html</url>
     <content><![CDATA[<h3 id="分析人称"><a href="#分析人称" class="headerlink" title="分析人称"></a>分析人称</h3><ul>
 <li>学习目标：<ol>
 <li>了解什么是人称</li>
@@ -1752,7 +1470,7 @@
   </entry>
   <entry>
     <title>想起你的声音-角色音</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-character-voice.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-character-voice.html</url>
     <content><![CDATA[<h3 id="有声书的角色音"><a href="#有声书的角色音" class="headerlink" title="有声书的角色音"></a>有声书的角色音</h3><ul>
 <li>角色音：就是有声小说中，除旁白以外所有需要演播的内容。</li>
 <li>角色配音的构成：口齿清晰+戏感+声线</li>
@@ -1813,7 +1531,7 @@
   </entry>
   <entry>
     <title>想起你的声音-语气的色彩和语言的节奏（2-3）</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-color-of-tone-and-rhythm-of-speech-2-3.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-color-of-tone-and-rhythm-of-speech-2-3.html</url>
     <content><![CDATA[<h3 id="语气的色彩"><a href="#语气的色彩" class="headerlink" title="语气的色彩"></a>语气的色彩</h3><ul>
 <li>喜庆欢乐的色彩（红色）<blockquote>
 <p>昨日清晨，在嘹亮的国歌声中，拉萨&#x2F;隆重举行升国旗仪式。<br>一面鲜艳的五行红旗&#x2F;在布达拉宫广场上&#x2F;冉冉升起，<br>成为新年里&#x2F;雪域高原上&#x2F;最为激动人心的景观</p>
@@ -1868,7 +1586,7 @@
   </entry>
   <entry>
     <title>表演的创作素质(3-1)</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-creative-qualities-of-performance-3-1.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-creative-qualities-of-performance-3-1.html</url>
     <content><![CDATA[<h3 id="七力四感"><a href="#七力四感" class="headerlink" title="七力四感"></a>七力四感</h3><ul>
 <li>说明：心理上，生理上能够适应表演艺术提出的创作任务，和表演艺术所具备的特点。</li>
 <li>内容：<ul>
@@ -1936,7 +1654,7 @@
   </entry>
   <entry>
     <title>想起你的声音-配音行情（3-8）</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-dubbing-quote-3-8.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-dubbing-quote-3-8.html</url>
     <content><![CDATA[<h3 id="影视配音"><a href="#影视配音" class="headerlink" title="影视配音"></a>影视配音</h3><h4 id="译制片"><a href="#译制片" class="headerlink" title="译制片"></a>译制片</h4><ul>
 <li>早期译制片特点：东北味、嗓门亮、台词倒背如流</li>
 <li>后期译制片特点：夸张、优雅、美声发音</li>
@@ -1959,7 +1677,7 @@
   </entry>
   <entry>
     <title>想起你的声音-情绪三关与表演训练（3-6）</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-emotion-and-acting-training-3-6.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-emotion-and-acting-training-3-6.html</url>
     <content><![CDATA[<h2 id="情绪三关"><a href="#情绪三关" class="headerlink" title="情绪三关"></a>情绪三关</h2><h3 id="情绪和情感的区别"><a href="#情绪和情感的区别" class="headerlink" title="情绪和情感的区别"></a>情绪和情感的区别</h3><ul>
 <li>情感：人们对事物的一种态度，比较稳定（爱国，爱子女，憎恨敌人，厌恶变态等）</li>
 <li>情绪：人们由于接受外部客观世界的影响和刺激而产生的具体态度（愤怒，恐惧，高兴，悲伤等）</li>
@@ -2033,7 +1751,7 @@
   </entry>
   <entry>
     <title>想起你的声音-附录一</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-extra1.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-extra1.html</url>
     <content><![CDATA[<h4 id="为什么会挤桑"><a href="#为什么会挤桑" class="headerlink" title="为什么会挤桑"></a>为什么会挤桑</h4><ol>
 <li>高音喉咙用力太多</li>
 <li>气不顺畅、声音抖</li>
@@ -2101,7 +1819,7 @@
   </entry>
   <entry>
     <title>想起你的声音-附录二</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-extra2.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-extra2.html</url>
     <content><![CDATA[<h4 id="声音练习"><a href="#声音练习" class="headerlink" title="声音练习"></a>声音练习</h4><ol>
 <li>口部操（唇舌力度）</li>
 <li>气息（对气息的控制能力）</li>
@@ -2148,7 +1866,7 @@
   </entry>
   <entry>
     <title>想起你的声音-童话、寓言演播</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-fairy-and-fable.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-fairy-and-fable.html</url>
     <content><![CDATA[<h3 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h3><ul>
 <li>寓言：一种文学体裁，手法多用劝诫或讽刺。以小见大，将深刻道理溶于简单的故事当中。</li>
 <li>童话：一种儿童类文学体裁，通过丰富的想象、幻想和夸张的手法来描绘生活现状。通常故事中情节曲折多变，道理浅显易懂，较多的拟人化手法使儿童易于接受</li>
@@ -2192,7 +1910,7 @@
   </entry>
   <entry>
     <title>想起你的声音-初闻</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-first-listen.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-first-listen.html</url>
     <content><![CDATA[<span id="more"></span>
 
 <h3 id="声音基础知识"><a href="#声音基础知识" class="headerlink" title="声音基础知识"></a>声音基础知识</h3><h4 id="发声器官"><a href="#发声器官" class="headerlink" title="发声器官"></a>发声器官</h4><ul>
@@ -2249,7 +1967,7 @@
   </entry>
   <entry>
     <title>想起你的声音-初见</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-first-see.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-first-see.html</url>
     <content><![CDATA[<h3 id="解放天性"><a href="#解放天性" class="headerlink" title="解放天性"></a>解放天性</h3><h4 id="情景感和生活感"><a href="#情景感和生活感" class="headerlink" title="情景感和生活感"></a>情景感和生活感</h4><ul>
 <li>情景感：所处环境、所处时间、音乐音效和天气时间<br><img src="/../img/post-img/think-of-voice-2.jpg" alt="情景感" title="情景感"></li>
 <li>生活感：所处时代、人物关系、人物状态和文化特征<br><img src="/../img/post-img/think-of-voice-3.png" alt="生活感" title="生活感"></li>
@@ -2271,7 +1989,7 @@
   </entry>
   <entry>
     <title>想起你的声音-语流音变与变调</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-language-flow-and-sound-change.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-language-flow-and-sound-change.html</url>
     <content><![CDATA[<h3 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h3><ul>
 <li>语流音变：语流音变是语言流动的结果。人们平时在说话、朗诵、播音等言语活动时，语音并不是一个个孤立地发出，而是连续地发出的。在这连续的语流中，一连串音紧密连接，发音部位和发音方法不断改变，有时难免相互影响，产生明显的变化。这种变化，语音学上叫“语流音变。</li>
 <li>语流音变四种形式：<ul>
@@ -2446,7 +2164,7 @@
   </entry>
   <entry>
     <title>想起你的声音-台词(3-4)</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-line-3-4.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-line-3-4.html</url>
     <content><![CDATA[<h3 id="对角色台词的分析与理解"><a href="#对角色台词的分析与理解" class="headerlink" title="对角色台词的分析与理解"></a>对角色台词的分析与理解</h3><ol>
 <li><p>独白：内心独白是角色的思维活动过程</p>
 <ul>
@@ -2544,7 +2262,7 @@
   </entry>
   <entry>
     <title>想起你的声音-普通话测试</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-mandarin-test.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-mandarin-test.html</url>
     <content><![CDATA[<h3 id="单音节字"><a href="#单音节字" class="headerlink" title="单音节字"></a>单音节字</h3><pre><code>&gt; 昼（zhou-去）  鸣（ming-阳） 风（feng-阴） 刘（liu-阳） 年（nian-阳） 
 &gt; 嫩（nen-去） 晒（shai-去） 晌（shang-上） 剜（wan-阴） 癣（xuan-上）
 &gt;
@@ -2573,7 +2291,7 @@
   </entry>
   <entry>
     <title>想起你的声音-普通话</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-mandarin.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-mandarin.html</url>
     <content><![CDATA[<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><ul>
 <li>普通话：普通话（Standard Mandarin&#x2F;Putonghua），是现代标准汉语的另一个称呼，是以北京语音为标准音，以北方官话为基础方言，以典范的现代白话文著作为语法规范的通用语。</li>
 <li>声母<table>
@@ -2769,7 +2487,7 @@
   </entry>
   <entry>
     <title>想起你的声音-备稿（2-1）</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-prepare-manuscript-2-1.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-prepare-manuscript-2-1.html</url>
     <content><![CDATA[<h3 id="备稿六步"><a href="#备稿六步" class="headerlink" title="备稿六步"></a>备稿六步</h3><ol>
 <li>划分层次<ol>
 <li>划分小层次是从“便于听”入手，把自然段化整为零，区分<br> 出语言推进的小层次。</li>
@@ -2858,24 +2576,8 @@
       </tags>
   </entry>
   <entry>
-    <title>想起你的声音-情景再现和对象感</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-situational-reenactment-and-object-sense.html</url>
-    <content><![CDATA[<h3 id="情景再现"><a href="#情景再现" class="headerlink" title="情景再现"></a>情景再现</h3><ul>
-<li>概念：在播音主持创作过程中，文本中的人物、事件、情节、场面、景物、情绪等，在创作主体的脑海里应该像放电影那样，形成连续的活动的画面；这画面不可能不带有创作主体的感受、态度、感情，不可能不带有文本本身所蕴含着的作者的感受、态度、感情以及创作主体因而产生的评价体验的“映象”。也就是说，创作主体理解和感受文本的过程中，不但感受到了其中的形象————“景”，而且也感受到了其中的神采————“情”。从而达到情景交融的境界。这个过程（注意，这里说的是过程，不是结果；是运动的，不是静止的；是融合的，不是孤立的），我们就叫它“情景再现”</li>
-</ul>
-<p>未完待续。。。</p>
-]]></content>
-      <categories>
-        <category>知声配音</category>
-      </categories>
-      <tags>
-        <tag>苔花小米</tag>
-        <tag>声音优化</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>剧本分析(3-2)</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-screenplay-analysis-3-2.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-screenplay-analysis-3-2.html</url>
     <content><![CDATA[<h3 id="了解时代背景"><a href="#了解时代背景" class="headerlink" title="了解时代背景"></a>了解时代背景</h3><ul>
 <li>说明<blockquote>
 <p>时代背景是人物生存的总的环境，他包括人物所生活的<br>时代中，历史，政治，经济，社会，哲学，道德，心理，<br>风俗等方面因素在内。</p>
@@ -2955,8 +2657,24 @@
       </tags>
   </entry>
   <entry>
+    <title>想起你的声音-情景再现和对象感</title>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-situational-reenactment-and-object-sense.html</url>
+    <content><![CDATA[<h3 id="情景再现"><a href="#情景再现" class="headerlink" title="情景再现"></a>情景再现</h3><ul>
+<li>概念：在播音主持创作过程中，文本中的人物、事件、情节、场面、景物、情绪等，在创作主体的脑海里应该像放电影那样，形成连续的活动的画面；这画面不可能不带有创作主体的感受、态度、感情，不可能不带有文本本身所蕴含着的作者的感受、态度、感情以及创作主体因而产生的评价体验的“映象”。也就是说，创作主体理解和感受文本的过程中，不但感受到了其中的形象————“景”，而且也感受到了其中的神采————“情”。从而达到情景交融的境界。这个过程（注意，这里说的是过程，不是结果；是运动的，不是静止的；是融合的，不是孤立的），我们就叫它“情景再现”</li>
+</ul>
+<p>未完待续。。。</p>
+]]></content>
+      <categories>
+        <category>知声配音</category>
+      </categories>
+      <tags>
+        <tag>苔花小米</tag>
+        <tag>声音优化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>想起你的声音-调值</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-transfer-value.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-transfer-value.html</url>
     <content><![CDATA[<h3 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h3><ul>
 <li>调值：指依附在音节里高低长短的变化的固定格式，也就是声调的实际音值或读法。调值主要由音高构成，音的高低在物理上决定于机械波的频率和波长。</li>
 <li>五度标记法：赵元任1920年代发明的一种记录语言声调调值的方法<blockquote>
@@ -3035,7 +2753,7 @@
   </entry>
   <entry>
     <title>想起你的声音-了解有声书</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-understanding-audiobooks.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-understanding-audiobooks.html</url>
     <content><![CDATA[<h3 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h3><ul>
 <li>有声书：有声书是一种个人或多人依据文稿并借着不同的声音表情和录音格式所录制的作品（把文字变成音频供听众欣赏）</li>
 <li>受众：<ul>
@@ -3081,7 +2799,7 @@
   </entry>
   <entry>
     <title>想起你的声音-气声的运用（3-5）</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-use-of-breath-3-5.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-use-of-breath-3-5.html</url>
     <content><![CDATA[<h3 id="接戏气息状态"><a href="#接戏气息状态" class="headerlink" title="接戏气息状态"></a>接戏气息状态</h3><ul>
 <li><p>常规：</p>
 <ul>
@@ -3122,7 +2840,7 @@
   </entry>
   <entry>
     <title>想起你的声音-声线精调(3-7)</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-voice-modulation-3-7.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-voice-modulation-3-7.html</url>
     <content><![CDATA[<h3 id="声线精调"><a href="#声线精调" class="headerlink" title="声线精调"></a>声线精调</h3><ul>
 <li>基础<ul>
 <li>气息：声音的动力</li>
@@ -3212,7 +2930,7 @@
   </entry>
   <entry>
     <title>想起你的声音-朗诵的语音技巧(2-2)</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-voice-skills-for-recitation-2-2.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-voice-skills-for-recitation-2-2.html</url>
     <content><![CDATA[<h3 id="语气"><a href="#语气" class="headerlink" title="语气"></a>语气</h3><ul>
 <li>概念：说话时流露出来的感情色彩（情绪—表情）（共情能力）</li>
 <li>稳一些和高低起伏到底有啥区别<ol>
@@ -3307,8 +3025,68 @@
       </tags>
   </entry>
   <entry>
+    <title>计算机硬件-CPU（中央处理器）</title>
+    <url>/WebGis/web-gis-study/computer-cpu.html</url>
+    <content><![CDATA[<h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>CPU（central processing unit）即中央处理器，是计算机系统的运算和控制核心，是信息处理、程序运行的最终执行单元；</p>
+<p>CPU 主要功能是解释计算机指令以及处理计算机软件中的数据。</p>
+<p>CPU 由运算器、控制器和寄存器及实现它们之间联系的数据、控制及状态的总线构成。</p>
+<h3 id="性能衡量指标"><a href="#性能衡量指标" class="headerlink" title="性能衡量指标"></a>性能衡量指标</h3><ul>
+<li>主频： CPU 运行计算时工作频率，每秒的运算速度<ul>
+<li>睿频： Intel 的加速技术，性能分配上实现按需分配，根据系统的运行自动调整频率。</li>
+<li>超频： CPU 和主板都支持超频时，可手动调整频率。</li>
+</ul>
+</li>
+<li>核心数： 计算核心数，核心数越多可以打开的程序就越多，同时进行多任务计算的能力也越高。</li>
+<li>位数： CPU 位数&#x3D;CPU 中寄存器的位数&#x3D;CPU 能够一次并行处理的数据宽度（位数）&#x3D;数据总线宽度。（pg.现在的计算机处理器一般都是 64 位)</li>
+<li>缓存指令集: CPU 缓存,用于暂存指令。</li>
+</ul>
+<h3 id="后缀详解"><a href="#后缀详解" class="headerlink" title="后缀详解"></a>后缀详解</h3><h4 id="intel-处理器含义："><a href="#intel-处理器含义：" class="headerlink" title="intel 处理器含义："></a>intel 处理器含义：</h4><ul>
+<li>X：高端牛逼处理器</li>
+<li>K：解锁超频模式的处理器，适合超频玩家</li>
+<li>F：没有内置核显，需要搭配额外的独立显卡</li>
+<li>S：节能版处理器，相比于同型号不带 S 的处理器性能差一些</li>
+<li>T：相比于同型号后面带 S 的更加节能，但是功耗更低，适合长时间开机但是对性能要求不那么高的用户</li>
+<li>U：笔记本低功耗处理器，性能偏弱，续航能力强，多用于轻薄本</li>
+<li>Q：笔记本高性能四核处理器</li>
+<li>M：移动版 CPU</li>
+<li>Y：超低功耗处理器，性能很弱，功耗很低，大多数用于平板电脑</li>
+<li>H：高电压处理器，功耗高、主频高的处理器</li>
+<li>R：有 Iris 的核显，没有独立显卡的情况下有比较强的图形处理能力</li>
+<li>G：与 AMD 合作的产物，带 AMD 家的 Vega 牛逼核显</li>
+</ul>
+<h4 id="AMD-处理器含义："><a href="#AMD-处理器含义：" class="headerlink" title="AMD 处理器含义："></a>AMD 处理器含义：</h4><ul>
+<li>X：高端牛逼处理器</li>
+<li>K：解锁超频模式的处理器，适合超频玩家</li>
+<li>U：低功耗处理器，性能偏弱，续航能力强，一般用于轻薄本</li>
+<li>G：有 Vega 的核显，没有独立显卡的情况下有比较强的图形处理能力</li>
+<li>H：高电压处理器，功耗高主频高的处理器</li>
+<li>E：低功耗处理器，性能弱</li>
+<li>T：比较古老的 AMD 处理器后缀 T 表示支持 Turbo 睿频技术，如果是比较新版的，一般跟 Intel 一样表示超低功耗</li>
+<li>B：一般是低功耗的商务本</li>
+<li>C：一般用于 Chrome OS 的笔记本电脑</li>
+<li>W: 是指工作的专业 CPU，最适合编程画图渲染的朋友。</li>
+<li>WX: 这个后缀 CPU 是 AMD 平台中最好最贵的 CPU，性能也是最好的。经常用在玩游戏和高端设计上。</li>
+</ul>
+<h3 id="购买注意事项"><a href="#购买注意事项" class="headerlink" title="购买注意事项"></a>购买注意事项</h3><ol>
+<li>注意与主板规格适配</li>
+<li>处理器后缀含义与处理器生产厂商直接相关</li>
+<li>睿频参数较大影响 CPU 运算速度，建议和主频共同参考</li>
+<li>核数多但单核主频较低的 CPU 不建议购买</li>
+</ol>
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://www.leixue.com/ask/what-do-the-letters-of-the-cpu-suffix-represent?hl=2</span><br><span class="line">https://www.jianshu.com/p/273551811a77</span><br><span class="line">https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/284033</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>WebGis</category>
+      </categories>
+      <tags>
+        <tag>计算机</tag>
+        <tag>硬件</tag>
+        <tag>知识普及</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>想起你的声音-韵母</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice-vowel.html</url>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-vowel.html</url>
     <content><![CDATA[<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><ul>
 <li>韵母：韵母&#x3D;韵头（介音）+韵腹（元音，韵母中最关键的部分）+韵尾（可元音可辅音，其中的辅音专指鼻韵母）</li>
 <li>音节：汉语的音节是由声母和韵母相拼组成的语音单位，单个韵母也可自成音节<ul>
@@ -3589,30 +3367,308 @@
       </tags>
   </entry>
   <entry>
-    <title>怯乐悲色</title>
-    <url>/%E6%97%A5%E8%AE%B0%E6%95%A3%E6%96%87/timidity-and-sadness.html</url>
-    <content><![CDATA[<span id="more"></span>
+    <title>css-动画</title>
+    <url>/WebGis/web-gis-study/css-animation.html</url>
+    <content><![CDATA[<blockquote>
+<p>浏览器最低版本支持： Chrome（43.0）、Firefox（16.0）、Opera（30.0）、Internet（10.0）</p>
+</blockquote>
+<h3 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h3><h4 id="animation属性系列"><a href="#animation属性系列" class="headerlink" title="animation属性系列"></a>animation属性系列</h4><ul>
+<li><p><code>animation: name duration timing-function delay iteration-count direction</code></p>
+</li>
+<li><p><em><strong>animation-name</strong></em>：<br><strong>描述</strong>：规定 @keyframes 动画的名称<br><strong>语法</strong>：<code>animation-name: keyframename|none;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody><tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
 
-<h3 id="怯弱"><a href="#怯弱" class="headerlink" title="怯弱"></a>怯弱</h3><p>何为怯？是不敢，是畏惧，是踌躇，是后悔的开始；怯弱让人悲观，让人失去大好机会，使本不该失去的东西，再也得不到。就仿佛把自己框到笼子里，可能笼子并不坚固，甚至触之即碎，但仍然无法走出，到最后，因为怯弱，它愈加坚固，甚至会让人觉得更加舒服，准确的说，不是舒服，而且习惯了，坦然了。<br>怯弱确实会上瘾，以前害怕陌生人，然后就避开陌生人，最后熟悉的人也陌生了，所以也就慢慢喜欢一个人了。其实不能说是喜欢，只是相较与陌生人相处，一个人，反而没那么忐忑与不适。<br>那怎样才能不怯弱呢？硬着头皮乱吼吗？如果真这样做的话，可能就再也没办法回头了，因为负面的情绪会给你更大的重击，让人永坠谷底。我觉得吧，怯弱本质上还是因为自卑，卑自己容貌不佳，卑自己举止不雅，卑自己思维迟钝，卑自己身份低微，人前半生的环境是很难自己选择的，环境不一样，起点不一样，遇见的人也不一样，做过的事也不一样，和他人比，终究会有强弱与好坏，一些人出身就能拿到几个亿，我可能这辈子都攒不够这个数。所以，拿两个人进行比较本身就是不公平的，人应该和自己比，和昨天的自己比，和以前的自己比，有人可能会说，这样脱离环境的自娱自乐很可悲，但人不就是为自己而活，为需要自己的人而活的吗？别人可以是目标，可以是参照，也可以是教训，和别人比，终究会乱了神，迷了心，眼观六路，耳听八方，走自己的路，不自卑，不怯弱，心里有光，目光灼灼。</p>
-<hr>
-<h3 id="迷乐"><a href="#迷乐" class="headerlink" title="迷乐"></a>迷乐</h3><p>迷，头脑不清；乐，情绪高涨，不冷静，不敏锐。处于迷乐状态有多种原因，第一种，得志的时候，由自满而产生的情绪高涨，周围环境所产生的有利氛围，让人迷乐，这可能会导致给你机会的人觉得你不够稳重，太张扬而有所疑虑，也可能会使你的同事对你产生厌恶情绪，这时多想一想如果自己同事得志了，自己希望他处于怎样的状态，自己就试着处于那种状态。第二种，沉迷娱乐时，也会造成迷乐，不管是喝酒玩乐，游戏玩乐，都可能会产生迷乐情绪，这时候迷乐可能会让你口无遮拦，让你说出一些会后悔的言语，所以把我好自己的度，适可而止才能不沉迷。迷乐其实很难自我发现，但多做少说，多自勉少自满，多观察周围，多思考自己的环境，终会清心寡欲，从容不迫的。</p>
-<h3 id="悲愁"><a href="#悲愁" class="headerlink" title="悲愁"></a>悲愁</h3><p>夜风萧瑟，路灯闪烁，漫漫长路，形影相吊，无人追赶，无处寻觅，天空洒下的月光，仿佛把时间冰冻了一般；拖着沉重的步伐，没有目的地前进，前方的路和曾经走过的路那么相似，变了的只有自己，这条路很宽，宽的左拐右拐还能回到原地，它也很窄，绑着你脚，不管逃到哪里，你总在它的上面；有些乏力了，但隔壁地路上人来人往，一拳一拳地在后面捶打着自己，也曾抬头挥翅，兴奋地想要飞到高处，但总也飞不出去，不是向往地地方太高，是自己少了些羽翼；走着走着，遇到了一条河，在河中看到了喜欢的人渐渐远离，看到了想要的果实被别人摘取，看到了周围人的质疑，亲人的冷语；有时多想成为一个不会思考，没有感受的傻瓜，不去爱，也不去争，不知不觉的沉睡，自给自足的老去，但自己就是自己，想去争，想被爱，想被需要，既然生命的尽头不可知，那就探索寻觅到走到尽头的那一刻，戛然而止也好，功成名就也罢。</p>
-<h3 id="繁色"><a href="#繁色" class="headerlink" title="繁色"></a>繁色</h3><p>怒目圆睁是色，喜极而泣是色，情欲狰狞也是色。古人云：”困于心，衡于虑，而后作；征与色，发于声，而后喻。“《生于忧患，死于安乐-孟子》，然他人之感独己难变，人没办法改变他人的想法，解释会变成掩饰，措辞会变成说辞，情感流露需要有场景区别，是需要有感情程度的，对于陌生人，你的哭泣可能会引来嘲讽，对于亲近之人，一滴眼泪可能就会引起他心中的风云变化，亲近之人征于色，陌生之人掩于色，毕竟没有人会对一潭清水指指点点。那么这种行为算是虚伪吗？我认为是不算的，因为对于内人你已经是真诚相待的，至于外人，你捎带扰乱的坦诚反而会更让人生厌。</p>
-<hr>
-<p>怯乐悲色，也许像喜怒哀乐一般让生活变得真实，也会给生活带来诸多不变，古人长谈修心养性，有的人四面圆滑，有的人正气凌然，大家都在做，但结果总是呈现出多样性，经历生活多次衍生出来的理解，不同方面会有不同方面的好坏，以前常警戒自己”怯乐悲色，哀若如死人一般“，现在想来，仿佛没有个结果，看不到终点，终享不得圆满。</p>
+  <tr>
+  <td><i>keyframename</i></td>
+  <td>规定需要绑定到选择器的 keyframe 的名称。</td>
+  </tr>
+
+  <tr>
+  <td>none</td>
+  <td>规定无动画效果（可用于覆盖来自级联的动画）。</td>
+  </tr>
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-duration</strong></em>：<br><strong>描述</strong>：规定完成动画所花费的时间，以秒或毫秒计。<br><strong>语法</strong>：<code>animation-duration: time;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody><tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td><i>time</i></td>
+  <td>规定完成动画所花费的时间。默认值是 0，意味着没有动画效果。</td>
+  </tr>
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-timing-function</strong></em>：<br><strong>描述</strong>：规定动画的速度曲线。<br><strong>语法</strong>：<code>animation-timing-function: value;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody>
+  <tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td>linear</td>
+  <td>动画从头到尾的速度是相同的。</td>
+  </tr>
+
+  <tr>
+  <td>ease</td>
+  <td>默认。动画以低速开始，然后加快，在结束前变慢。</td>
+  </tr>
+
+  <tr>
+  <td>ease-in</td>
+  <td>动画以低速开始。</td>
+  </tr>
+
+  <tr>
+  <td>ease-out</td>
+  <td>动画以低速结束。</td>
+  </tr>
+
+
+  <tr>
+  <td>ease-in-out</td>
+  <td>动画以低速开始和结束。</td>
+  </tr>
+
+  <tr>
+  <td>cubic-bezier(<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>)</td>
+  <td>在 cubic-bezier 函数中自己的值。可能的值是从 0 到 1 的数值。</td>
+  <td></td>
+  </tr>
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-delay</strong></em>：<br><strong>描述</strong>：规定在动画开始之前的延迟。<br><strong>语法</strong>：<code>animation-delay: time;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody>
+  <tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td><i>time</i></td>
+  <td>可选。定义动画开始前等待的时间，以秒或毫秒计。默认值是 0。</td>
+  </tr>
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-iteration-count</strong></em>：<br><strong>描述</strong>：规定动画应该播放的次数。<br><strong>语法</strong>：<code>animation-iteration-count: n|infinite;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody><tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td><i>n</i></td>
+  <td>定义动画播放次数的数值。</td>
+  </tr>
+
+  <tr>
+  <td>infinite</td>
+  <td>规定动画应该无限次播放。</td>
+  </tr>
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-direction</strong></em>：<br><strong>描述</strong>：规定是否应该轮流反向播放动画。<br><strong>语法</strong>：<code>animation-direction: normal|alternate;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody><tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td>normal</td>
+  <td>默认值。动画应该正常播放。</td>
+  </tr>
+
+  <tr>
+  <td>alternate</td>
+  <td>动画应该轮流反向播放。</td>
+  </tr>
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-fill-mode</strong></em>：<br><strong>描述</strong>：规定动画在执行时间之外应用的值。<br><strong>语法</strong>：<code>animation-fill-mode : none | forwards | backwards | both;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody><tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td>none</td>
+  <td>不改变默认行为。</td>
+  </tr>
+
+  <tr>
+  <td>forwards</td>
+  <td>当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。</td>
+  </tr>
+
+  <tr>
+  <td>backwards</td>
+  <td>在 animation-delay 所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定义）。</td>
+  </tr>
+
+  <tr>
+  <td>both</td>
+  <td>向前和向后填充模式都被应用。</td>
+  </tr>
+
+  </tbody></table>
+</li>
+<li><p><em><strong>animation-play-state</strong></em>：<br><strong>描述</strong>：规定动画是正在运行还是暂停。<br><strong>语法</strong>：<code>animation-play-state: paused|running;</code><br><strong>属性</strong>：</p>
+  <table>
+  <tbody><tr>
+  <th style="width:25%;">值</th>
+  <th>描述</th>
+  </tr>
+
+  <tr>
+  <td>paused</td>
+  <td>规定动画已暂停。</td>
+  </tr>
+
+  <tr>
+  <td>running</td>
+  <td>规定动画正在播放。</td>
+  </tr>
+  </tbody></table></li>
+</ul>
+<h4 id="keyframes属性"><a href="#keyframes属性" class="headerlink" title="@keyframes属性"></a>@keyframes属性</h4><ul>
+<li><p><strong>描述</strong>：规定动画模式。</p>
+</li>
+<li><p><strong>语法</strong>：<code>@keyframes animationname &#123;keyframes-selector &#123;css-styles;&#125;&#125;</code></p>
+</li>
+<li><p><strong>属性</strong>：</p>
+<table>
+<tbody><tr>
+<th style="width:25%;">值</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td><i>animationname</i></td>
+<td>必需。定义动画的名称。</td>
+</tr>
+
+<tr>
+<td><i>keyframes-selector</i></td>
+<td>
+  <p>必需。动画时长的百分比。</p>
+  <p>合法的值：</p>
+    0-100% 、
+    from（与 0% 相同）、
+    to（与 100% 相同）
+</td>
+</tr>
+
+<tr>
+<td><i>css-styles</i></td>
+<td>必需。一个或多个合法的 CSS 样式属性。</td>
+</tr>
+</tbody></table></li>
+</ul>
+<h3 id="应用范围分析"><a href="#应用范围分析" class="headerlink" title="应用范围分析"></a>应用范围分析</h3><ul>
+<li>基础使用：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">div &#123;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  background-color: red;</span><br><span class="line">  animation-name: example;</span><br><span class="line">  animation-duration: 4s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@keyframes example &#123;</span><br><span class="line">  0% &#123;</span><br><span class="line">    background-color: red;</span><br><span class="line">  &#125;</span><br><span class="line">  25% &#123;</span><br><span class="line">    background-color: yellow;</span><br><span class="line">  &#125;</span><br><span class="line">  50% &#123;</span><br><span class="line">    background-color: blue;</span><br><span class="line">  &#125;</span><br><span class="line">  100% &#123;</span><br><span class="line">    background-color: green;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
 ]]></content>
       <categories>
-        <category>日记散文</category>
+        <category>WebGis</category>
       </categories>
       <tags>
-        <tag>日记</tag>
-        <tag>思考</tag>
-        <tag>生活</tag>
+        <tag>学习记录</tag>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我是一个WebGIS开发工程师</title>
+    <url>/WebGis/web-gis-study/i-am-a-GIS-development-engineer.html</url>
+    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>   我总在追求清晰，避免模糊的道路上前进，因为模糊会让我看不清自己。我也总在反复确定自己身份，确定自己在社会群体中，担任着怎么样的职务，三年前褪去学生的身份后，我走上了WebGis的职业道路上，在社会角色扮演中，职业是最重要的一重身份。第一年学习前端开发，第二年学习后端开发，第三年作为核心开发人员进行综合开发，如今第四年也已经过去了两个月多，回头想一想，总是会有一些茫然，学习了很多，但感觉又很单薄，因此想抽出一些时间，认真描绘一下自己职业的轮廓。<br>   ps.本文为个人所遇所感，所思所想，如有不足，请谅解。</p>
+<h3 id="职业简介"><a href="#职业简介" class="headerlink" title="职业简介"></a>职业简介</h3><p>   顾名思义，WebGIS开发工程师就是以WebGIS开发模式进行GIS系统开发的工程师，WebGIS开发是软件研发的重要方向，以网络请求做为信息传输方式，在客户端与服务端进行数据传输，从而实现各种各样的业务系统平台；GIS系统是以地图和空间数据为基础，对自然地理或者人文地理相关问题进行分析和处理的一类系统。因此，WebGIS开发工程师需要地理学相关支持，从而支持本身主要的业务能力，同时也需要Web前端、Web后端和网络技术三大方面的技术能力支持。计算机网络领域发展十分迅速，各种框架推陈出新，新的技术也不断产生，仿佛无限增长又望之不尽的海洋，但一个职业的职能是确定的，不同种类工具的作用也是明确的，一个职业的人用自己知道的工具做成这个职业需要做到的事，便足以。</p>
+<h3 id="WEB开发相关技术"><a href="#WEB开发相关技术" class="headerlink" title="WEB开发相关技术"></a>WEB开发相关技术</h3><ul>
+<li>计算机技术<ol>
+<li>linux系统</li>
+<li>数据库<ol>
+<li>MySQL</li>
+<li>PostgreSQL</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>前端技术<ol>
+<li>前端基础<ol>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>ECMAScript 6</li>
+</ol>
+</li>
+<li>前端环境（Node.js）<ol>
+<li>包的管理工具 npm&#x2F;yarn</li>
+<li>资源构建工具 webpack</li>
+</ol>
+</li>
+<li>前端框架<ol>
+<li>vue(组件化 数据驱动)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>后端技术<ol>
+<li>微服务技术栈<ol>
+<li>Spring Boot</li>
+<li>Spring Clound</li>
+<li>Docker</li>
+<li>Eureka</li>
+<li>Ribbon</li>
+<li>Feign</li>
+<li>GateWay</li>
+<li>RabbitMQ</li>
+</ol>
+</li>
+<li>后端环境（JDK8）</li>
+</ol>
+</li>
+<li>网络技术<ol>
+<li>nginx</li>
+<li>http&#x2F;https</li>
+</ol>
+</li>
+</ul>
+<h3 id="WebGIS系统特有技术"><a href="#WebGIS系统特有技术" class="headerlink" title="WebGIS系统特有技术"></a>WebGIS系统特有技术</h3><ul>
+<li>SuperMap产品<ol>
+<li>iDecktop</li>
+<li>iServer</li>
+<li>iManage</li>
+</ol>
+</li>
+<li>地图库<ol>
+<li>leaflet</li>
+<li>Cesium</li>
+</ol>
+</li>
+</ul>
+<p>未完待续。。。</p>
+]]></content>
+      <categories>
+        <category>WebGis</category>
+      </categories>
+      <tags>
+        <tag>思考总结</tag>
       </tags>
   </entry>
   <entry>
     <title>webGIS-基础知识框架</title>
-    <url>/WEB-GIS/web-gis-basic.html</url>
+    <url>/WebGis/web-gis-study/web-gis-basic.html</url>
     <content><![CDATA[<h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>该文章将简要概括 webGIS 的基础知识框架体系，以基础、进阶、扩展三个维度阐述前端 GIS 开发的技术内容，结合自身工作经历与工作认知清晰明确的说明技术体系，协助所需朋友的职业构建。</p>
 <h3 id="webGIS-开发的工作过程"><a href="#webGIS-开发的工作过程" class="headerlink" title="webGIS 开发的工作过程"></a>webGIS 开发的工作过程</h3><ul>
 <li>开发员工工作流程：编写项目具体功能模块与解决日常需求与 BUG<ol>
@@ -3718,7 +3774,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">参考链接:</span><br><span class="line"> - https://zhuanlan.zhihu.com/p/603970067</span><br><span class="line"> - https://www.osgeo.cn/tutorial/</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>WEB-GIS</category>
+        <category>WebGis</category>
       </categories>
       <tags>
         <tag>WEB-GIS</tag>
