@@ -1,5 +1,6 @@
 ---
 title: 语珠的故事
+category: 诗词散文
 tags:
   - 日记散文
 abbrlink: 7c8d8e6d

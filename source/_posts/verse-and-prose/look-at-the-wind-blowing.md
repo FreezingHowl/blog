@@ -1,6 +1,6 @@
 ---
 title: 望风吹
-category: 诗词
+category: 诗词散文
 tags:
   - 秘密
   - 夜风

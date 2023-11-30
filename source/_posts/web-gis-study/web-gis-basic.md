@@ -1,6 +1,6 @@
 ---
 title: webGIS-基础知识框架
-category: WEB-GIS
+category: WebGis
 tags:
   - WEB-GIS
   - 知识

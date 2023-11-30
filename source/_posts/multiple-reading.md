@@ -1,6 +1,6 @@
 ---
 title: 多重阅读-阅读技巧
-category: 学习力
+category: 哲学思考
 tags:
   - 阅读
   - 技巧

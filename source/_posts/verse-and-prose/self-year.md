@@ -1,6 +1,6 @@
 ---
 title: 本人年华
-category: 日记散文
+category: 诗词散文
 tags:
   - 总结
   - 日记

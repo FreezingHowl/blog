@@ -1,6 +1,6 @@
 ---
 title: 计算机硬件-CPU（中央处理器）
-category: 计算机基础知识
+category: WebGis
 tags:
   - 计算机
   - 硬件

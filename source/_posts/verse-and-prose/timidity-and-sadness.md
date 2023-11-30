@@ -1,6 +1,6 @@
 ---
 title: 怯乐悲色
-category: 日记散文
+category: 诗词散文
 tags:
   - 日记
   - 思考
