@@ -11,7 +11,7 @@ menu:
   关于: /about/ || fas fa-heart
 
 nav:
-  logo: /img/favicon.png # image
+  logo: https://img.nonnight.com/img/favicon.png # image
   display_title: true
   fixed: false # fixed navigation bar
 
@@ -78,11 +78,11 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /img/favicon.png
+favicon: https://img.nonnight.com/img/favicon.png
 
 # Avatar (头像)
 avatar:
-  img: /img/icon_okino.jpg
+  img: https://img.nonnight.com/img/icon_okino.jpg
   effect: false
 
 # Disable all banner image（禁用头部图片）
@@ -95,7 +95,7 @@ index_img: https://img.nonnight.com/img/imagevisual_a.jpg
 default_top_img: https://img.nonnight.com/img/imagevisual_a.jpg
 
 # The banner image of archive page（归档头部图片）
-archive_img: 
+archive_img:
 
 # If the banner of tag page not setting, it will show the top_img（标签头部图片）
 # note: tag page, not tags page (子标签页面的 top_img)
@@ -125,15 +125,15 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (当沒有设置cover时，默认的封面显示)
   default_cover:
-    - '/img/top-img/top_img_1.webp'
-    - '/img/top-img/top_img_2.webp'
-    - '/img/top-img/top_img_3.webp'
-    - '/img/top-img/top_img_4.webp'
+    - 'https://img.nonnight.com/img/top-img/top_img_1.webp'
+    - 'https://img.nonnight.com/img/top-img/top_img_2.webp'
+    - 'https://img.nonnight.com/img/top-img/top_img_3.webp'
+    - 'https://img.nonnight.com/img/top-img/top_img_4.webp'
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
-  flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  flink: https://img.nonnight.com/img/friend_404.gif
+  post_page: https://img.nonnight.com/img/404.jpg
 
 # A simple 404 page
 error_404:
@@ -440,7 +440,7 @@ footer:
 
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics: 
+baidu_analytics:
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
@@ -611,7 +611,7 @@ font:
 # Font settings for the site title and site subtitle
 # 左上角网站名字 主页居中网站名字
 blog_title_font:
-  font_link: 
+  font_link:
   font-family:
 
 # The setting of divider icon (水平分隔线图标设置)
