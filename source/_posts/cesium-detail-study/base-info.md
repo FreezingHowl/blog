@@ -25,4 +25,4 @@ SuperMap Cesium 是由 SuperMap 提供的一种用于集成和展示地理信息
 
 ### 思维导图
 
-![Cesium-API](../../img/web-gis/cesium-api.png)
+![Cesium-API](https://img.nonnight.com/img/web-gis/cesium-api.png)

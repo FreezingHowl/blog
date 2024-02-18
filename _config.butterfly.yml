@@ -89,10 +89,10 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page（主页头部图片）
-index_img: https://nonnight-blog.oss-cn-shanghai.aliyuncs.com/imagevisual_a.jpg
+index_img: https://img.nonnight.com/img/imagevisual_a.jpg
 
 # If the banner of page not setting, it will show the top_img（头部默认图片）
-default_top_img: https://nonnight-blog.oss-cn-shanghai.aliyuncs.com/imagevisual_a.jpg
+default_top_img: https://img.nonnight.com/img/imagevisual_a.jpg
 
 # The banner image of archive page（归档头部图片）
 archive_img: 

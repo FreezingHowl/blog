@@ -13,9 +13,9 @@ date: 2023-05-19 09:03:21
 #### 情景感和生活感
 
 - 情景感：所处环境、所处时间、音乐音效和天气时间
-  ![情景感](../img/post-img/think-of-voice-2.jpg "情景感")
+  ![情景感](.https://img.nonnight.com/img/post-img/think-of-voice-2.jpg "情景感")
 - 生活感：所处时代、人物关系、人物状态和文化特征
-  ![生活感](../img/post-img/think-of-voice-3.png "生活感")
+  ![生活感](.https://img.nonnight.com/img/post-img/think-of-voice-3.png "生活感")
 - 感受方式：观察分析和倾听感受
 
 #### 坚定的信念

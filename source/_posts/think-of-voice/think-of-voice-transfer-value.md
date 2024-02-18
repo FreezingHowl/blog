@@ -17,7 +17,7 @@ date: 2023-06-21 16:41:52
   > 上声—214 特点:前低后高、前短后长、前轻后重
   > 去声—51 特点:又高又短
 - 注意：声音连贯避免顿声、上声>阳平>阴平>去声（声音长短）
-![五度标记法](../img/post-img/five-degree-scale.png "五度标记法")
+![五度标记法](.https://img.nonnight.com/img/post-img/five-degree-scale.png "五度标记法")
 
 ### 双音节练习
 
