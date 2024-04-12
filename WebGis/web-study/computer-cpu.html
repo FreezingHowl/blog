@@ -1,0 +1,282 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>计算机硬件-CPU（中央处理器） | 绿夜星空</title><meta name="author" content="非想飞"><meta name="copyright" content="非想飞"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="介绍CPU（central processing unit）即中央处理器，是计算机系统的运算和控制核心，是信息处理、程序运行的最终执行单元； CPU 主要功能是解释计算机指令以及处理计算机软件中的数据。 CPU 由运算器、控制器和寄存器及实现它们之间联系的数据、控制及状态的总线构成。 性能衡量指标 主频： CPU 运行计算时工作频率，每秒的运算速度 睿频： Intel 的加速技术，性能分配上实现按">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机硬件-CPU（中央处理器）">
+<meta property="og:url" content="https://www.nonnight.com/WebGis/web-study/computer-cpu.html">
+<meta property="og:site_name" content="绿夜星空">
+<meta property="og:description" content="介绍CPU（central processing unit）即中央处理器，是计算机系统的运算和控制核心，是信息处理、程序运行的最终执行单元； CPU 主要功能是解释计算机指令以及处理计算机软件中的数据。 CPU 由运算器、控制器和寄存器及实现它们之间联系的数据、控制及状态的总线构成。 性能衡量指标 主频： CPU 运行计算时工作频率，每秒的运算速度 睿频： Intel 的加速技术，性能分配上实现按">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.nonnight.com/img/top-img/top_img_1.webp">
+<meta property="article:published_time" content="2024-01-30T00:38:35.000Z">
+<meta property="article:modified_time" content="2024-04-12T06:57:14.000Z">
+<meta property="article:author" content="非想飞">
+<meta property="article:tag" content="计算机">
+<meta property="article:tag" content="硬件">
+<meta property="article:tag" content="知识普及">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.nonnight.com/img/top-img/top_img_1.webp"><link rel="shortcut icon" href="https://img.nonnight.com/img/favicon.png"><link rel="canonical" href="https://www.nonnight.com/WebGis/web-study/computer-cpu.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"文章已过期","messageNext":"自上次更新以来的几天内，文章的内容可能已过时。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '计算机硬件-CPU（中央处理器）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-04-12 14:57:14'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="绿夜星空" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = 'hidden';
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+
+preloader.initLoading()
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (false) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.nonnight.com/img/icon_okino.jpg" onerror="onerror=null;src='https://img.nonnight.com/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">42</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">32</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/top-img/top_img_1.webp')"><nav id="nav"><span id="blog-info"><a href="/" title="绿夜星空"><img class="site-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.nonnight.com/img/favicon.png"/><span class="site-name">绿夜星空</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">计算机硬件-CPU（中央处理器）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-01-30T00:38:35.000Z" title="发表于 2024-01-30 08:38:35">2024-01-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-04-12T06:57:14.000Z" title="更新于 2024-04-12 14:57:14">2024-04-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/WebGis/">WebGis</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">883</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="计算机硬件-CPU（中央处理器）"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>CPU（central processing unit）即中央处理器，是计算机系统的运算和控制核心，是信息处理、程序运行的最终执行单元；</p>
+<p>CPU 主要功能是解释计算机指令以及处理计算机软件中的数据。</p>
+<p>CPU 由运算器、控制器和寄存器及实现它们之间联系的数据、控制及状态的总线构成。</p>
+<h3 id="性能衡量指标"><a href="#性能衡量指标" class="headerlink" title="性能衡量指标"></a>性能衡量指标</h3><ul>
+<li>主频： CPU 运行计算时工作频率，每秒的运算速度<ul>
+<li>睿频： Intel 的加速技术，性能分配上实现按需分配，根据系统的运行自动调整频率。</li>
+<li>超频： CPU 和主板都支持超频时，可手动调整频率。</li>
+</ul>
+</li>
+<li>核心数： 计算核心数，核心数越多可以打开的程序就越多，同时进行多任务计算的能力也越高。</li>
+<li>位数： CPU 位数&#x3D;CPU 中寄存器的位数&#x3D;CPU 能够一次并行处理的数据宽度（位数）&#x3D;数据总线宽度。（pg.现在的计算机处理器一般都是 64 位)</li>
+<li>缓存指令集: CPU 缓存,用于暂存指令。</li>
+</ul>
+<h3 id="后缀详解"><a href="#后缀详解" class="headerlink" title="后缀详解"></a>后缀详解</h3><h4 id="intel-处理器含义："><a href="#intel-处理器含义：" class="headerlink" title="intel 处理器含义："></a>intel 处理器含义：</h4><ul>
+<li>X：高端牛逼处理器</li>
+<li>K：解锁超频模式的处理器，适合超频玩家</li>
+<li>F：没有内置核显，需要搭配额外的独立显卡</li>
+<li>S：节能版处理器，相比于同型号不带 S 的处理器性能差一些</li>
+<li>T：相比于同型号后面带 S 的更加节能，但是功耗更低，适合长时间开机但是对性能要求不那么高的用户</li>
+<li>U：笔记本低功耗处理器，性能偏弱，续航能力强，多用于轻薄本</li>
+<li>Q：笔记本高性能四核处理器</li>
+<li>M：移动版 CPU</li>
+<li>Y：超低功耗处理器，性能很弱，功耗很低，大多数用于平板电脑</li>
+<li>H：高电压处理器，功耗高、主频高的处理器</li>
+<li>R：有 Iris 的核显，没有独立显卡的情况下有比较强的图形处理能力</li>
+<li>G：与 AMD 合作的产物，带 AMD 家的 Vega 牛逼核显</li>
+</ul>
+<h4 id="AMD-处理器含义："><a href="#AMD-处理器含义：" class="headerlink" title="AMD 处理器含义："></a>AMD 处理器含义：</h4><ul>
+<li>X：高端牛逼处理器</li>
+<li>K：解锁超频模式的处理器，适合超频玩家</li>
+<li>U：低功耗处理器，性能偏弱，续航能力强，一般用于轻薄本</li>
+<li>G：有 Vega 的核显，没有独立显卡的情况下有比较强的图形处理能力</li>
+<li>H：高电压处理器，功耗高主频高的处理器</li>
+<li>E：低功耗处理器，性能弱</li>
+<li>T：比较古老的 AMD 处理器后缀 T 表示支持 Turbo 睿频技术，如果是比较新版的，一般跟 Intel 一样表示超低功耗</li>
+<li>B：一般是低功耗的商务本</li>
+<li>C：一般用于 Chrome OS 的笔记本电脑</li>
+<li>W: 是指工作的专业 CPU，最适合编程画图渲染的朋友。</li>
+<li>WX: 这个后缀 CPU 是 AMD 平台中最好最贵的 CPU，性能也是最好的。经常用在玩游戏和高端设计上。</li>
+</ul>
+<h3 id="购买注意事项"><a href="#购买注意事项" class="headerlink" title="购买注意事项"></a>购买注意事项</h3><ol>
+<li>注意与主板规格适配</li>
+<li>处理器后缀含义与处理器生产厂商直接相关</li>
+<li>睿频参数较大影响 CPU 运算速度，建议和主频共同参考</li>
+<li>核数多但单核主频较低的 CPU 不建议购买</li>
+</ol>
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">https://www.leixue.com/ask/what-do-the-letters-of-the-cpu-suffix-represent?hl=2</span><br><span class="line">https://www.jianshu.com/p/273551811a77</span><br><span class="line">https://baike.baidu.com/item/%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8/284033</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://www.nonnight.com">非想飞</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.nonnight.com/WebGis/web-study/computer-cpu.html">https://www.nonnight.com/WebGis/web-study/computer-cpu.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.nonnight.com" target="_blank">绿夜星空</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a><a class="post-meta__tags" href="/tags/%E7%A1%AC%E4%BB%B6/">硬件</a><a class="post-meta__tags" href="/tags/%E7%9F%A5%E8%AF%86%E6%99%AE%E5%8F%8A/">知识普及</a></div><div class="post_share"><div class="social-share" data-image="/img/top-img/top_img_1.webp" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/supermapCesium/cesium-detail-study/viewer-scene.html" title="supermapCesium-视图与场景（2）"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.nonnight.com/img/top-img/top_img_4.webp" onerror="onerror=null;src='https://img.nonnight.com/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">supermapCesium-视图与场景（2）</div></div></a></div><div class="next-post pull-right"><a href="/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-vowel.html" title="想起你的声音-韵母"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.nonnight.com/img/top-img/top_img_2.webp" onerror="onerror=null;src='https://img.nonnight.com/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">想起你的声音-韵母</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.nonnight.com/img/icon_okino.jpg" onerror="this.onerror=null;this.src='https://img.nonnight.com/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">非想飞</div><div class="author-info__description">得之则幸，弗得则安，走走停停，磕磕碰碰。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">42</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">32</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/FreezingHowl"><i class="fab fa-github"></i><span>GitHub</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/FreezingHowl" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:nonnight@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%A7%E8%83%BD%E8%A1%A1%E9%87%8F%E6%8C%87%E6%A0%87"><span class="toc-number">2.</span> <span class="toc-text">性能衡量指标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E7%BC%80%E8%AF%A6%E8%A7%A3"><span class="toc-number">3.</span> <span class="toc-text">后缀详解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#intel-%E5%A4%84%E7%90%86%E5%99%A8%E5%90%AB%E4%B9%89%EF%BC%9A"><span class="toc-number">3.1.</span> <span class="toc-text">intel 处理器含义：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AMD-%E5%A4%84%E7%90%86%E5%99%A8%E5%90%AB%E4%B9%89%EF%BC%9A"><span class="toc-number">3.2.</span> <span class="toc-text">AMD 处理器含义：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%AD%E4%B9%B0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">4.</span> <span class="toc-text">购买注意事项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="toc-number">5.</span> <span class="toc-text">参考链接</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-vowel.html" title="想起你的声音-韵母"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.nonnight.com/img/top-img/top_img_2.webp" onerror="this.onerror=null;this.src='https://img.nonnight.com/img/404.jpg'" alt="想起你的声音-韵母"/></a><div class="content"><a class="title" href="/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-vowel.html" title="想起你的声音-韵母">想起你的声音-韵母</a><time datetime="2024-04-12T06:57:57.314Z" title="发表于 2024-04-12 14:57:57">2024-04-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/WebGis/web-study/computer-cpu.html" title="计算机硬件-CPU（中央处理器）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/top-img/top_img_1.webp" onerror="this.onerror=null;this.src='https://img.nonnight.com/img/404.jpg'" alt="计算机硬件-CPU（中央处理器）"/></a><div class="content"><a class="title" href="/WebGis/web-study/computer-cpu.html" title="计算机硬件-CPU（中央处理器）">计算机硬件-CPU（中央处理器）</a><time datetime="2024-01-30T00:38:35.000Z" title="发表于 2024-01-30 08:38:35">2024-01-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/supermapCesium/cesium-detail-study/viewer-scene.html" title="supermapCesium-视图与场景（2）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.nonnight.com/img/top-img/top_img_4.webp" onerror="this.onerror=null;this.src='https://img.nonnight.com/img/404.jpg'" alt="supermapCesium-视图与场景（2）"/></a><div class="content"><a class="title" href="/supermapCesium/cesium-detail-study/viewer-scene.html" title="supermapCesium-视图与场景（2）">supermapCesium-视图与场景（2）</a><time datetime="2023-12-07T11:52:31.000Z" title="发表于 2023-12-07 19:52:31">2023-12-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/supermapCesium/cesium-detail-study/base-info.html" title="supermapCesium-基础介绍（1）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.nonnight.com/img/top-img/top_img_2.webp" onerror="this.onerror=null;this.src='https://img.nonnight.com/img/404.jpg'" alt="supermapCesium-基础介绍（1）"/></a><div class="content"><a class="title" href="/supermapCesium/cesium-detail-study/base-info.html" title="supermapCesium-基础介绍（1）">supermapCesium-基础介绍（1）</a><time datetime="2023-11-30T01:27:31.000Z" title="发表于 2023-11-30 09:27:31">2023-11-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-dubbing-quote-3-8.html" title="想起你的声音-配音行情（3-8）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.nonnight.com/img/top-img/top_img_3.webp" onerror="this.onerror=null;this.src='https://img.nonnight.com/img/404.jpg'" alt="想起你的声音-配音行情（3-8）"/></a><div class="content"><a class="title" href="/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-dubbing-quote-3-8.html" title="想起你的声音-配音行情（3-8）">想起你的声音-配音行情（3-8）</a><time datetime="2023-11-03T07:24:41.000Z" title="发表于 2023-11-03 15:24:41">2023-11-03</time></div></div></div></div></div></div></main><footer id="footer" style="background: #add5a2"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 非想飞</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">一夜无梦</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'edW3BV0OcpZYsJ7izfq1QOZQ-gzGzoHsz',
+      appKey: '3C3Xuro3CyreNZKcwJ8iolZF',
+      avatar: 'monsterid',
+      serverURLs: 'https://edw3bv0o.lc-cn-n1-shared.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@master/js/busuanzi.pure.mini.js"></script></div></body></html>
