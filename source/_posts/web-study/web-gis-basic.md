@@ -5,7 +5,7 @@ tags:
   - WEB-GIS
   - 知识
   - 概括
-cover: /img/top-img/top_img_1.webp
+cover: https://img.nonnight.com/img/top-img/top_img_1.webp
 abbrlink: 5af50b98
 date: 2023-01-30 08:38:35
 ---

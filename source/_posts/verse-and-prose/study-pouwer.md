@@ -4,7 +4,6 @@ category: 诗词散文
 tags:
   - 夜风
   - 伤感
-cover: /img/top-img/top_img_4.webp
 abbrlink: 8a6609a9
 date: 2023-01-30 08:38:35
 ---
