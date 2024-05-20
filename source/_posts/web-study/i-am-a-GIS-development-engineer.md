@@ -1,6 +1,6 @@
 ---
 title: 我是一个WebGIS开发工程师
-category: WebGis
+category: WebStudy
 tags:
   - 思考总结
 abbrlink: 3577a018
