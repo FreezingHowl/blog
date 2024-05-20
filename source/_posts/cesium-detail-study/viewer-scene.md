@@ -1,6 +1,6 @@
 ---
 title: supermapCesium-视图与场景（2）
-category: supermapCesium
+category: SupermapCesium
 tags:
   - 学习思考
   - 学习记录

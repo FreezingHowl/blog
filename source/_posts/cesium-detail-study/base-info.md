@@ -1,6 +1,6 @@
 ---
 title: supermapCesium-基础介绍（1）
-category: supermapCesium
+category: SupermapCesium
 tags:
   - 学习思考
   - 学习记录
