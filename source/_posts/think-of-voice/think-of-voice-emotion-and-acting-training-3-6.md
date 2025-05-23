@@ -63,8 +63,8 @@ date: 2023-09-30 16:06:47
 - 气声
 
 > 看图片中场景开始展开想象
-![吃烫的场景](.https://img.nonnight.com/img/post-img/think-of-voice-5.png)
-![吃酸的场景](.https://img.nonnight.com/img/post-img/think-of-voice-6.png)
+![吃烫的场景](https://img.nonnight.com/img/post-img/think-of-voice-5.png)
+![吃酸的场景](https://img.nonnight.com/img/post-img/think-of-voice-6.png)
 
 ### 性格化练习
 

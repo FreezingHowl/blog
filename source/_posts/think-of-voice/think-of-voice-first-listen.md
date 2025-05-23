@@ -25,7 +25,7 @@ tags:
   - 咽腔：
   - 口腔：
   - 鼻腔：
-    ![发音器官示意图](.https://img.nonnight.com/img/post-img/think-of-your-voice-1.png "发音器官示意图")
+    ![发音器官示意图](https://img.nonnight.com/img/post-img/think-of-your-voice-1.png "发音器官示意图")
 
 #### 咬字器官
 

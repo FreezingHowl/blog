@@ -24,7 +24,7 @@ date: 2023-09-22 18:51:32
 - 依赖关系复杂，容易出现兼容性问题
 - 开发、测试、生产环境有差异
 
-![传统应用部署](.https://img.nonnight.com/img/mts-docker/image-20210731141907366.png)
+![传统应用部署](https://img.nonnight.com/img/mts-docker/image-20210731141907366.png)
 
 例如一个项目中，部署时需要依赖于node.js、Redis、RabbitMQ、MySQL等，这些服务部署时所需要的函数库、依赖项各不相同，甚至会有冲突。给部署带来了极大的困难。
 
@@ -38,7 +38,7 @@ Docker为了解决依赖的兼容问题的，采用了两个手段：
 
 - 将每个应用放到一个隔离**容器**去运行，避免互相干扰
 
-![Docker部署](.https://img.nonnight.com/img/mts-docker/image-20210731142219735.png)
+![Docker部署](https://img.nonnight.com/img/mts-docker/image-20210731142219735.png)
 
 这样打包好的应用包中，既包含应用本身，也保护应用所需要的Libs、Deps，无需再操作系统上安装这些，自然就不存在不同应用之间的兼容问题了。
 
@@ -48,7 +48,7 @@ Docker为了解决依赖的兼容问题的，采用了两个手段：
 
 要解决不同操作系统环境差异问题，必须先了解操作系统结构。以一个Ubuntu操作系统为例，结构如下：
 
-![Ubuntu 操作系统](.https://img.nonnight.com/img/mts-docker/image-20210731143401460.png)
+![Ubuntu 操作系统](https://img.nonnight.com/img/mts-docker/image-20210731143401460.png)
 
 结构包括：
 
@@ -66,11 +66,11 @@ Docker为了解决依赖的兼容问题的，采用了两个手段：
 
 Ubuntu和CentOSpringBoot都是基于Linux内核，无非是系统应用不同，提供的函数库有差异：
 
-![Linux系统应用差异](.https://img.nonnight.com/img/mts-docker/image-20210731144304990.png)
+![Linux系统应用差异](https://img.nonnight.com/img/mts-docker/image-20210731144304990.png)
 
 此时，如果将一个Ubuntu版本的MySQL应用安装到CentOS系统，MySQL在调用Ubuntu函数库时，会发现找不到或者不匹配，就会报错了：
 
-![函数库差异报错](.https://img.nonnight.com/img/mts-docker/image-20210731144458680.png)
+![函数库差异报错](https://img.nonnight.com/img/mts-docker/image-20210731144458680.png)
 
 Docker如何解决不同系统环境的问题？
 
@@ -79,7 +79,7 @@ Docker如何解决不同系统环境的问题？
 
 如图：
 
-![Docker解决环境差异问题](.https://img.nonnight.com/img/mts-docker/image-20210731144820638.png)
+![Docker解决环境差异问题](https://img.nonnight.com/img/mts-docker/image-20210731144820638.png)
 
 ### 小结
 
@@ -108,11 +108,11 @@ Docker可以让一个应用在任何操作系统中非常方便的运行。而�
 
 **Docker**仅仅是封装函数库，并没有模拟完整的操作系统，如图：
 
-![结构差异](.https://img.nonnight.com/img/mts-docker/image-20210731145914960.png)
+![结构差异](https://img.nonnight.com/img/mts-docker/image-20210731145914960.png)
 
 对比来看：
 
-![差异描述](.https://img.nonnight.com/img/mts-docker/image-20210731152243765.png)
+![差异描述](https://img.nonnight.com/img/mts-docker/image-20210731152243765.png)
 
 小结：
 
@@ -138,7 +138,7 @@ Docker中有几个重要的概念：
 
 **容器**呢，就是将这些文件中编写的程序、函数加载到内存中允许，形成进程，只不过要隔离起来。因此一个镜像可以启动多次，形成多个容器进程。
 
-![镜像和容器关系](.https://img.nonnight.com/img/mts-docker/image-20210731153059464.png)
+![镜像和容器关系](https://img.nonnight.com/img/mts-docker/image-20210731153059464.png)
 
 例如你下载了一个QQ，如果我们将QQ在磁盘上的运行**文件**及其运行的操作系统依赖打包，形成QQ镜像。然后你可以启动多次，双开、甚至三开QQ，跟多个妹子聊天。
 
@@ -152,7 +152,7 @@ Docker中有几个重要的概念：
 
 我们一方面可以将自己的镜像共享到DockerHub，另一方面也可以从DockerHub拉取镜像：
 
-![DockerHub示意图](.https://img.nonnight.com/img/mts-docker/image-20210731153743354.png)
+![DockerHub示意图](https://img.nonnight.com/img/mts-docker/image-20210731153743354.png)
 
 ### Docker架构
 
@@ -166,7 +166,7 @@ Docker是一个CS架构的程序，由两部分组成：
 
 如图：
 
-![Docker架构](.https://img.nonnight.com/img/mts-docker/image-20210731154257653.png)
+![Docker架构](https://img.nonnight.com/img/mts-docker/image-20210731154257653.png)
 
 ### 小结
 
@@ -282,7 +282,7 @@ docker -v
 
 如图：
 
-![docker 版本显示](.https://img.nonnight.com/img/mts-docker/image-20210418154704436.png)
+![docker 版本显示](https://img.nonnight.com/img/mts-docker/image-20210418154704436.png)
 
 ### 配置镜像加速
 
@@ -398,7 +398,7 @@ systemctl restart docker
 
 如图：
 
-![镜像名称组成](.https://img.nonnight.com/img/mts-docker/image-20210731155141362.png)
+![镜像名称组成](https://img.nonnight.com/img/mts-docker/image-20210731155141362.png)
 
 这里的mysql就是repository，5.7就是tag，合一起就是镜像名称，代表5.7版本的MySQL镜像。
 
@@ -406,7 +406,7 @@ systemctl restart docker
 
 常见的镜像操作命令如图：
 
-![镜像操作命令](.https://img.nonnight.com/img/mts-docker/image-20210731155649535.png)
+![镜像操作命令](https://img.nonnight.com/img/mts-docker/image-20210731155649535.png)
 
 ### 案例1-拉取、查看镜像
 
@@ -414,15 +414,15 @@ systemctl restart docker
 
 1）首先去镜像仓库搜索nginx镜像，比如[DockerHub](https://hub.docker.com/):
 
-![搜索镜像](.https://img.nonnight.com/img/mts-docker/image-20210731155844368.png)
+![搜索镜像](https://img.nonnight.com/img/mts-docker/image-20210731155844368.png)
 
 2）根据查看到的镜像名称，拉取自己需要的镜像，通过命令：docker pull nginx
 
-![拉取镜像](.https://img.nonnight.com/img/mts-docker/image-20210731155856199.png)
+![拉取镜像](https://img.nonnight.com/img/mts-docker/image-20210731155856199.png)
 
 3）通过命令：docker images 查看拉取到的镜像
 
-![查看镜像](.https://img.nonnight.com/img/mts-docker/image-20210731155903037.png)
+![查看镜像](https://img.nonnight.com/img/mts-docker/image-20210731155903037.png)
 
 ### 案例2-保存、导入镜像
 
@@ -438,7 +438,7 @@ docker save --help
 
 结果：
 
-![保存镜像描述](.https://img.nonnight.com/img/mts-docker/image-20210731161104732.png)
+![保存镜像描述](https://img.nonnight.com/img/mts-docker/image-20210731161104732.png)
 
 命令格式：
 
@@ -456,7 +456,7 @@ docker save -o nginx.tar nginx:latest
 
 结果如图：
 
-![保存镜像结果](.https://img.nonnight.com/img/mts-docker/image-20210731161354344.png)
+![保存镜像结果](https://img.nonnight.com/img/mts-docker/image-20210731161354344.png)
 
 3）使用docker load加载镜像
 
@@ -474,7 +474,7 @@ docker load -i nginx.tar
 
 结果：
 
-![加载镜像](.https://img.nonnight.com/img/mts-docker/image-20210731161746245.png)
+![加载镜像](https://img.nonnight.com/img/mts-docker/image-20210731161746245.png)
 
 ## 容器操作
 
@@ -482,7 +482,7 @@ docker load -i nginx.tar
 
 容器操作的命令如图：
 
-![容器操作](.https://img.nonnight.com/img/mts-docker/image-20210731161950495.png)
+![容器操作](https://img.nonnight.com/img/mts-docker/image-20210731161950495.png)
 
 容器三个状态：
 
@@ -522,7 +522,7 @@ docker run --name containerName -p 80:80 -d nginx
 
 现在，将容器的80与宿主机的80关联起来，当我们访问宿主机的80端口时，就会被映射到容器的80，这样就能访问到nginx了：
 
-![容器端口映射](.https://img.nonnight.com/img/mts-docker/image-20210731163255863.png)
+![容器端口映射](https://img.nonnight.com/img/mts-docker/image-20210731163255863.png)
 
 ### 案例-进入容器，修改文件
 
@@ -552,7 +552,7 @@ docker exec -it mn bash
 
 容器内部会模拟一个独立的Linux文件系统，看起来如同一个linux服务器一样：
 
-![进入容器操作](.https://img.nonnight.com/img/mts-docker/image-20210731164159811.png)
+![进入容器操作](https://img.nonnight.com/img/mts-docker/image-20210731164159811.png)
 
 nginx的环境、配置、运行文件全部都在这个文件系统中，包括我们要修改的html文件。
 
@@ -566,7 +566,7 @@ cd /usr/share/nginx/html
 
  查看目录下文件：
 
-![目录文件查看](.https://img.nonnight.com/img/mts-docker/image-20210731164455818.png)
+![目录文件查看](https://img.nonnight.com/img/mts-docker/image-20210731164455818.png)
 
 3）修改index.html的内容
 
@@ -578,7 +578,7 @@ sed -i -e 's#Welcome to nginx#传智教育欢迎您#g' -e 's#<head>#<head><meta 
 
 在浏览器访问自己的虚拟机地址，例如我的是：<http://192.168.150.101，即可看到结果：>
 
-![修改文本内容](.https://img.nonnight.com/img/mts-docker/image-20210731164717604.png)
+![修改文本内容](https://img.nonnight.com/img/mts-docker/image-20210731164717604.png)
 
 ### 小结
 
@@ -604,7 +604,7 @@ docker run命令的常见参数有哪些？
 
 这就是因为容器与数据（容器内文件）耦合带来的后果。
 
-![容器与数据耦合](.https://img.nonnight.com/img/mts-docker/image-20210731172440275.png)
+![容器与数据耦合](https://img.nonnight.com/img/mts-docker/image-20210731172440275.png)
 
 要解决这个问题，必须将数据与容器解耦，这就要用到数据卷了。
 
@@ -612,7 +612,7 @@ docker run命令的常见参数有哪些？
 
 **数据卷（volume）**是一个虚拟目录，指向宿主机文件系统中的某个目录。
 
-![数据卷示意图](.https://img.nonnight.com/img/mts-docker/image-20210731173541846.png)
+![数据卷示意图](https://img.nonnight.com/img/mts-docker/image-20210731173541846.png)
 
 一旦完成数据卷挂载，对容器的一切操作都会作用在数据卷对应的宿主机目录了。
 
@@ -652,7 +652,7 @@ docker volume ls
 
 结果：
 
-![查看所有数据](.https://img.nonnight.com/img/mts-docker/image-20210731173746910.png)
+![查看所有数据](https://img.nonnight.com/img/mts-docker/image-20210731173746910.png)
 
 ③ 查看数据卷详细信息卷
 
@@ -662,7 +662,7 @@ docker volume inspect html
 
 结果：
 
-![查看数据卷详细信息卷](.https://img.nonnight.com/img/mts-docker/image-20210731173809877.png)
+![查看数据卷详细信息卷](https://img.nonnight.com/img/mts-docker/image-20210731173809877.png)
 
 可以看到，我们创建的html这个数据卷关联的宿主机目录为`/var/lib/docker/volumes/html/_data`目录。
 
@@ -732,7 +732,7 @@ vi index.html
 
 如图：
 
-![关联关系示意图](.https://img.nonnight.com/img/mts-docker/image-20210731175155453.png)
+![关联关系示意图](https://img.nonnight.com/img/mts-docker/image-20210731175155453.png)
 
 **语法**：
 
@@ -784,7 +784,7 @@ docker run的命令中通过 -v 参数挂载文件或目录到容器中：
 
 我们以MySQL为例，来看看镜像的组成结构：
 
-![镜像的组成结构](.https://img.nonnight.com/img/mts-docker/image-20210731175806273.png)
+![镜像的组成结构](https://img.nonnight.com/img/mts-docker/image-20210731175806273.png)
 
 简单来说，镜像就是在系统函数库、运行环境基础上，添加应用程序文件、配置文件、依赖文件等组合，然后编写好启动脚本打包在一起形成的文件。
 
@@ -800,7 +800,7 @@ docker run的命令中通过 -v 参数挂载文件或目录到容器中：
 
 **Dockerfile**就是一个文本文件，其中包含一个个的**指令(Instruction)**，用指令来说明要执行什么操作来构建镜像。每一个指令都会形成一层Layer。
 
-![Dockerfile 语法说明](.https://img.nonnight.com/img/mts-docker/image-20210731180321133.png)
+![Dockerfile 语法说明](https://img.nonnight.com/img/mts-docker/image-20210731180321133.png)
 
 更新详细语法说明，请参考官网文档： <https://docs.docker.com/engine/reference/builder>
 
@@ -812,19 +812,19 @@ docker run的命令中通过 -v 参数挂载文件或目录到容器中：
 
 - 步骤1：新建一个空文件夹docker-demo
 
-  ![新建空文件夹](.https://img.nonnight.com/img/mts-docker/image-20210801101207444.png)
+  ![新建空文件夹](https://img.nonnight.com/img/mts-docker/image-20210801101207444.png)
 
 - 步骤2：拷贝课前资料中的docker-demo.jar文件到docker-demo这个目录
 
-  ![拷贝资料1](.https://img.nonnight.com/img/mts-docker/image-20210801101314816.png)
+  ![拷贝资料1](https://img.nonnight.com/img/mts-docker/image-20210801101314816.png)
 
 - 步骤3：拷贝课前资料中的jdk8.tar.gz文件到docker-demo这个目录
 
-  ![拷贝资料2](.https://img.nonnight.com/img/mts-docker/image-20210801101410200.png)
+  ![拷贝资料2](https://img.nonnight.com/img/mts-docker/image-20210801101410200.png)
 
 - 步骤4：拷贝课前资料提供的Dockerfile到docker-demo这个目录
 
-  ![拷贝资料3](.https://img.nonnight.com/img/mts-docker/image-20210801101455590.png)
+  ![拷贝资料3](https://img.nonnight.com/img/mts-docker/image-20210801101455590.png)
 
   其中的内容如下：
 
@@ -916,7 +916,7 @@ docker run的命令中通过 -v 参数挂载文件或目录到容器中：
 
 Docker Compose可以基于Compose文件帮我们快速的部署分布式应用，而无需手动一个个创建和运行容器！
 
-![Docker Compose](.https://img.nonnight.com/img/mts-docker/image-20210731180921742.png)
+![Docker Compose](https://img.nonnight.com/img/mts-docker/image-20210731180921742.png)
 
 ## 初识DockerCompose
 
@@ -972,7 +972,7 @@ DockerCompose的详细语法参考官网：<https://docs.docker.com/compose/comp
 
 查看课前资料提供的cloud-demo文件夹，里面已经编写好了docker-compose文件，而且每个微服务都准备了一个独立的目录：
 
-![文件结构](.https://img.nonnight.com/img/mts-docker/image-20210731181341330.png)
+![文件结构](https://img.nonnight.com/img/mts-docker/image-20210731181341330.png)
 
 内容如下：
 
@@ -1019,11 +1019,11 @@ services:
 
 查看mysql目录，可以看到其中已经准备好了cloud_order、cloud_user表：
 
-![文件展示](.https://img.nonnight.com/img/mts-docker/image-20210801095205034.png)
+![文件展示](https://img.nonnight.com/img/mts-docker/image-20210801095205034.png)
 
 查看微服务目录，可以看到都包含Dockerfile文件：
 
-![文件展示](.https://img.nonnight.com/img/mts-docker/image-20210801095320586.png)
+![文件展示](https://img.nonnight.com/img/mts-docker/image-20210801095320586.png)
 
 内容如下：
 
@@ -1074,7 +1074,7 @@ spring:
 
 打包后：
 
-![打包后](.https://img.nonnight.com/img/mts-docker/image-20210801095951030.png)
+![打包后](https://img.nonnight.com/img/mts-docker/image-20210801095951030.png)
 
 ### 拷贝jar包到部署目录
 
@@ -1082,15 +1082,15 @@ spring:
 
 user-service：
 
-![user-service](.https://img.nonnight.com/img/mts-docker/image-20210801100201253.png)
+![user-service](https://img.nonnight.com/img/mts-docker/image-20210801100201253.png)
 
 order-service：
 
-![order-service](.https://img.nonnight.com/img/mts-docker/image-20210801100231495.png)
+![order-service](https://img.nonnight.com/img/mts-docker/image-20210801100231495.png)
 
 gateway：
 
-![gateway](.https://img.nonnight.com/img/mts-docker/image-20210801100308102.png)
+![gateway](https://img.nonnight.com/img/mts-docker/image-20210801100308102.png)
 
 ### 部署
 
@@ -1098,7 +1098,7 @@ gateway：
 
 上传到任意目录：
 
-![上传目录](.https://img.nonnight.com/img/mts-docker/image-20210801100955653.png)
+![上传目录](https://img.nonnight.com/img/mts-docker/image-20210801100955653.png)
 
 部署：
 

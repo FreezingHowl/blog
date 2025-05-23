@@ -25,26 +25,26 @@ date: 2023-08-07 22:16:42
 制作流程：
 
   1. 画本
-    ![画本](.https://img.nonnight.com/img/post-img/audio-book-1.png)
+    ![画本](https://img.nonnight.com/img/post-img/audio-book-1.png)
     - 注意：
   2. 录制
-    ![录制](.https://img.nonnight.com/img/post-img/audio-book-2.png)
+    ![录制](https://img.nonnight.com/img/post-img/audio-book-2.png)
     - 注意：
   3. 审反
-    ![审反](.https://img.nonnight.com/img/post-img/audio-book-3.png)
+    ![审反](https://img.nonnight.com/img/post-img/audio-book-3.png)
     - 注意：
       1. 只需重新补录正确部分；返音要求与录制相同
 
 ### 有声书的分类
 
 - 出版物
-  ![出版物](.https://img.nonnight.com/img/post-img/audio-book-4.png)
+  ![出版物](https://img.nonnight.com/img/post-img/audio-book-4.png)
 - 社科类
-  ![社科类](.https://img.nonnight.com/img/post-img/audio-book-5.png)
+  ![社科类](https://img.nonnight.com/img/post-img/audio-book-5.png)
 - 网络小说
   - 男频搞笑
-    ![男频搞笑](.https://img.nonnight.com/img/post-img/audio-book-6.png)
+    ![男频搞笑](https://img.nonnight.com/img/post-img/audio-book-6.png)
   - 女频宫斗
-    ![女频宫斗](.https://img.nonnight.com/img/post-img/audio-book-7.png)
+    ![女频宫斗](https://img.nonnight.com/img/post-img/audio-book-7.png)
   - 男频玄幻
-    ![男频玄幻](.https://img.nonnight.com/img/post-img/audio-book-8.png)
+    ![男频玄幻](https://img.nonnight.com/img/post-img/audio-book-8.png)
