@@ -300,7 +300,7 @@
 <li>依赖关系复杂，容易出现兼容性问题</li>
 <li>开发、测试、生产环境有差异</li>
 </ul>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731141907366.png" alt="传统应用部署"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731141907366.png" alt="传统应用部署"></p>
 <p>例如一个项目中，部署时需要依赖于node.js、Redis、RabbitMQ、MySQL等，这些服务部署时所需要的函数库、依赖项各不相同，甚至会有冲突。给部署带来了极大的困难。</p>
 <h3 id="Docker解决依赖兼容问题"><a href="#Docker解决依赖兼容问题" class="headerlink" title="Docker解决依赖兼容问题"></a>Docker解决依赖兼容问题</h3><p>而Docker确巧妙的解决了这些问题，Docker是如何实现的呢？</p>
 <p>Docker为了解决依赖的兼容问题的，采用了两个手段：</p>
@@ -310,11 +310,11 @@
 <li><p>将每个应用放到一个隔离<strong>容器</strong>去运行，避免互相干扰</p>
 </li>
 </ul>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731142219735.png" alt="Docker部署"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731142219735.png" alt="Docker部署"></p>
 <p>这样打包好的应用包中，既包含应用本身，也保护应用所需要的Libs、Deps，无需再操作系统上安装这些，自然就不存在不同应用之间的兼容问题了。</p>
 <p>虽然解决了不同应用的兼容问题，但是开发、测试等环境会存在差异，操作系统版本也会有差异，怎么解决这些问题呢？</p>
 <h3 id="Docker解决操作系统环境差异"><a href="#Docker解决操作系统环境差异" class="headerlink" title="Docker解决操作系统环境差异"></a>Docker解决操作系统环境差异</h3><p>要解决不同操作系统环境差异问题，必须先了解操作系统结构。以一个Ubuntu操作系统为例，结构如下：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731143401460.png" alt="Ubuntu 操作系统"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731143401460.png" alt="Ubuntu 操作系统"></p>
 <p>结构包括：</p>
 <ul>
 <li>计算机硬件：例如CPU、内存、磁盘等</li>
@@ -326,16 +326,16 @@
 <p>2）系统函数库是对内核指令集的封装，会调用内核指令</p>
 <p>3）内核指令操作计算机硬件</p>
 <p>Ubuntu和CentOSpringBoot都是基于Linux内核，无非是系统应用不同，提供的函数库有差异：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731144304990.png" alt="Linux系统应用差异"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731144304990.png" alt="Linux系统应用差异"></p>
 <p>此时，如果将一个Ubuntu版本的MySQL应用安装到CentOS系统，MySQL在调用Ubuntu函数库时，会发现找不到或者不匹配，就会报错了：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731144458680.png" alt="函数库差异报错"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731144458680.png" alt="函数库差异报错"></p>
 <p>Docker如何解决不同系统环境的问题？</p>
 <ul>
 <li>Docker将用户程序与所需要调用的系统(比如Ubuntu)函数库一起打包</li>
 <li>Docker运行到不同操作系统时，直接基于打包的函数库，借助于操作系统的Linux内核来运行</li>
 </ul>
 <p>如图：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731144820638.png" alt="Docker解决环境差异问题"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731144820638.png" alt="Docker解决环境差异问题"></p>
 <h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>Docker如何解决大型项目依赖关系复杂，不同组件依赖的兼容性问题？</p>
 <ul>
 <li>Docker允许开发中将应用、依赖、函数库、配置一起<strong>打包</strong>，形成可移植镜像</li>
@@ -355,9 +355,9 @@
 <p>两者有什么差异呢？</p>
 <p><strong>虚拟机</strong>（virtual machine）是在操作系统中<strong>模拟</strong>硬件设备，然后运行另一个操作系统，比如在 Windows 系统里面运行 Ubuntu 系统，这样就可以运行任意的Ubuntu应用了。</p>
 <p><strong>Docker</strong>仅仅是封装函数库，并没有模拟完整的操作系统，如图：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731145914960.png" alt="结构差异"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731145914960.png" alt="结构差异"></p>
 <p>对比来看：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731152243765.png" alt="差异描述"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731152243765.png" alt="差异描述"></p>
 <p>小结：</p>
 <p>Docker和虚拟机的差异：</p>
 <ul>
@@ -372,7 +372,7 @@
 <p>一切应用最终都是代码组成，都是硬盘中的一个个的字节形成的<strong>文件</strong>。只有运行时，才会加载到内存，形成进程。</p>
 <p>而<strong>镜像</strong>，就是把一个应用在硬盘上的文件、及其运行环境、部分系统函数库文件一起打包形成的文件包。这个文件包是只读的。</p>
 <p><strong>容器</strong>呢，就是将这些文件中编写的程序、函数加载到内存中允许，形成进程，只不过要隔离起来。因此一个镜像可以启动多次，形成多个容器进程。</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731153059464.png" alt="镜像和容器关系"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731153059464.png" alt="镜像和容器关系"></p>
 <p>例如你下载了一个QQ，如果我们将QQ在磁盘上的运行<strong>文件</strong>及其运行的操作系统依赖打包，形成QQ镜像。然后你可以启动多次，双开、甚至三开QQ，跟多个妹子聊天。</p>
 <h3 id="DockerHub"><a href="#DockerHub" class="headerlink" title="DockerHub"></a>DockerHub</h3><p>开源应用程序非常多，打包这些应用往往是重复的劳动。为了避免这些重复劳动，人们就会将自己打包的应用镜像，例如Redis、MySQL镜像放到网络上，共享使用，就像GitHub的代码共享一样。</p>
 <ul>
@@ -382,7 +382,7 @@
 </li>
 </ul>
 <p>我们一方面可以将自己的镜像共享到DockerHub，另一方面也可以从DockerHub拉取镜像：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731153743354.png" alt="DockerHub示意图"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731153743354.png" alt="DockerHub示意图"></p>
 <h3 id="Docker架构-1"><a href="#Docker架构-1" class="headerlink" title="Docker架构"></a>Docker架构</h3><p>我们要使用Docker来操作镜像、容器，就必须要安装Docker。</p>
 <p>Docker是一个CS架构的程序，由两部分组成：</p>
 <ul>
@@ -392,7 +392,7 @@
 </li>
 </ul>
 <p>如图：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731154257653.png" alt="Docker架构"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731154257653.png" alt="Docker架构"></p>
 <h3 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h3><p>镜像：</p>
 <ul>
 <li>将应用程序及其依赖、环境、配置打包在一起</li>
@@ -441,7 +441,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">docker -v</span><br></pre></td></tr></table></figure>
 
 <p>如图：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210418154704436.png" alt="docker 版本显示"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210418154704436.png" alt="docker 版本显示"></p>
 <h3 id="配置镜像加速"><a href="#配置镜像加速" class="headerlink" title="配置镜像加速"></a>配置镜像加速</h3><p>docker官方镜像仓库网速较差，我们需要设置国内镜像服务：</p>
 <p>参考阿里云的镜像加速文档：<a href="https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors">https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors</a></p>
 <h2 id="CentOS7安装DockerCompose"><a href="#CentOS7安装DockerCompose" class="headerlink" title="CentOS7安装DockerCompose"></a>CentOS7安装DockerCompose</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>Linux下需要通过命令下载：</p>
@@ -475,24 +475,24 @@
 <li>在没有指定tag时，默认是latest，代表最新版本的镜像</li>
 </ul>
 <p>如图：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731155141362.png" alt="镜像名称组成"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731155141362.png" alt="镜像名称组成"></p>
 <p>这里的mysql就是repository，5.7就是tag，合一起就是镜像名称，代表5.7版本的MySQL镜像。</p>
 <h3 id="镜像命令"><a href="#镜像命令" class="headerlink" title="镜像命令"></a>镜像命令</h3><p>常见的镜像操作命令如图：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731155649535.png" alt="镜像操作命令"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731155649535.png" alt="镜像操作命令"></p>
 <h3 id="案例1-拉取、查看镜像"><a href="#案例1-拉取、查看镜像" class="headerlink" title="案例1-拉取、查看镜像"></a>案例1-拉取、查看镜像</h3><p>需求：从DockerHub中拉取一个nginx镜像并查看</p>
 <p>1）首先去镜像仓库搜索nginx镜像，比如<a href="https://hub.docker.com/">DockerHub</a>:</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731155844368.png" alt="搜索镜像"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731155844368.png" alt="搜索镜像"></p>
 <p>2）根据查看到的镜像名称，拉取自己需要的镜像，通过命令：docker pull nginx</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731155856199.png" alt="拉取镜像"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731155856199.png" alt="拉取镜像"></p>
 <p>3）通过命令：docker images 查看拉取到的镜像</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731155903037.png" alt="查看镜像"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731155903037.png" alt="查看镜像"></p>
 <h3 id="案例2-保存、导入镜像"><a href="#案例2-保存、导入镜像" class="headerlink" title="案例2-保存、导入镜像"></a>案例2-保存、导入镜像</h3><p>需求：利用docker save将nginx镜像导出磁盘，然后再通过load加载回来</p>
 <p>1）利用docker xx –help命令查看docker save和docker load的语法</p>
 <p>例如，查看save命令用法，可以输入命令：</p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">docker save --<span class="built_in">help</span></span><br></pre></td></tr></table></figure>
 
 <p>结果：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731161104732.png" alt="保存镜像描述"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731161104732.png" alt="保存镜像描述"></p>
 <p>命令格式：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker save -o [保存的目标文件名称] [镜像名称]</span><br></pre></td></tr></table></figure>
 
@@ -501,7 +501,7 @@
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">docker save -o nginx.tar nginx:latest</span><br></pre></td></tr></table></figure>
 
 <p>结果如图：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731161354344.png" alt="保存镜像结果"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731161354344.png" alt="保存镜像结果"></p>
 <p>3）使用docker load加载镜像</p>
 <p>先删除本地的nginx镜像：</p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">docker rmi nginx:latest</span><br></pre></td></tr></table></figure>
@@ -510,9 +510,9 @@
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">docker load -i nginx.tar</span><br></pre></td></tr></table></figure>
 
 <p>结果：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731161746245.png" alt="加载镜像"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731161746245.png" alt="加载镜像"></p>
 <h2 id="容器操作"><a href="#容器操作" class="headerlink" title="容器操作"></a>容器操作</h2><h3 id="容器相关命令"><a href="#容器相关命令" class="headerlink" title="容器相关命令"></a>容器相关命令</h3><p>容器操作的命令如图：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731161950495.png" alt="容器操作"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731161950495.png" alt="容器操作"></p>
 <p>容器三个状态：</p>
 <ul>
 <li>运行：进程正常运行</li>
@@ -548,7 +548,7 @@
 <p>这里的<code>-p</code>参数，是将容器端口映射到宿主机端口。</p>
 <p>默认情况下，容器是隔离环境，我们直接访问宿主机的80端口，肯定访问不到容器中的nginx。</p>
 <p>现在，将容器的80与宿主机的80关联起来，当我们访问宿主机的80端口时，就会被映射到容器的80，这样就能访问到nginx了：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731163255863.png" alt="容器端口映射"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731163255863.png" alt="容器端口映射"></p>
 <h3 id="案例-进入容器，修改文件"><a href="#案例-进入容器，修改文件" class="headerlink" title="案例-进入容器，修改文件"></a>案例-进入容器，修改文件</h3><p><strong>需求</strong>：进入Nginx容器，修改HTML文件内容，添加“传智教育欢迎您”</p>
 <p><strong>提示</strong>：进入容器要用到docker exec命令。</p>
 <p><strong>步骤</strong>：</p>
@@ -568,20 +568,20 @@
 </ul>
 <p>2）进入nginx的HTML所在目录 &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html</p>
 <p>容器内部会模拟一个独立的Linux文件系统，看起来如同一个linux服务器一样：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731164159811.png" alt="进入容器操作"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731164159811.png" alt="进入容器操作"></p>
 <p>nginx的环境、配置、运行文件全部都在这个文件系统中，包括我们要修改的html文件。</p>
 <p>查看DockerHub网站中的nginx页面，可以知道nginx的html目录位置在<code>/usr/share/nginx/html</code></p>
 <p>我们执行命令，进入该目录：</p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/share/nginx/html</span><br></pre></td></tr></table></figure>
 
 <p> 查看目录下文件：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731164455818.png" alt="目录文件查看"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731164455818.png" alt="目录文件查看"></p>
 <p>3）修改index.html的内容</p>
 <p>容器内没有vi命令，无法直接修改，我们用下面的命令来修改：</p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sed -i -e <span class="string">&#x27;s#Welcome to nginx#传智教育欢迎您#g&#x27;</span> -e <span class="string">&#x27;s#&lt;head&gt;#&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;#g&#x27;</span> index.html</span><br></pre></td></tr></table></figure>
 
 <p>在浏览器访问自己的虚拟机地址，例如我的是：<a href="http://192.168.150.101，即可看到结果：">http://192.168.150.101，即可看到结果：</a></p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731164717604.png" alt="修改文本内容"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731164717604.png" alt="修改文本内容"></p>
 <h3 id="小结-2"><a href="#小结-2" class="headerlink" title="小结"></a>小结</h3><p>docker run命令的常见参数有哪些？</p>
 <ul>
 <li>–name：指定容器名称</li>
@@ -600,10 +600,10 @@
 </ul>
 <h2 id="数据卷（容器数据管理）"><a href="#数据卷（容器数据管理）" class="headerlink" title="数据卷（容器数据管理）"></a>数据卷（容器数据管理）</h2><p>在之前的nginx案例中，修改nginx的html页面时，需要进入nginx内部。并且因为没有编辑器，修改文件也很麻烦。</p>
 <p>这就是因为容器与数据（容器内文件）耦合带来的后果。</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731172440275.png" alt="容器与数据耦合"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731172440275.png" alt="容器与数据耦合"></p>
 <p>要解决这个问题，必须将数据与容器解耦，这就要用到数据卷了。</p>
 <h3 id="什么是数据卷"><a href="#什么是数据卷" class="headerlink" title="什么是数据卷"></a>什么是数据卷</h3><p><strong>数据卷（volume）</strong>是一个虚拟目录，指向宿主机文件系统中的某个目录。</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731173541846.png" alt="数据卷示意图"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731173541846.png" alt="数据卷示意图"></p>
 <p>一旦完成数据卷挂载，对容器的一切操作都会作用在数据卷对应的宿主机目录了。</p>
 <p>这样，我们操作宿主机的&#x2F;var&#x2F;lib&#x2F;docker&#x2F;volumes&#x2F;html目录，就等于操作容器内的&#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html目录了</p>
 <h3 id="数据集操作命令"><a href="#数据集操作命令" class="headerlink" title="数据集操作命令"></a>数据集操作命令</h3><p>数据卷操作的基本语法如下：</p>
@@ -625,12 +625,12 @@
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">docker volume <span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
 
 <p>结果：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731173746910.png" alt="查看所有数据"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731173746910.png" alt="查看所有数据"></p>
 <p>③ 查看数据卷详细信息卷</p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">docker volume inspect html</span><br></pre></td></tr></table></figure>
 
 <p>结果：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731173809877.png" alt="查看数据卷详细信息卷"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731173809877.png" alt="查看数据卷详细信息卷"></p>
 <p>可以看到，我们创建的html这个数据卷关联的宿主机目录为<code>/var/lib/docker/volumes/html/_data</code>目录。</p>
 <p><strong>小结</strong>：</p>
 <p>数据卷的作用：</p>
@@ -668,7 +668,7 @@
 <li>直接挂载模式：宿主机目录 —&gt; 容器内目录</li>
 </ul>
 <p>如图：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731175155453.png" alt="关联关系示意图"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731175155453.png" alt="关联关系示意图"></p>
 <p><strong>语法</strong>：</p>
 <p>目录挂载与数据卷挂载的语法是类似的：</p>
 <ul>
@@ -699,28 +699,28 @@
 <p>而要自定义镜像，就必须先了解镜像的结构才行。</p>
 <h2 id="镜像结构"><a href="#镜像结构" class="headerlink" title="镜像结构"></a>镜像结构</h2><p>镜像是将应用程序及其需要的系统函数库、环境、配置、依赖打包而成。</p>
 <p>我们以MySQL为例，来看看镜像的组成结构：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731175806273.png" alt="镜像的组成结构"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731175806273.png" alt="镜像的组成结构"></p>
 <p>简单来说，镜像就是在系统函数库、运行环境基础上，添加应用程序文件、配置文件、依赖文件等组合，然后编写好启动脚本打包在一起形成的文件。</p>
 <p>我们要构建镜像，其实就是实现上述打包的过程。</p>
 <h2 id="Dockerfile语法"><a href="#Dockerfile语法" class="headerlink" title="Dockerfile语法"></a>Dockerfile语法</h2><p>构建自定义的镜像时，并不需要一个个文件去拷贝，打包。</p>
 <p>我们只需要告诉Docker，我们的镜像的组成，需要哪些BaseImage、需要拷贝什么文件、需要安装什么依赖、启动脚本是什么，将来Docker会帮助我们构建镜像。</p>
 <p>而描述上述信息的文件就是Dockerfile文件。</p>
 <p><strong>Dockerfile</strong>就是一个文本文件，其中包含一个个的**指令(Instruction)**，用指令来说明要执行什么操作来构建镜像。每一个指令都会形成一层Layer。</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731180321133.png" alt="Dockerfile 语法说明"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731180321133.png" alt="Dockerfile 语法说明"></p>
 <p>更新详细语法说明，请参考官网文档： <a href="https://docs.docker.com/engine/reference/builder">https://docs.docker.com/engine/reference/builder</a></p>
 <h2 id="构建Java项目"><a href="#构建Java项目" class="headerlink" title="构建Java项目"></a>构建Java项目</h2><h3 id="基于Ubuntu构建Java项目"><a href="#基于Ubuntu构建Java项目" class="headerlink" title="基于Ubuntu构建Java项目"></a>基于Ubuntu构建Java项目</h3><p>需求：基于Ubuntu镜像构建一个新镜像，运行一个java项目</p>
 <ul>
 <li><p>步骤1：新建一个空文件夹docker-demo</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210801101207444.png" alt="新建空文件夹"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210801101207444.png" alt="新建空文件夹"></p>
 </li>
 <li><p>步骤2：拷贝课前资料中的docker-demo.jar文件到docker-demo这个目录</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210801101314816.png" alt="拷贝资料1"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210801101314816.png" alt="拷贝资料1"></p>
 </li>
 <li><p>步骤3：拷贝课前资料中的jdk8.tar.gz文件到docker-demo这个目录</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210801101410200.png" alt="拷贝资料2"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210801101410200.png" alt="拷贝资料2"></p>
 </li>
 <li><p>步骤4：拷贝课前资料提供的Dockerfile到docker-demo这个目录</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210801101455590.png" alt="拷贝资料3"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210801101455590.png" alt="拷贝资料3"></p>
 <p>其中的内容如下：</p>
 <figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 指定基础镜像</span></span><br><span class="line"><span class="keyword">FROM</span> ubuntu:<span class="number">16.04</span></span><br><span class="line"><span class="comment"># 配置环境变量，JDK的安装目录</span></span><br><span class="line"><span class="keyword">ENV</span> JAVA_DIR=/usr/local</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拷贝jdk和java项目的包</span></span><br><span class="line"><span class="keyword">COPY</span><span class="language-bash"> ./jdk8.tar.gz <span class="variable">$JAVA_DIR</span>/</span></span><br><span class="line"><span class="keyword">COPY</span><span class="language-bash"> ./docker-demo.jar /tmp/app.jar</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装JDK</span></span><br><span class="line"><span class="keyword">RUN</span><span class="language-bash"> <span class="built_in">cd</span> <span class="variable">$JAVA_DIR</span> \</span></span><br><span class="line"><span class="language-bash"> &amp;&amp; tar -xf ./jdk8.tar.gz \</span></span><br><span class="line"><span class="language-bash"> &amp;&amp; <span class="built_in">mv</span> ./jdk1.8.0_144 ./java8</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置环境变量</span></span><br><span class="line"><span class="keyword">ENV</span> JAVA_HOME=$JAVA_DIR/java8</span><br><span class="line"><span class="keyword">ENV</span> PATH=$PATH:$JAVA_HOME/bin</span><br><span class="line"></span><br><span class="line"><span class="comment"># 暴露端口</span></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">8090</span></span><br><span class="line"><span class="comment"># 入口，java项目的启动命令</span></span><br><span class="line"><span class="keyword">ENTRYPOINT</span><span class="language-bash"> java -jar /tmp/app.jar</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -768,7 +768,7 @@
 </li>
 </ol>
 <h1 id="Docker-Compose"><a href="#Docker-Compose" class="headerlink" title="Docker-Compose"></a>Docker-Compose</h1><p>Docker Compose可以基于Compose文件帮我们快速的部署分布式应用，而无需手动一个个创建和运行容器！</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731180921742.png" alt="Docker Compose"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731180921742.png" alt="Docker Compose"></p>
 <h2 id="初识DockerCompose"><a href="#初识DockerCompose" class="headerlink" title="初识DockerCompose"></a>初识DockerCompose</h2><p>Compose文件是一个文本文件，通过指令定义集群中的每个容器如何运行。格式如下：</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line">version<span class="punctuation">:</span> <span class="string">&quot;3.8&quot;</span></span><br><span class="line"> services<span class="punctuation">:</span></span><br><span class="line">  mysql<span class="punctuation">:</span></span><br><span class="line">    image<span class="punctuation">:</span> mysql<span class="punctuation">:</span><span class="number">5.7</span><span class="number">.25</span></span><br><span class="line">    environment<span class="punctuation">:</span></span><br><span class="line">     MYSQL_ROOT_PASSWORD<span class="punctuation">:</span> <span class="number">123</span> </span><br><span class="line">    volumes<span class="punctuation">:</span></span><br><span class="line">     - <span class="string">&quot;/tmp/mysql/data:/var/lib/mysql&quot;</span></span><br><span class="line">     - <span class="string">&quot;/tmp/mysql/conf/hmy.cnf:/etc/mysql/conf.d/hmy.cnf&quot;</span></span><br><span class="line">  web<span class="punctuation">:</span></span><br><span class="line">    build<span class="punctuation">:</span> .</span><br><span class="line">    ports<span class="punctuation">:</span></span><br><span class="line">     - <span class="string">&quot;8090:8090&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -788,7 +788,7 @@
 <p>④ 将打包好的app.jar拷贝到cloud-demo中的每一个对应的子目录中</p>
 <p>⑤ 将cloud-demo上传至虚拟机，利用 docker-compose up -d 来部署</p>
 <h3 id="compose文件"><a href="#compose文件" class="headerlink" title="compose文件"></a>compose文件</h3><p>查看课前资料提供的cloud-demo文件夹，里面已经编写好了docker-compose文件，而且每个微服务都准备了一个独立的目录：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210731181341330.png" alt="文件结构"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210731181341330.png" alt="文件结构"></p>
 <p>内容如下：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&quot;3.2&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">nacos:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">nacos/nacos-server</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="attr">MODE:</span> <span class="string">standalone</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;8848:8848&quot;</span></span><br><span class="line">  <span class="attr">mysql:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">mysql:5.7.25</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="attr">MYSQL_ROOT_PASSWORD:</span> <span class="number">123</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;$PWD/mysql/data:/var/lib/mysql&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;$PWD/mysql/conf:/etc/mysql/conf.d/&quot;</span></span><br><span class="line">  <span class="attr">userservice:</span></span><br><span class="line">    <span class="attr">build:</span> <span class="string">./user-service</span></span><br><span class="line">  <span class="attr">orderservice:</span></span><br><span class="line">    <span class="attr">build:</span> <span class="string">./order-service</span></span><br><span class="line">  <span class="attr">gateway:</span></span><br><span class="line">    <span class="attr">build:</span> <span class="string">./gateway</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;10010:10010&quot;</span></span><br></pre></td></tr></table></figure>
 
@@ -815,9 +815,9 @@
 <li><code>userservice</code>、<code>orderservice</code>、<code>gateway</code>：都是基于Dockerfile临时构建的</li>
 </ul>
 <p>查看mysql目录，可以看到其中已经准备好了cloud_order、cloud_user表：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210801095205034.png" alt="文件展示"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210801095205034.png" alt="文件展示"></p>
 <p>查看微服务目录，可以看到都包含Dockerfile文件：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210801095320586.png" alt="文件展示"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210801095320586.png" alt="文件展示"></p>
 <p>内容如下：</p>
 <figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line"><span class="keyword">FROM</span> java:<span class="number">8</span>-alpine</span><br><span class="line"><span class="keyword">COPY</span><span class="language-bash"> ./app.jar /tmp/app.jar</span></span><br><span class="line"><span class="keyword">ENTRYPOINT</span><span class="language-bash"> java -jar /tmp/app.jar</span></span><br></pre></td></tr></table></figure>
 
@@ -830,17 +830,17 @@
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 服务打包的最终名称 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">finalName</span>&gt;</span>app<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>打包后：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210801095951030.png" alt="打包后"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210801095951030.png" alt="打包后"></p>
 <h3 id="拷贝jar包到部署目录"><a href="#拷贝jar包到部署目录" class="headerlink" title="拷贝jar包到部署目录"></a>拷贝jar包到部署目录</h3><p>编译打包好的app.jar文件，需要放到Dockerfile的同级目录中。注意：每个微服务的app.jar放到与服务名称对应的目录，别搞错了。</p>
 <p>user-service：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210801100201253.png" alt="user-service"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210801100201253.png" alt="user-service"></p>
 <p>order-service：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210801100231495.png" alt="order-service"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210801100231495.png" alt="order-service"></p>
 <p>gateway：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210801100308102.png" alt="gateway"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210801100308102.png" alt="gateway"></p>
 <h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>最后，我们需要将文件整个cloud-demo文件夹上传到虚拟机中，理由DockerCompose部署。</p>
 <p>上传到任意目录：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-docker/image-20210801100955653.png" alt="上传目录"></p>
+<p><img src="https://img.nonnight.com/img/mts-docker/image-20210801100955653.png" alt="上传目录"></p>
 <p>部署：</p>
 <p>进入cloud-demo目录，然后运行下面的命令：</p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
@@ -867,65 +867,15 @@
       </tags>
   </entry>
   <entry>
-    <title>天地劫-幽城再临-角色培养</title>
-    <url>/%E6%B8%B8%E6%88%8F/tdd-phantom-city-revisited/heaven-and-earth-robbery.html</url>
-    <content><![CDATA[<span id="more"></span>
-
-<pre><code>天地劫-幽城再临属于SRPG(Strategy Role-Playing Game),除去剧情外，角色养成和战旗策略是该类游戏的两大游玩内容。
-</code></pre>
-<h3 id="角色养成"><a href="#角色养成" class="headerlink" title="角色养成"></a>角色养成</h3><h4 id="角色能力组成与对应资源来源"><a href="#角色能力组成与对应资源来源" class="headerlink" title="角色能力组成与对应资源来源"></a>角色能力组成与对应资源来源</h4><pre><code>- 兵刃
-    - 淬火（蚀之隙）
-    - 魂石（创命之间、幻海魂渊）
-    - 神兵（九如塔）
-- 及身
-    - 饰品（三途川）
-    - 精化（灵脉光渊）
-- 五内
-    - 化蕴（蚀之隙）
-    - 内力精进（江湖）
-    - 绝学化神（江湖）
-- 天魂之力
-    - 回响（蚀之隙）
-</code></pre>
-<p>由此可见，培养角色的本质在于资源材料获取（副本攻克），根据副本敌人属性组成本人将副本分为单属性副本和多属性副本：</p>
-<ul>
-<li>单属性副本<ul>
-<li>创命之间、幻海魂渊、九如塔、灵脉光渊</li>
-</ul>
-</li>
-<li>多属性副本<ul>
-<li>蚀之隙、三途川、江湖</li>
-</ul>
-</li>
-</ul>
-<h4 id="养成探讨"><a href="#养成探讨" class="headerlink" title="养成探讨"></a>养成探讨</h4><blockquote>
-<p>根据副本类型，对应出属性队和混色队，属性队由单属性为主体组成，混色队由多色队组成。<br>两种队伍形成原因在于属性克制和副本对属性的加成（九如塔）。<br>游戏推荐角色养成路线和有限的资源导致混色队培养优先级高于混色队。<br>角色功能可以分为：输出、辅助、坦克三类，且功能存在交集，即一个角色既可以是输出也可以是辅助。<br>角色职业培养优先级：侠客、巫咒&gt;祝由&gt;铁卫&gt;御风&gt;羽士；<br>侠客为游戏中最为平衡的职业，数值平均，功能多样，适配能力强，常作为物理主输出。<br>祝由常作为恢复辅助，大幅提高队伍生存能力。<br>铁卫有很高的生存能力，护卫能力可保护队友，为队友攻击提供环境。</p>
-</blockquote>
-<h4 id="培养方案"><a href="#培养方案" class="headerlink" title="培养方案"></a>培养方案</h4><ul>
-<li>第一阶段：混色队培养 - 标准：六星五属性有阵混色队 - 例子：真胤[雷]（阵眼-坦克+辅助）、殷剑平[炎]（物理输出）、于小雪[冰]（辅助）、武英仲[光]（辅助+输出）、黎幽<a href="%E8%BE%85%E5%8A%A9+%E8%BE%93%E5%87%BA">暗</a> - 说明：混色队培养需要考虑两个问题，第一是角色强度，第二是向属性队的衍生；以上角色中，每个角色都很强力，都有阵，并且该阵可组成本身属性的属性队，可顺利的衍生出属性队，五个人配合强度和功能性也很高。</li>
-<li>第二阶段：五属性纯色队培养 - 标准：两个六星+三个五星有阵属性队 - 例子：冰属性-&gt;于小雪（阵眼）+冰璃+隋酒+封寒月+银玛 - 说明：当达到该标准时，九如塔可较为轻松通过，江湖也有一战之力，得到资源后反哺本属性人物；由于资源有限，个人建议一个属性队一个属性队的培养，切不可零碎培养，导致培养周期延长</li>
-<li>第三阶段：五属性全职业培养</li>
-</ul>
-]]></content>
-      <categories>
-        <category>游戏</category>
-      </categories>
-      <tags>
-        <tag>天地劫</tag>
-        <tag>SRPG</tag>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>微服务技术栈-rabbitMQ</title>
     <url>/uncategorized/microservices-technology-stack/microservices-technology-stack-rabbitMQ.html</url>
     <content><![CDATA[<h1 id="初识MQ"><a href="#初识MQ" class="headerlink" title="初识MQ"></a>初识MQ</h1><h2 id="同步和异步通讯"><a href="#同步和异步通讯" class="headerlink" title="同步和异步通讯"></a>同步和异步通讯</h2><p>微服务间通讯有同步和异步两种方式：</p>
 <p>同步通讯：就像打电话，需要实时响应。</p>
 <p>异步通讯：就像发邮件，不需要马上回复。</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717161939695.png" alt="同步通讯与异步通讯"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717161939695.png" alt="同步通讯与异步通讯"></p>
 <p>两种方式各有优劣，打电话可以立即得到响应，但是你却不能跟多个人同时通话。发送邮件可以同时与多个人收发邮件，但是往往响应会有延迟。</p>
 <h3 id="同步通讯"><a href="#同步通讯" class="headerlink" title="同步通讯"></a>同步通讯</h3><p>我们之前学习的Feign调用就属于同步方式，虽然调用可以实时得到结果，但存在下面的问题：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717162004285.png" alt="同步通讯问题"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717162004285.png" alt="同步通讯问题"></p>
 <p>总结：</p>
 <p>同步调用的优点：</p>
 <ul>
@@ -943,7 +893,7 @@
 <p>在事件模式中，支付服务是事件发布者（publisher），在支付完成后只需要发布一个支付成功的事件（event），事件中带上订单id。</p>
 <p>订单服务和物流服务是事件订阅者（Consumer），订阅支付成功的事件，监听到事件后完成自己业务即可。</p>
 <p>为了解除事件发布者与订阅者之间的耦合，两者并不是直接通信，而是有一个中间人（Broker）。发布者发布事件到Broker，不关心谁来订阅事件。订阅者从Broker订阅事件，不关心谁发来的消息。</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210422095356088.png" alt="Broker的作用"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210422095356088.png" alt="Broker的作用"></p>
 <p>Broker 是一个像数据总线一样的东西，所有的服务要接收数据和发送数据都发到这个总线上，这个总线就像协议一样，让服务间的通讯变得标准和可控。</p>
 <p>好处：</p>
 <ul>
@@ -1038,9 +988,9 @@
 <p>追求吞吐能力：RocketMQ、Kafka</p>
 <p>追求消息低延迟：RabbitMQ、Kafka</p>
 <h1 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h1><h2 id="安装RabbitMQ"><a href="#安装RabbitMQ" class="headerlink" title="安装RabbitMQ"></a>安装RabbitMQ</h2><p>安装RabbitMQ，参考课前资料：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717162628635.png" alt="文件地址"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717162628635.png" alt="文件地址"></p>
 <p>MQ的基本结构：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717162752376.png" alt="MQ的基本结构"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717162752376.png" alt="MQ的基本结构"></p>
 <p>RabbitMQ中的一些角色：</p>
 <ul>
 <li>publisher：生产者</li>
@@ -1050,11 +1000,11 @@
 <li>virtualHost：虚拟主机，隔离不同租户的exchange、queue、消息的隔离</li>
 </ul>
 <h2 id="RabbitMQ消息模型"><a href="#RabbitMQ消息模型" class="headerlink" title="RabbitMQ消息模型"></a>RabbitMQ消息模型</h2><p>RabbitMQ官方提供了5个不同的Demo示例，对应了不同的消息模型：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717163332646.png" alt="五种消息模型"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717163332646.png" alt="五种消息模型"></p>
 <h2 id="导入Demo工程"><a href="#导入Demo工程" class="headerlink" title="导入Demo工程"></a>导入Demo工程</h2><p>课前资料提供了一个Demo工程，mq-demo:</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717163253264.png" alt="文件地址"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717163253264.png" alt="文件地址"></p>
 <p>导入后可以看到结构如下：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717163604330.png" alt="代码结构"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717163604330.png" alt="代码结构"></p>
 <p>包括三部分：</p>
 <ul>
 <li>mq-demo：父工程，管理项目依赖</li>
@@ -1062,7 +1012,7 @@
 <li>consumer：消息的消费者</li>
 </ul>
 <h2 id="2-4-入门案例"><a href="#2-4-入门案例" class="headerlink" title="2.4.入门案例"></a>2.4.入门案例</h2><p>简单队列模式的模型图：</p>
-<p> <img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717163434647.png" alt="简单队列模型图"></p>
+<p> <img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717163434647.png" alt="简单队列模型图"></p>
 <p>官方的HelloWorld是基于最基础的消息队列模型来实现的，只包括三个角色：</p>
 <ul>
 <li>publisher：消息发布者，将消息发送到队列queue</li>
@@ -1116,8 +1066,8 @@
 </ol>
 <h1 id="SpringAMQP"><a href="#SpringAMQP" class="headerlink" title="SpringAMQP"></a>SpringAMQP</h1><p>SpringAMQP是基于RabbitMQ封装的一套模板，并且还利用SpringBoot对其实现了自动装配，使用起来非常方便。</p>
 <p>SpringAmqp的官方地址：<a href="https://spring.io/projects/spring-amqp">https://spring.io/projects/spring-amqp</a></p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717164024967.png" alt="AMQP"></p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717164038678.png" alt="SpringAMQP"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717164024967.png" alt="AMQP"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717164038678.png" alt="SpringAMQP"></p>
 <p>SpringAMQP提供了三个功能：</p>
 <ul>
 <li>自动声明队列、交换机及其绑定关系</li>
@@ -1141,7 +1091,7 @@
 
 <h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>启动consumer服务，然后在publisher服务中运行测试代码，发送MQ消息</p>
 <h2 id="WorkQueue"><a href="#WorkQueue" class="headerlink" title="WorkQueue"></a>WorkQueue</h2><p>Work queues，也被称为（Task queues），任务模型。简单来说就是<strong>让多个消费者绑定到一个队列，共同消费队列中的消息</strong>。</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717164238910.png" alt="任务模型"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717164238910.png" alt="任务模型"></p>
 <p>当消息处理比较耗时的时候，可能生产消息的速度会远远大于消息的消费速度。长此以往，消息就会堆积越来越多，无法及时处理。</p>
 <p>此时就可以使用work 模型，多个消费者共同处理消息处理，速度就能大大提高了。</p>
 <h3 id="消息发送-1"><a href="#消息发送-1" class="headerlink" title="消息发送"></a>消息发送</h3><p>这次我们循环发送，模拟大量消息堆积现象。</p>
@@ -1164,7 +1114,7 @@
 <li>通过设置prefetch来控制消费者预取的消息数量</li>
 </ul>
 <h2 id="发布-x2F-订阅"><a href="#发布-x2F-订阅" class="headerlink" title="发布&#x2F;订阅"></a>发布&#x2F;订阅</h2><p>发布订阅的模型如图：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717165309625.png" alt="发布订阅"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717165309625.png" alt="发布订阅"></p>
 <p>可以看到，在订阅模型中，多了一个exchange角色，而且过程略有变化：</p>
 <ul>
 <li>Publisher：生产者，也就是要发送消息的程序，但是不再发送到队列中，而是发给X（交换机）</li>
@@ -1179,7 +1129,7 @@
 </ul>
 <p><strong>Exchange（交换机）只负责转发消息，不具备存储消息的能力</strong>，因此如果没有任何队列与Exchange绑定，或者没有符合路由规则的队列，那么消息会丢失！</p>
 <h2 id="Fanout"><a href="#Fanout" class="headerlink" title="Fanout"></a>Fanout</h2><p>Fanout，英文翻译是扇出，我觉得在MQ中叫广播更合适。</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717165438225.png" alt="广播模式"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717165438225.png" alt="广播模式"></p>
 <p>在广播模式下，消息发送流程是这样的：</p>
 <ul>
 <li>1）  可以有多个队列</li>
@@ -1193,9 +1143,9 @@
 <li>创建一个交换机 itcast.fanout，类型是Fanout</li>
 <li>创建两个队列fanout.queue1和fanout.queue2，绑定到交换机itcast.fanout</li>
 </ul>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717165509466.png" alt="示例模型"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717165509466.png" alt="示例模型"></p>
 <h3 id="声明队列和交换机"><a href="#声明队列和交换机" class="headerlink" title="声明队列和交换机"></a>声明队列和交换机</h3><p>Spring提供了一个接口Exchange，来表示所有不同类型的交换机：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717165552676.png" alt="Exchange关联类图"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717165552676.png" alt="Exchange关联类图"></p>
 <p>在consumer中创建一个类，声明队列和交换机：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> cn.itcast.mq.config;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.amqp.core.Binding;</span><br><span class="line"><span class="keyword">import</span> org.springframework.amqp.core.BindingBuilder;</span><br><span class="line"><span class="keyword">import</span> org.springframework.amqp.core.FanoutExchange;</span><br><span class="line"><span class="keyword">import</span> org.springframework.amqp.core.Queue;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Bean;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Configuration;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">FanoutConfig</span> &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 声明交换机</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> Fanout类型交换机</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> FanoutExchange <span class="title function_">fanoutExchange</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">FanoutExchange</span>(<span class="string">&quot;itcast.fanout&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 第1个队列</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> Queue <span class="title function_">fanoutQueue1</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Queue</span>(<span class="string">&quot;fanout.queue1&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 绑定队列和交换机</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> Binding <span class="title function_">bindingQueue1</span><span class="params">(Queue fanoutQueue1, FanoutExchange fanoutExchange)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> BindingBuilder.bind(fanoutQueue1).to(fanoutExchange);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 第2个队列</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> Queue <span class="title function_">fanoutQueue2</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Queue</span>(<span class="string">&quot;fanout.queue2&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 绑定队列和交换机</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> Binding <span class="title function_">bindingQueue2</span><span class="params">(Queue fanoutQueue2, FanoutExchange fanoutExchange)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> BindingBuilder.bind(fanoutQueue2).to(fanoutExchange);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -1221,7 +1171,7 @@
 <li>Binding</li>
 </ul>
 <h2 id="Direct"><a href="#Direct" class="headerlink" title="Direct"></a>Direct</h2><p>在Fanout模式中，一条消息，会被所有订阅的队列都消费。但是，在某些场景下，我们希望不同的消息被不同的队列消费。这时就要用到Direct类型的Exchange。</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717170041447.png" alt="Direct模型图"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717170041447.png" alt="Direct模型图"></p>
 <p> 在Direct模型下：</p>
 <ul>
 <li>队列与交换机的绑定，不能是任意绑定了，而是要指定一个<code>RoutingKey</code>（路由key）</li>
@@ -1237,7 +1187,7 @@
 <li><p>在publisher中编写测试方法，向itcast. direct发送消息</p>
 </li>
 </ol>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717170223317.png" alt="示例模型"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717170223317.png" alt="示例模型"></p>
 <h3 id="基于注解声明队列和交换机"><a href="#基于注解声明队列和交换机" class="headerlink" title="基于注解声明队列和交换机"></a>基于注解声明队列和交换机</h3><p>基于@Bean的方式声明队列和交换机比较麻烦，Spring还提供了基于注解方式来声明。</p>
 <p>在consumer的SpringRabbitListener中添加两个消费者，同时基于注解来声明队列和交换机：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RabbitListener(bindings = @QueueBinding(</span></span><br><span class="line"><span class="meta">    value = @Queue(name = &quot;direct.queue1&quot;),</span></span><br><span class="line"><span class="meta">    exchange = @Exchange(name = &quot;itcast.direct&quot;, type = ExchangeTypes.DIRECT),</span></span><br><span class="line"><span class="meta">    key = &#123;&quot;red&quot;, &quot;blue&quot;&#125;</span></span><br><span class="line"><span class="meta">))</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">listenDirectQueue1</span><span class="params">(String msg)</span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;消费者接收到direct.queue1的消息：【&quot;</span> + msg + <span class="string">&quot;】&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@RabbitListener(bindings = @QueueBinding(</span></span><br><span class="line"><span class="meta">    value = @Queue(name = &quot;direct.queue2&quot;),</span></span><br><span class="line"><span class="meta">    exchange = @Exchange(name = &quot;itcast.direct&quot;, type = ExchangeTypes.DIRECT),</span></span><br><span class="line"><span class="meta">    key = &#123;&quot;red&quot;, &quot;yellow&quot;&#125;</span></span><br><span class="line"><span class="meta">))</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">listenDirectQueue2</span><span class="params">(String msg)</span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;消费者接收到direct.queue2的消息：【&quot;</span> + msg + <span class="string">&quot;】&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1265,7 +1215,7 @@
 <p><code>item.#</code>：能够匹配<code>item.spu.insert</code> 或者 <code>item.spu</code></p>
 <p><code>item.*</code>：只能匹配<code>item.spu</code></p>
 <p>图示：</p>
-<p> <img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717170705380.png" alt="Topic模型"></p>
+<p> <img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717170705380.png" alt="Topic模型"></p>
 <p>解释：</p>
 <ul>
 <li>Queue1：绑定的是<code>china.#</code> ，因此凡是以 <code>china.</code>开头的<code>routing key</code> 都会被匹配到。包括china.news和china.weather</li>
@@ -1281,7 +1231,7 @@
 <li><p>在publisher中编写测试方法，向itcast. topic发送消息</p>
 </li>
 </ol>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210717170829229.png" alt="示例模型"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210717170829229.png" alt="示例模型"></p>
 <h3 id="消息发送-4"><a href="#消息发送-4" class="headerlink" title="消息发送"></a>消息发送</h3><p>在publisher服务的SpringAmqpTest类中添加测试方法：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * topicExchange</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testSendTopicExchange</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">// 交换机名称</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">exchangeName</span> <span class="operator">=</span> <span class="string">&quot;itcast.topic&quot;</span>;</span><br><span class="line">    <span class="comment">// 消息</span></span><br><span class="line">    <span class="type">String</span> <span class="variable">message</span> <span class="operator">=</span> <span class="string">&quot;喜报！孙悟空大战哥斯拉，胜!&quot;</span>;</span><br><span class="line">    <span class="comment">// 发送消息</span></span><br><span class="line">    rabbitTemplate.convertAndSend(exchangeName, <span class="string">&quot;china.news&quot;</span>, message);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -1296,7 +1246,7 @@
 <li><code>*</code>：代表1个词</li>
 </ul>
 <h2 id="消息转换器"><a href="#消息转换器" class="headerlink" title="消息转换器"></a>消息转换器</h2><p>之前说过，Spring会把你发送的消息序列化为字节发送给MQ，接收消息的时候，还会把字节反序列化为Java对象。</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20200525170410401.png" alt="示例代码"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20200525170410401.png" alt="示例代码"></p>
 <p>只不过，默认情况下Spring采用的序列化方式是JDK序列化。众所周知，JDK序列化存在下列问题：</p>
 <ul>
 <li>数据体积过大</li>
@@ -1309,7 +1259,7 @@
 
 <p>停止consumer服务</p>
 <p>发送消息后查看控制台：</p>
-<p><img src="/.https:/img.nonnight.com/img/mts-rabbitMQ/image-20210422232835363.png" alt="控制台内容"></p>
+<p><img src="https://img.nonnight.com/img/mts-rabbitMQ/image-20210422232835363.png" alt="控制台内容"></p>
 <h3 id="配置JSON转换器"><a href="#配置JSON转换器" class="headerlink" title="配置JSON转换器"></a>配置JSON转换器</h3><p>显然，JDK序列化方式并不合适。我们希望消息体的体积更小、可读性更高，因此可以使用JSON方式来做序列化和反序列化。</p>
 <p>在publisher和consumer两个服务中都引入依赖：</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.fasterxml.jackson.dataformat<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jackson-dataformat-xml<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.9.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -1326,6 +1276,56 @@
       <tags>
         <tag>学习记录</tag>
         <tag>微服务</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>天地劫-幽城再临-角色培养</title>
+    <url>/%E6%B8%B8%E6%88%8F/tdd-phantom-city-revisited/heaven-and-earth-robbery.html</url>
+    <content><![CDATA[<span id="more"></span>
+
+<pre><code>天地劫-幽城再临属于SRPG(Strategy Role-Playing Game),除去剧情外，角色养成和战旗策略是该类游戏的两大游玩内容。
+</code></pre>
+<h3 id="角色养成"><a href="#角色养成" class="headerlink" title="角色养成"></a>角色养成</h3><h4 id="角色能力组成与对应资源来源"><a href="#角色能力组成与对应资源来源" class="headerlink" title="角色能力组成与对应资源来源"></a>角色能力组成与对应资源来源</h4><pre><code>- 兵刃
+    - 淬火（蚀之隙）
+    - 魂石（创命之间、幻海魂渊）
+    - 神兵（九如塔）
+- 及身
+    - 饰品（三途川）
+    - 精化（灵脉光渊）
+- 五内
+    - 化蕴（蚀之隙）
+    - 内力精进（江湖）
+    - 绝学化神（江湖）
+- 天魂之力
+    - 回响（蚀之隙）
+</code></pre>
+<p>由此可见，培养角色的本质在于资源材料获取（副本攻克），根据副本敌人属性组成本人将副本分为单属性副本和多属性副本：</p>
+<ul>
+<li>单属性副本<ul>
+<li>创命之间、幻海魂渊、九如塔、灵脉光渊</li>
+</ul>
+</li>
+<li>多属性副本<ul>
+<li>蚀之隙、三途川、江湖</li>
+</ul>
+</li>
+</ul>
+<h4 id="养成探讨"><a href="#养成探讨" class="headerlink" title="养成探讨"></a>养成探讨</h4><blockquote>
+<p>根据副本类型，对应出属性队和混色队，属性队由单属性为主体组成，混色队由多色队组成。<br>两种队伍形成原因在于属性克制和副本对属性的加成（九如塔）。<br>游戏推荐角色养成路线和有限的资源导致混色队培养优先级高于混色队。<br>角色功能可以分为：输出、辅助、坦克三类，且功能存在交集，即一个角色既可以是输出也可以是辅助。<br>角色职业培养优先级：侠客、巫咒&gt;祝由&gt;铁卫&gt;御风&gt;羽士；<br>侠客为游戏中最为平衡的职业，数值平均，功能多样，适配能力强，常作为物理主输出。<br>祝由常作为恢复辅助，大幅提高队伍生存能力。<br>铁卫有很高的生存能力，护卫能力可保护队友，为队友攻击提供环境。</p>
+</blockquote>
+<h4 id="培养方案"><a href="#培养方案" class="headerlink" title="培养方案"></a>培养方案</h4><ul>
+<li>第一阶段：混色队培养 - 标准：六星五属性有阵混色队 - 例子：真胤[雷]（阵眼-坦克+辅助）、殷剑平[炎]（物理输出）、于小雪[冰]（辅助）、武英仲[光]（辅助+输出）、黎幽<a href="%E8%BE%85%E5%8A%A9+%E8%BE%93%E5%87%BA">暗</a> - 说明：混色队培养需要考虑两个问题，第一是角色强度，第二是向属性队的衍生；以上角色中，每个角色都很强力，都有阵，并且该阵可组成本身属性的属性队，可顺利的衍生出属性队，五个人配合强度和功能性也很高。</li>
+<li>第二阶段：五属性纯色队培养 - 标准：两个六星+三个五星有阵属性队 - 例子：冰属性-&gt;于小雪（阵眼）+冰璃+隋酒+封寒月+银玛 - 说明：当达到该标准时，九如塔可较为轻松通过，江湖也有一战之力，得到资源后反哺本属性人物；由于资源有限，个人建议一个属性队一个属性队的培养，切不可零碎培养，导致培养周期延长</li>
+<li>第三阶段：五属性全职业培养</li>
+</ul>
+]]></content>
+      <categories>
+        <category>游戏</category>
+      </categories>
+      <tags>
+        <tag>天地劫</tag>
+        <tag>SRPG</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -1564,7 +1564,7 @@
 <p>可是因为紧张，它浑身发抖了，发出嘶哑的声音。它呆立着不动，准备着一场搏斗。在它看来，猎狗是个多么庞大的怪物啊！<br>可是它不能安然地站在高高的没有危险的树枝上，一种强大的力量使它飞了下来。</p>
 <p>猎狗愣住了，它可能没料到老麻雀会有这么大的勇气，慢慢地，慢慢地向后退。<br>我急忙唤回我的猎狗，带着它走开了。</p>
 </blockquote>
-<img src="/.https:/img.nonnight.com/img/post-img/think-of-voice-4.jpg" alt="发音器官示意图" title="麻雀朗诵参考"></li>
+<img src="https://img.nonnight.com/img/post-img/think-of-voice-4.jpg" alt="发音器官示意图" title="麻雀朗诵参考"></li>
 </ul>
 ]]></content>
       <categories>
@@ -1781,7 +1781,7 @@
 <li>气声</li>
 </ul>
 <blockquote>
-<p>看图片中场景开始展开想象<br><img src="/.https:/img.nonnight.com/img/post-img/think-of-voice-5.png" alt="吃烫的场景"><br><img src="/.https:/img.nonnight.com/img/post-img/think-of-voice-6.png" alt="吃酸的场景"></p>
+<p>看图片中场景开始展开想象<br><img src="https://img.nonnight.com/img/post-img/think-of-voice-5.png" alt="吃烫的场景"><br><img src="https://img.nonnight.com/img/post-img/think-of-voice-6.png" alt="吃酸的场景"></p>
 </blockquote>
 <h3 id="性格化练习"><a href="#性格化练习" class="headerlink" title="性格化练习"></a>性格化练习</h3><ul>
 <li>长时间的大笑</li>
@@ -1980,7 +1980,7 @@
 <li>喉腔：</li>
 <li>咽腔：</li>
 <li>口腔：</li>
-<li>鼻腔：<br><img src="/.https:/img.nonnight.com/img/post-img/think-of-your-voice-1.png" alt="发音器官示意图" title="发音器官示意图"></li>
+<li>鼻腔：<br><img src="https://img.nonnight.com/img/post-img/think-of-your-voice-1.png" alt="发音器官示意图" title="发音器官示意图"></li>
 </ul>
 </li>
 </ul>
@@ -2021,8 +2021,8 @@
     <title>想起你的声音-初见</title>
     <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-first-see.html</url>
     <content><![CDATA[<h3 id="解放天性"><a href="#解放天性" class="headerlink" title="解放天性"></a>解放天性</h3><h4 id="情景感和生活感"><a href="#情景感和生活感" class="headerlink" title="情景感和生活感"></a>情景感和生活感</h4><ul>
-<li>情景感：所处环境、所处时间、音乐音效和天气时间<br><img src="/.https:/img.nonnight.com/img/post-img/think-of-voice-2.jpg" alt="情景感" title="情景感"></li>
-<li>生活感：所处时代、人物关系、人物状态和文化特征<br><img src="/.https:/img.nonnight.com/img/post-img/think-of-voice-3.png" alt="生活感" title="生活感"></li>
+<li>情景感：所处环境、所处时间、音乐音效和天气时间<br><img src="https://img.nonnight.com/img/post-img/think-of-voice-2.jpg" alt="情景感" title="情景感"></li>
+<li>生活感：所处时代、人物关系、人物状态和文化特征<br><img src="https://img.nonnight.com/img/post-img/think-of-voice-3.png" alt="生活感" title="生活感"></li>
 <li>感受方式：观察分析和倾听感受</li>
 </ul>
 <h4 id="坚定的信念"><a href="#坚定的信念" class="headerlink" title="坚定的信念"></a>坚定的信念</h4><ul>
@@ -2030,104 +2030,6 @@
 <li>具体表现：通过对情景和生活进行理解感受后，确定自己以怎样的状态和情绪读词时，不管内容含义多么不应景，都需要以确定的状态和情绪进行配音读词。</li>
 </ul>
 <h3 id="感受与情绪"><a href="#感受与情绪" class="headerlink" title="感受与情绪"></a>感受与情绪</h3><p>未完待续。。。</p>
-]]></content>
-      <categories>
-        <category>知声配音</category>
-      </categories>
-      <tags>
-        <tag>苔花小米</tag>
-        <tag>声音优化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>想起你的声音-台词(3-4)</title>
-    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-line-3-4.html</url>
-    <content><![CDATA[<h3 id="对角色台词的分析与理解"><a href="#对角色台词的分析与理解" class="headerlink" title="对角色台词的分析与理解"></a>对角色台词的分析与理解</h3><ol>
-<li><p>独白：内心独白是角色的思维活动过程</p>
-<ul>
-<li><p>分析语言行动：人物为了达到一定的目的所采取的手段，反映在形体上的叫做形体行动。反映在语言上的就叫做语言行动。</p>
-<ul>
-<li>方法参考：<blockquote>
-<p>A 主题与主题思想<br>B 时代背景、矛盾冲突<br>C 时间与事实<br>D 目的与行动<br><strong>一般是使用行动性动词来表示，不用情绪性动词入手</strong></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>潜台词的挖掘：作者没有写出来，但是又最能表达人物的真实含义的叫做潜台词。</p>
-<ul>
-<li>方法参考：<blockquote>
-<p>A 从人物的语言行动上挖掘潜台词<br>B 从人物的最终目的去找潜台词</p>
-</blockquote>
-</li>
-<li>怎么表达：<ul>
-<li>节奏</li>
-<li>重音</li>
-<li>语调</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>内心独白</p>
-<blockquote>
-<p>人的思维生活里，人的思维活动是不间断进行的，说出的话仅仅是思维活动的<br>一部分。完整的内心独白应该是内心语言和丰富的内心视象构成的。（例如听<br>到车祸脑子里会出现“以后开车要小心点”带有结论似的内心语言。</p>
-</blockquote>
-<blockquote>
-<p>我们绝不要把内心独白理解为仅仅是以独白形式写出来的语言文字，并<br>拿到舞台上去默诵，他应该是角色的行为逻辑，感受，联想有机交织形<br>成的。</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ol>
-<h3 id="对角色台词的表达与体现"><a href="#对角色台词的表达与体现" class="headerlink" title="对角色台词的表达与体现"></a>对角色台词的表达与体现</h3><ol>
-<li><p>台词的衔接（节奏韵律）</p>
-<ul>
-<li>快接：争辩，高潮，激烈斗争</li>
-<li>慢接：故意冷淡，心怀鬼胎，难言之隐</li>
-<li>虚接：不做正面回答，换顾左右而言他</li>
-<li>实接：交代，对答</li>
-<li>高接：一声比一声高，争夺，或者距离较远</li>
-<li>低接：耳语，密告</li>
-<li>强接：命令要求</li>
-<li>弱接：心虚或者体虚，犹豫</li>
-</ul>
-</li>
-<li><p>台词基调（台词性格化）</p>
-<ul>
-<li>音色塑造</li>
-<li>语言色彩</li>
-</ul>
-</li>
-<li><p>气息与情感（表情达意的外部手段）</p>
-<ul>
-<li>高兴：气吸较浅，快呼快吸，气运动较快</li>
-<li>欢乐：气吸较深，横膈膜颤动，快速腹动</li>
-<li>愤怒：刹那屏住呼吸，然后大口换气</li>
-<li>忧虑: 气慢慢吸，稍停，慢慢呼出</li>
-<li>悲哀: 慢慢吸入，快呼</li>
-<li>恐惧: 快速吸气，较浅，并屏住呼吸</li>
-</ul>
-</li>
-</ol>
-<h3 id="不同体裁风格台词流派的台词处理-以悲剧，戏剧，正剧这三种体裁的剧本台词训练为主"><a href="#不同体裁风格台词流派的台词处理-以悲剧，戏剧，正剧这三种体裁的剧本台词训练为主" class="headerlink" title="不同体裁风格台词流派的台词处理(以悲剧，戏剧，正剧这三种体裁的剧本台词训练为主)"></a>不同体裁风格台词流派的台词处理(以悲剧，戏剧，正剧这三种体裁的剧本台词训练为主)</h3><ol>
-<li>风格介绍<br>- 风格：风格是指剧作家的创作个性在其戏剧作品中所表现出来的艺术特色<br>- 正剧：<blockquote>
-<p>老舍《茶馆》《龙须沟》对劳动人民同情，浓厚的背景乡土气息<br>曹禺《雷雨》《日出》结构严谨，扣人心弦。</p>
-</blockquote>
-</li>
-</ol>
-<pre><code>- 喜剧：
-  &gt; 宁财神《武林外传》《龙门镖局》天马行空，古说今话
-  &gt; 韦正《爱情公寓》轻松浪漫，时尚气息
-</code></pre>
-<ol start="2">
-<li><p>流派介绍<br>- 流派：流派是“戏剧风格的群体现象。” 是根据一些有共同创作倾向，有共同艺术特色的作家，在一定的历史时期，受一定的社会风尚和艺术风尚的影响（古典主义，现实主义，浪漫主<br>义。。。。。）</p>
-</li>
-<li><p>悲剧台词处理<br>- 浓烈饱满的激情<br>- 高亢雄浑的声音<br>- 沉稳抒缓的气息<br>- 铿锵有力的吐字<br>- 如诗如画的意境<br>- 节奏起伏的韵律</p>
-</li>
-<li><p>喜剧台词的处理<br>- 真挚热情的语态<br>- 幽默风趣的语调<br>- 辛辣锋利的语势<br>- 轻松明快的语言节奏<br>- 灵活敏捷的语言交流<br>- 冷热、快慢的语言突变</p>
-</li>
-<li><p>正剧台词处理<br>- 生活口语<br>- 自然亲切<br>- 真实可信</p>
-</li>
-</ol>
 ]]></content>
       <categories>
         <category>知声配音</category>
@@ -2303,6 +2205,104 @@
 </blockquote>
 </li>
 </ul>
+]]></content>
+      <categories>
+        <category>知声配音</category>
+      </categories>
+      <tags>
+        <tag>苔花小米</tag>
+        <tag>声音优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>想起你的声音-台词(3-4)</title>
+    <url>/%E7%9F%A5%E5%A3%B0%E9%85%8D%E9%9F%B3/think-of-voice/think-of-voice-line-3-4.html</url>
+    <content><![CDATA[<h3 id="对角色台词的分析与理解"><a href="#对角色台词的分析与理解" class="headerlink" title="对角色台词的分析与理解"></a>对角色台词的分析与理解</h3><ol>
+<li><p>独白：内心独白是角色的思维活动过程</p>
+<ul>
+<li><p>分析语言行动：人物为了达到一定的目的所采取的手段，反映在形体上的叫做形体行动。反映在语言上的就叫做语言行动。</p>
+<ul>
+<li>方法参考：<blockquote>
+<p>A 主题与主题思想<br>B 时代背景、矛盾冲突<br>C 时间与事实<br>D 目的与行动<br><strong>一般是使用行动性动词来表示，不用情绪性动词入手</strong></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>潜台词的挖掘：作者没有写出来，但是又最能表达人物的真实含义的叫做潜台词。</p>
+<ul>
+<li>方法参考：<blockquote>
+<p>A 从人物的语言行动上挖掘潜台词<br>B 从人物的最终目的去找潜台词</p>
+</blockquote>
+</li>
+<li>怎么表达：<ul>
+<li>节奏</li>
+<li>重音</li>
+<li>语调</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>内心独白</p>
+<blockquote>
+<p>人的思维生活里，人的思维活动是不间断进行的，说出的话仅仅是思维活动的<br>一部分。完整的内心独白应该是内心语言和丰富的内心视象构成的。（例如听<br>到车祸脑子里会出现“以后开车要小心点”带有结论似的内心语言。</p>
+</blockquote>
+<blockquote>
+<p>我们绝不要把内心独白理解为仅仅是以独白形式写出来的语言文字，并<br>拿到舞台上去默诵，他应该是角色的行为逻辑，感受，联想有机交织形<br>成的。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="对角色台词的表达与体现"><a href="#对角色台词的表达与体现" class="headerlink" title="对角色台词的表达与体现"></a>对角色台词的表达与体现</h3><ol>
+<li><p>台词的衔接（节奏韵律）</p>
+<ul>
+<li>快接：争辩，高潮，激烈斗争</li>
+<li>慢接：故意冷淡，心怀鬼胎，难言之隐</li>
+<li>虚接：不做正面回答，换顾左右而言他</li>
+<li>实接：交代，对答</li>
+<li>高接：一声比一声高，争夺，或者距离较远</li>
+<li>低接：耳语，密告</li>
+<li>强接：命令要求</li>
+<li>弱接：心虚或者体虚，犹豫</li>
+</ul>
+</li>
+<li><p>台词基调（台词性格化）</p>
+<ul>
+<li>音色塑造</li>
+<li>语言色彩</li>
+</ul>
+</li>
+<li><p>气息与情感（表情达意的外部手段）</p>
+<ul>
+<li>高兴：气吸较浅，快呼快吸，气运动较快</li>
+<li>欢乐：气吸较深，横膈膜颤动，快速腹动</li>
+<li>愤怒：刹那屏住呼吸，然后大口换气</li>
+<li>忧虑: 气慢慢吸，稍停，慢慢呼出</li>
+<li>悲哀: 慢慢吸入，快呼</li>
+<li>恐惧: 快速吸气，较浅，并屏住呼吸</li>
+</ul>
+</li>
+</ol>
+<h3 id="不同体裁风格台词流派的台词处理-以悲剧，戏剧，正剧这三种体裁的剧本台词训练为主"><a href="#不同体裁风格台词流派的台词处理-以悲剧，戏剧，正剧这三种体裁的剧本台词训练为主" class="headerlink" title="不同体裁风格台词流派的台词处理(以悲剧，戏剧，正剧这三种体裁的剧本台词训练为主)"></a>不同体裁风格台词流派的台词处理(以悲剧，戏剧，正剧这三种体裁的剧本台词训练为主)</h3><ol>
+<li>风格介绍<br>- 风格：风格是指剧作家的创作个性在其戏剧作品中所表现出来的艺术特色<br>- 正剧：<blockquote>
+<p>老舍《茶馆》《龙须沟》对劳动人民同情，浓厚的背景乡土气息<br>曹禺《雷雨》《日出》结构严谨，扣人心弦。</p>
+</blockquote>
+</li>
+</ol>
+<pre><code>- 喜剧：
+  &gt; 宁财神《武林外传》《龙门镖局》天马行空，古说今话
+  &gt; 韦正《爱情公寓》轻松浪漫，时尚气息
+</code></pre>
+<ol start="2">
+<li><p>流派介绍<br>- 流派：流派是“戏剧风格的群体现象。” 是根据一些有共同创作倾向，有共同艺术特色的作家，在一定的历史时期，受一定的社会风尚和艺术风尚的影响（古典主义，现实主义，浪漫主<br>义。。。。。）</p>
+</li>
+<li><p>悲剧台词处理<br>- 浓烈饱满的激情<br>- 高亢雄浑的声音<br>- 沉稳抒缓的气息<br>- 铿锵有力的吐字<br>- 如诗如画的意境<br>- 节奏起伏的韵律</p>
+</li>
+<li><p>喜剧台词的处理<br>- 真挚热情的语态<br>- 幽默风趣的语调<br>- 辛辣锋利的语势<br>- 轻松明快的语言节奏<br>- 灵活敏捷的语言交流<br>- 冷热、快慢的语言突变</p>
+</li>
+<li><p>正剧台词处理<br>- 生活口语<br>- 自然亲切<br>- 真实可信</p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>知声配音</category>
@@ -2733,7 +2733,7 @@
 <p>阴平一55 特点:高平调，又高又平、有终<br>阳平—35 特点:中平调，高起高走、平稳上升、结尾收住<br>上声—214 特点:前低后高、前短后长、前轻后重<br>去声—51 特点:又高又短</p>
 </blockquote>
 </li>
-<li>注意：声音连贯避免顿声、上声&gt;阳平&gt;阴平&gt;去声（声音长短）<br><img src="/.https:/img.nonnight.com/img/post-img/five-degree-scale.png" alt="五度标记法" title="五度标记法"></li>
+<li>注意：声音连贯避免顿声、上声&gt;阳平&gt;阴平&gt;去声（声音长短）<br><img src="https://img.nonnight.com/img/post-img/five-degree-scale.png" alt="五度标记法" title="五度标记法"></li>
 </ul>
 <h3 id="双音节练习"><a href="#双音节练习" class="headerlink" title="双音节练习"></a>双音节练习</h3><ul>
 <li><p>阴平</p>
@@ -2823,20 +2823,20 @@
 </ul>
 <h3 id="有声书的制作"><a href="#有声书的制作" class="headerlink" title="有声书的制作"></a>有声书的制作</h3><p>制作流程：</p>
 <ol>
-<li>画本<br><img src="/.https:/img.nonnight.com/img/post-img/audio-book-1.png" alt="画本"><br>- 注意：</li>
-<li>录制<br><img src="/.https:/img.nonnight.com/img/post-img/audio-book-2.png" alt="录制"><br>- 注意：</li>
-<li>审反<br><img src="/.https:/img.nonnight.com/img/post-img/audio-book-3.png" alt="审反"><br>- 注意：<ol>
+<li>画本<br><img src="https://img.nonnight.com/img/post-img/audio-book-1.png" alt="画本"><br>- 注意：</li>
+<li>录制<br><img src="https://img.nonnight.com/img/post-img/audio-book-2.png" alt="录制"><br>- 注意：</li>
+<li>审反<br><img src="https://img.nonnight.com/img/post-img/audio-book-3.png" alt="审反"><br>- 注意：<ol>
 <li>只需重新补录正确部分；返音要求与录制相同</li>
 </ol>
 </li>
 </ol>
 <h3 id="有声书的分类"><a href="#有声书的分类" class="headerlink" title="有声书的分类"></a>有声书的分类</h3><ul>
-<li>出版物<br><img src="/.https:/img.nonnight.com/img/post-img/audio-book-4.png" alt="出版物"></li>
-<li>社科类<br><img src="/.https:/img.nonnight.com/img/post-img/audio-book-5.png" alt="社科类"></li>
+<li>出版物<br><img src="https://img.nonnight.com/img/post-img/audio-book-4.png" alt="出版物"></li>
+<li>社科类<br><img src="https://img.nonnight.com/img/post-img/audio-book-5.png" alt="社科类"></li>
 <li>网络小说<ul>
-<li>男频搞笑<br><img src="/.https:/img.nonnight.com/img/post-img/audio-book-6.png" alt="男频搞笑"></li>
-<li>女频宫斗<br><img src="/.https:/img.nonnight.com/img/post-img/audio-book-7.png" alt="女频宫斗"></li>
-<li>男频玄幻<br><img src="/.https:/img.nonnight.com/img/post-img/audio-book-8.png" alt="男频玄幻"></li>
+<li>男频搞笑<br><img src="https://img.nonnight.com/img/post-img/audio-book-6.png" alt="男频搞笑"></li>
+<li>女频宫斗<br><img src="https://img.nonnight.com/img/post-img/audio-book-7.png" alt="女频宫斗"></li>
+<li>男频玄幻<br><img src="https://img.nonnight.com/img/post-img/audio-book-8.png" alt="男频玄幻"></li>
 </ul>
 </li>
 </ul>
@@ -3077,6 +3077,21 @@
       <tags>
         <tag>苔花小米</tag>
         <tag>声音优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>望风吹</title>
+    <url>/%E8%AF%97%E8%AF%8D%E6%95%A3%E6%96%87/verse-and-prose/look-at-the-wind-blowing.html</url>
+    <content><![CDATA[<p>虔心祈，<br>春风，代替秋雨，<br>花开，抹去冷寂，<br>一点的凝望，<br>换一点驻足的歌唱。</p>
+<p>愿风来，<br>小草摆头等待，<br>细雪调皮欢快，<br>我逃离了泪眼之地，<br>没有无助，<br>也没有刻意。</p>
+<p>忘思愁，<br>清晨的挽留，<br>勾勒出，<br>夕阳下你温柔的眼眸。</p>
+]]></content>
+      <categories>
+        <category>诗词散文</category>
+      </categories>
+      <tags>
+        <tag>夜风</tag>
+        <tag>伤感</tag>
       </tags>
   </entry>
   <entry>
@@ -3362,21 +3377,6 @@
       </tags>
   </entry>
   <entry>
-    <title>望风吹</title>
-    <url>/%E8%AF%97%E8%AF%8D%E6%95%A3%E6%96%87/verse-and-prose/look-at-the-wind-blowing.html</url>
-    <content><![CDATA[<p>虔心祈，<br>春风，代替秋雨，<br>花开，抹去冷寂，<br>一点的凝望，<br>换一点驻足的歌唱。</p>
-<p>愿风来，<br>小草摆头等待，<br>细雪调皮欢快，<br>我逃离了泪眼之地，<br>没有无助，<br>也没有刻意。</p>
-<p>忘思愁，<br>清晨的挽留，<br>勾勒出，<br>夕阳下你温柔的眼眸。</p>
-]]></content>
-      <categories>
-        <category>诗词散文</category>
-      </categories>
-      <tags>
-        <tag>夜风</tag>
-        <tag>伤感</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>本人年华</title>
     <url>/%E8%AF%97%E8%AF%8D%E6%95%A3%E6%96%87/verse-and-prose/self-year.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -3392,24 +3392,6 @@
         <tag>总结</tag>
         <tag>日记</tag>
         <tag>感慨</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>因为那夜风</title>
-    <url>/%E8%AF%97%E8%AF%8D%E6%95%A3%E6%96%87/verse-and-prose/study-pouwer.html</url>
-    <content><![CDATA[<p>总是因为风中的一丝味道而伤感。</p>
-<span id="more"></span>
-
-<h3 id="因为那夜风"><a href="#因为那夜风" class="headerlink" title="因为那夜风"></a>因为那夜风</h3><p>因为一场风，<br>落日迎来了星空点点，<br>余晖拉长了记忆的影子，<br>月光洒下，<br>荡起层层细语。</p>
-<p>吹来的这阵风，<br>偷走了曾经的一个梦，<br>曾想把它藏在过去，<br>如今却随风而去。</p>
-<p>那夜里吹走了的风，<br>朦朦胧胧，<br>抓不到，<br>也留不住，<br>但有种种思绪，<br>因为这风，<br>成为了心中默默嘈杂的秘密。</p>
-]]></content>
-      <categories>
-        <category>诗词散文</category>
-      </categories>
-      <tags>
-        <tag>夜风</tag>
-        <tag>伤感</tag>
       </tags>
   </entry>
   <entry>
@@ -3438,6 +3420,24 @@
       </categories>
       <tags>
         <tag>日记散文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>因为那夜风</title>
+    <url>/%E8%AF%97%E8%AF%8D%E6%95%A3%E6%96%87/verse-and-prose/study-pouwer.html</url>
+    <content><![CDATA[<p>总是因为风中的一丝味道而伤感。</p>
+<span id="more"></span>
+
+<h3 id="因为那夜风"><a href="#因为那夜风" class="headerlink" title="因为那夜风"></a>因为那夜风</h3><p>因为一场风，<br>落日迎来了星空点点，<br>余晖拉长了记忆的影子，<br>月光洒下，<br>荡起层层细语。</p>
+<p>吹来的这阵风，<br>偷走了曾经的一个梦，<br>曾想把它藏在过去，<br>如今却随风而去。</p>
+<p>那夜里吹走了的风，<br>朦朦胧胧，<br>抓不到，<br>也留不住，<br>但有种种思绪，<br>因为这风，<br>成为了心中默默嘈杂的秘密。</p>
+]]></content>
+      <categories>
+        <category>诗词散文</category>
+      </categories>
+      <tags>
+        <tag>夜风</tag>
+        <tag>伤感</tag>
       </tags>
   </entry>
   <entry>
